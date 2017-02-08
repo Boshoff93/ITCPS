@@ -34,7 +34,8 @@
         <activity android:name=".Advance_Display_ScenThree" />
         <activity android:name=".Activity_Vitals_ScenFour" />
         <activity android:name=".Activity_Game_Scen4" />
-        <activity android:name=".Activity_Scenario_ScenFour"></activity>
+        <activity android:name=".Activity_Scenario_ScenFour" />
+        <activity android:name=".Advance_Display_ScenFour"></activity>
     </application>
 
 </manifest>

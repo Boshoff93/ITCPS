@@ -108,16 +108,6 @@
         android:layout_toEndOf="@+id/pulseSumP2_Scen2" />
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/BPNum_Scen2"
-        android:textStyle="normal|bold"
-        android:textSize="28sp"
-        android:textAlignment="textEnd"
-        android:layout_alignTop="@+id/graphBBAdvance_Scen2"
-        android:layout_toStartOf="@+id/graphBBAdvance_Scen2" />
-
-    <TextView
         android:text="P1:"
         android:layout_height="25dp"
         android:id="@+id/textP1_Scen2"
@@ -150,50 +140,6 @@
         android:layout_toEndOf="@+id/BPsumP1_Scen2"
         android:layout_marginTop="11dp" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="100dp"
-        android:id="@+id/BPsumP1_Scen2"
-        android:textStyle="normal|bold"
-        android:layout_height="25dp"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/pulseSumP1_Scen2"
-        android:layout_alignBottom="@+id/pulseSumP1_Scen2"
-        android:layout_toStartOf="@+id/pulseSumP2_Scen2" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_height="25dp"
-        android:id="@+id/BPsumP2_Scen2"
-        android:layout_width="100dp"
-        android:textStyle="normal|bold"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/pulseSumP2_Scen2"
-        android:layout_alignBottom="@+id/pulseSumP2_Scen2"
-        android:layout_toStartOf="@+id/pulseSumP2_Scen2" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="100dp"
-        android:id="@+id/pulseSumP2_Scen2"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_height="25dp"
-        android:layout_marginTop="11dp"
-        android:layout_below="@+id/RRSumP1_Scen2"
-        android:layout_alignStart="@+id/patient_One_Button_Adv_Scen2" />
-
-    <TextView
-        android:text="P2:"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:id="@+id/textP2_Scen2"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_alignBaseline="@+id/BPsumP2_Scen2"
-        android:layout_alignBottom="@+id/BPsumP2_Scen2"
-        android:layout_alignStart="@+id/textPatientNo_Scen2" />
-
     <Button
         android:text="Patient 1"
         android:layout_width="100dp"
@@ -218,28 +164,6 @@
         android:layout_alignStart="@+id/buttonCAPAdvance_Scen2" />
 
     <TextView
-        android:text="TextView"
-        android:layout_width="100dp"
-        android:layout_height="25dp"
-        android:id="@+id/tempSumP1_Scen2"
-        android:textStyle="normal|bold"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/RRSumP1_Scen2"
-        android:layout_alignBottom="@+id/RRSumP1_Scen2"
-        android:layout_alignEnd="@+id/patient_Two_Button_Adv_Scen2" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="100dp"
-        android:layout_height="25dp"
-        android:id="@+id/tempSumP2_Scen2"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_alignBaseline="@+id/RRSumP2_Scen2"
-        android:layout_alignBottom="@+id/RRSumP2_Scen2"
-        android:layout_alignStart="@+id/tempSumP1_Scen2" />
-
-    <TextView
         android:text="Temp"
         android:layout_height="50dp"
         android:id="@+id/textTempAdvance_Scen2"
@@ -262,18 +186,6 @@
         android:layout_marginTop="10dp"
         android:layout_below="@+id/graphPulseAdvance_Scen2"
         android:layout_alignStart="@+id/textPulseAdvance_Scen2" />
-
-    <TextView
-        android:text="BP"
-        android:id="@+id/textBPAdvance_Scen2"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_width="80dp"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:layout_marginTop="10dp"
-        android:layout_alignTop="@+id/BPNum_Scen2"
-        />
 
     <TextView
         android:text="Pulse"
@@ -327,6 +239,82 @@
 
     <TextView
         android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/BPNumAdvance_Scen2"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:textAlignment="textEnd"
+        android:layout_alignBaseline="@+id/textBPAdvance_Scen2"
+        android:layout_alignBottom="@+id/textBPAdvance_Scen2"
+        android:layout_toStartOf="@+id/graphBBAdvance_Scen2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:id="@+id/BPsumP1_Scen2"
+        android:textStyle="normal|bold"
+        android:layout_height="25dp"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/pulseSumP1_Scen2"
+        android:layout_alignBottom="@+id/pulseSumP1_Scen2"
+        android:layout_toStartOf="@+id/vitalTrends_Scen2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="25dp"
+        android:id="@+id/BPsumP2_Scen2"
+        android:layout_width="100dp"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/BPsumP1_Scen2"
+        android:layout_alignStart="@+id/BPsumP1_Scen2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:id="@+id/pulseSumP2_Scen2"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_height="25dp"
+        android:layout_below="@+id/RRSumP1_Scen2"
+        android:layout_toEndOf="@+id/BPsumP2_Scen2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/tempSumP2_Scen2"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/RRSumP2_Scen2"
+        android:layout_alignBottom="@+id/RRSumP2_Scen2"
+        android:layout_toEndOf="@+id/RRSumP2_Scen2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/tempSumP1_Scen2"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/RRSumP1_Scen2"
+        android:layout_alignBottom="@+id/RRSumP1_Scen2"
+        android:layout_toEndOf="@+id/RRSumP2_Scen2" />
+
+    <TextView
+        android:text="BP"
+        android:id="@+id/textBPAdvance_Scen2"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@+id/graphBBAdvance_Scen2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp" />
+
+    <TextView
+        android:layout_width="100dp"
         android:id="@+id/tempNumAdvance_Scen2"
         android:layout_height="50dp"
         android:textSize="28sp"
@@ -335,6 +323,16 @@
         android:layout_alignBaseline="@+id/textTempAdvance_Scen2"
         android:layout_alignBottom="@+id/textTempAdvance_Scen2"
         android:layout_toStartOf="@+id/graphTempAdvance_Scen2" />
+
+    <TextView
+        android:text="P2:"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/textP2_Scen2"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textP1_Scen2"
+        android:layout_alignStart="@+id/textPatientNo_Scen2" />
 
 
 </RelativeLayout>

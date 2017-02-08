@@ -35,7 +35,7 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advance_display_scen_one);
 
-        BPNumAdvance = (TextView)  findViewById(R.id.BPNum_Scen1) ;
+        BPNumAdvance = (TextView)  findViewById(R.id.BPNumAdvance_Scen1) ;
         pulseNumAdvance = (TextView)  findViewById(R.id.pulseNumAdvance_Scen1) ;
         RRNumAdvance = (TextView)  findViewById(R.id.RRNumAdvance_Scen1) ;
         tempNumAdvance = (TextView)  findViewById(R.id.tempNumAdvance_Scen1) ;

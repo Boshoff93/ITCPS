@@ -102,18 +102,6 @@
         android:layout_marginTop="13dp" />
 
     <Button
-        android:text="Continue"
-        android:id="@+id/buttonConGame_Scen3"
-        android:layout_height="75dp"
-        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:layout_width="225dp"
-        android:background="@drawable/my_personal_buttons"
-        android:textSize="18sp"
-        android:layout_below="@+id/textRR_Scen3"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="84dp" />
-
-    <Button
         android:text="Patient 5"
         android:id="@+id/patient_five_Button_Scen3"
         style="@android:style/Widget.Button.Inset"
@@ -208,7 +196,20 @@
         android:layout_width="400dp"
         android:layout_height="200dp"
         android:layout_alignTop="@+id/graphBP_Scen3"
-        android:layout_alignParentEnd="true" />
+        android:layout_toEndOf="@+id/graphRR_Scen3"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:text="Continue"
+        android:id="@+id/buttonConGame_Scen3"
+        android:layout_height="75dp"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="225dp"
+        android:background="@drawable/my_personal_buttons"
+        android:textSize="18sp"
+        android:layout_marginEnd="85dp"
+        android:layout_below="@+id/textRR_Scen3"
+        android:layout_alignEnd="@+id/summaryText_Scen3" />
 
 
 </RelativeLayout>

@@ -21,14 +21,14 @@
         android:layout_width="225dp"
         android:background="@drawable/my_personal_buttons"
         android:textSize="18sp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="14dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphBP_Scen3"
-        android:layout_width="350dp"
-        android:layout_height="75dp"
+        android:layout_width="375dp"
+        android:layout_height="90dp"
         android:layout_below="@+id/patient_three_Button_Scen3"
         android:layout_toEndOf="@+id/BPNum_Scen3"
         android:layout_marginTop="35dp" />
@@ -47,24 +47,24 @@
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphPulse_Scen3"
-        android:layout_width="350dp"
-        android:layout_height="75dp"
+        android:layout_width="375dp"
+        android:layout_height="90dp"
         android:layout_below="@+id/graphBP_Scen3"
         android:layout_toEndOf="@+id/RRNum_Scen3"
         android:layout_marginTop="14dp" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphRR_Scen3"
-        android:layout_height="75dp"
-        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_width="375dp"
         android:layout_below="@+id/graphPulse_Scen3"
         android:layout_toEndOf="@+id/tempNum_Scen3"
         android:layout_marginTop="13dp" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphTemp_Scen3"
-        android:layout_width="350dp"
-        android:layout_height="75dp"
+        android:layout_width="375dp"
+        android:layout_height="90dp"
         android:layout_below="@+id/graphRR_Scen3"
         android:layout_alignStart="@+id/buttonConGame_Scen3"
         android:layout_marginTop="14dp" />
@@ -110,9 +110,9 @@
         android:typeface="sans"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textAlignment="center"
-        android:layout_width="450dp"
+        android:layout_width="520dp"
         android:textSize="24sp"
-        android:layout_height="180dp"
+        android:layout_height="150dp"
         android:layout_marginBottom="18dp"
         android:layout_above="@+id/buttonConGame_Scen3"
         android:layout_centerHorizontal="true" />

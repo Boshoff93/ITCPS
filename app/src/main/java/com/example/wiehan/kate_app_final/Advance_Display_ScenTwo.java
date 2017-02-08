@@ -122,6 +122,36 @@ public class Advance_Display_ScenTwo extends AppCompatActivity {
             }
         });
 
+//start of setting patient 1 data by default
+        graphBBAdvance.removeAllSeries();
+        graphPulseAdvance.removeAllSeries();
+        graphRRAdvance.removeAllSeries();
+        graphTempAdvance.removeAllSeries();
+
+        textPatientNo.setText("Patient 1:");
+        textPatientInfo.setText("Maddy. Female. 29");
+        BPNumAdvance.setText("120/80 ");
+        pulseNumAdvance.setText("70 ");
+        RRNumAdvance.setText("18 ");
+        tempNumAdvance.setText("98.6 ");
+        textInfo.setText("\nFentanyl administered : 7:34 pm\nFluids givens : 7:40 pm");
+
+        seriesBP = new LineGraphSeries<DataPoint>();
+        seriesPulse = new LineGraphSeries<DataPoint>();
+        seriesRR = new LineGraphSeries<DataPoint>();
+        seriesTemp = new LineGraphSeries<DataPoint>();
+
+
+        patienOneRandomGraphs();
+
+        graphPulseAdvance.addSeries(seriesPulse);
+        graphBBAdvance.addSeries(seriesBP);
+        graphRRAdvance.addSeries(seriesRR);
+        graphTempAdvance.addSeries(seriesTemp);
+
+
+        //end
+
         final Button patientOne = (Button) findViewById(R.id.patient_One_Button_Adv_Scen2) ;
 
         patientOne.setOnClickListener(new View.OnClickListener() {

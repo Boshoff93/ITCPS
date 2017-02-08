@@ -77,6 +77,35 @@ public class Activity_Vitals_ScenTwo extends AppCompatActivity {
             }
         });
 
+        //start of setting patient 1 data by default
+
+        graphBP.removeAllSeries();
+        graphPulse.removeAllSeries();
+        graphRR.removeAllSeries();
+        graphTemp.removeAllSeries();
+
+        BPNum.setText("120/80 ");
+        pulseNum.setText("70 ");
+        RRNum.setText("18 ");
+        tempNum.setText("98.6 ");
+        summaryText.setText("\nSummary: 29 y/o female, Minor head injuries, Bruises and discoloration in temporal area.");
+
+        seriesBP = new LineGraphSeries<DataPoint>();
+        seriesPulse = new LineGraphSeries<DataPoint>();
+        seriesRR = new LineGraphSeries<DataPoint>();
+        seriesTemp = new LineGraphSeries<DataPoint>();
+
+
+        patienOneRandomGraphs();
+
+        graphPulse.addSeries(seriesPulse);
+        graphBP.addSeries(seriesBP);
+        graphRR.addSeries(seriesRR);
+        graphTemp.addSeries(seriesTemp);
+
+        //end
+
+
         final Button patientOne = (Button) findViewById(R.id.patient_one_Button_Scen2) ;
 
         patientOne.setOnClickListener(new View.OnClickListener() {

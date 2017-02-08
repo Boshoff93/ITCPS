@@ -42,17 +42,6 @@
         android:layout_alignStart="@+id/textRRAdvance_Scen1" />
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/BPNum_Scen1"
-        android:textStyle="normal|bold"
-        android:textSize="28sp"
-        android:textAlignment="textEnd"
-        android:layout_alignBaseline="@+id/textBPAdvance_Scen1"
-        android:layout_alignBottom="@+id/textBPAdvance_Scen1"
-        android:layout_toEndOf="@+id/textPulseAdvance_Scen1" />
-
-    <TextView
         android:text="Pulse"
         android:id="@+id/textPulseAdvance_Scen1"
         android:textSize="28sp"
@@ -144,13 +133,6 @@
         android:layout_alignBottom="@+id/RRNumAdvance_Scen1"
         android:layout_alignParentStart="true" />
 
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphBBAdvance_Scen1"
-        android:layout_height="50dp"
-        android:layout_width="350dp"
-        android:layout_below="@+id/vitalTrends_Scen1"
-        android:layout_toEndOf="@+id/BPNum_Scen1" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -207,5 +189,23 @@
         android:layout_alignBottom="@+id/graphTempAdvance_Scen1"
         android:layout_toEndOf="@+id/textTempAdvance_Scen1"
         android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/BPNumAdvance_Scen1"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:textAlignment="textEnd"
+        android:layout_alignBaseline="@+id/textBPAdvance_Scen1"
+        android:layout_alignBottom="@+id/textBPAdvance_Scen1"
+        android:layout_toEndOf="@+id/textBPAdvance_Scen1" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphBBAdvance_Scen1"
+        android:layout_height="50dp"
+        android:layout_width="350dp"
+        android:layout_below="@+id/vitalTrends_Scen1"
+        android:layout_toEndOf="@+id/BPNumAdvance_Scen1" />
 
 </RelativeLayout>

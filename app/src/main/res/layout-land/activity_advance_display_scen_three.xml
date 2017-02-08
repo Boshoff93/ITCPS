@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/textPatient2"
+        android:textSize="22sp"
+        android:layout_alignBaseline="@+id/textPatient1"
+        android:layout_alignBottom="@+id/textPatient1"
+        android:layout_toEndOf="@+id/textPatient1"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Patient 2"
+        android:id="@+id/patient_Two_Button_Adv_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_toEndOf="@+id/patient_One_Button_Adv_Scen3"
+        android:layout_alignBottom="@+id/patient_One_Button_Adv_Scen3"
+        android:layout_alignTop="@+id/patient_Three_Button_Adv_Scen3" />
+
+    <Button
+        android:text="Patient 1"
+        android:id="@+id/patient_One_Button_Adv_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_alignStart="@+id/textInfo_Scen3"
+        android:layout_alignTop="@+id/patient_Three_Button_Adv_Scen3" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/textPatient1"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/patient_One_Button_Adv_Scen3"
+        android:layout_toEndOf="@+id/graphBPAdvance_Scen3" />
+
+    <TextView
+        android:text="BP"
+        android:id="@+id/textBPAdvance_Scen3"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/textPatient1"
+        android:layout_alignBottom="@+id/textPatient1"
+        android:layout_toStartOf="@+id/BPNumAdvance_Scen3" />
+
+    <TextView
+        android:text=" "
+        android:id="@+id/BPNumAdvance_Scen3"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_width="100dp"
+        android:textAlignment="textEnd"
+        android:layout_alignTop="@+id/graphBPAdvance_Scen3"
+        android:layout_toStartOf="@+id/graphBPAdvance_Scen3"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="RR"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:id="@+id/textRRAdvance_Scen3"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/RRNumAdvance_Scen3"
+        android:layout_alignBottom="@+id/RRNumAdvance_Scen3"
+        android:layout_toStartOf="@+id/pulseNumAdvance_Scen3" />
+
+    <TextView
+        android:text="Pulse"
+        android:id="@+id/textPulseAdvance_Scen3"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_weight="0.03"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/pulseNumAdvance_Scen3"
+        android:layout_alignBottom="@+id/pulseNumAdvance_Scen3"
+        android:layout_toStartOf="@+id/tempNumAdvance_Scen3" />
+
+    <TextView
+        android:text="Temp"
+        android:layout_height="50dp"
+        android:id="@+id/textTempAdvance_Scen3"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/tempNumAdvance_Scen3"
+        android:layout_alignBottom="@+id/tempNumAdvance_Scen3"
+        android:layout_toStartOf="@+id/tempNumAdvance_Scen3" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/tempNumAdvance_Scen3"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:textAlignment="textEnd"
+        android:layout_marginBottom="12dp"
+        android:layout_alignBottom="@+id/graphTempAdvance_Scen3"
+        android:layout_toStartOf="@+id/graphTempAdvance_Scen3" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPulseAdvance_Scen3"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/pulseNumAdvance_Scen3"
+        android:layout_alignStart="@+id/graphBPAdvance_Scen3" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphBPAdvance_Scen3"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="61dp"
+        android:layout_above="@+id/patient_Four_Button_Adv_Scen3"
+        android:layout_toStartOf="@+id/patient_One_Button_Adv_Scen3" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/RRNumAdvance_Scen3"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:layout_marginBottom="11dp"
+        android:layout_alignBottom="@+id/graphRRAdvance_Scen3"
+        android:layout_toEndOf="@+id/textRRAdvance_Scen3" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="50dp"
+        android:id="@+id/textPatient3"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/patient_Three_Button_Adv_Scen3"
+        android:layout_toEndOf="@+id/textPatient2"
+        android:layout_width="100dp" />
+
+    <Button
+        android:text="Patient 3"
+        android:id="@+id/patient_Three_Button_Adv_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/patient_Two_Button_Adv_Scen3" />
+
+    <TextView
+        android:id="@+id/textInfo_Scen3"
+        android:background="@drawable/my_personal_border"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="330dp"
+        android:layout_alignBottom="@+id/graphTempAdvance_Scen3"
+        android:layout_alignParentEnd="true"
+        android:layout_height="160dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphTempAdvance_Scen3"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/graphRRAdvance_Scen3"
+        android:layout_marginBottom="10dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphRRAdvance_Scen3"
+        android:layout_height="75dp"
+        android:layout_width="350dp"
+        android:layout_below="@+id/textPatient4"
+        android:layout_alignStart="@+id/graphPulseAdvance_Scen3" />
+
+    <Button
+        android:text="Continue"
+        android:id="@+id/buttonCAPAdvance_Scen3"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="100dp"
+        android:background="@drawable/my_personal_buttons"
+        android:textSize="14sp"
+        android:layout_height="75dp"
+        android:layout_toEndOf="@+id/textPatient5"
+        android:layout_alignTop="@+id/patient_Five_Button_Adv_Scen3" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/textPatient4"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/patient_Four_Button_Adv_Scen3"
+        android:layout_alignStart="@+id/textInfo_Scen3" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/textPatient5"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_above="@+id/textInfo_Scen3"
+        android:layout_toEndOf="@+id/textPatient4"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:text="Patient 5"
+        android:id="@+id/patient_Five_Button_Adv_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_above="@+id/textPatient4"
+        android:layout_toEndOf="@+id/patient_Four_Button_Adv_Scen3" />
+
+    <Button
+        android:text="Patient 4"
+        android:id="@+id/patient_Four_Button_Adv_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_above="@+id/textPatient5"
+        android:layout_alignStart="@+id/textPatient4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vitalTrends_Scen3"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:text="Last 5 Minutes Vital Trends"
+        android:layout_alignTop="@+id/patient_One_Button_Adv_Scen3"
+        android:layout_alignStart="@+id/graphBPAdvance_Scen3" />
+
+    <TextView
+        android:layout_height="50dp"
+        android:id="@+id/pulseNumAdvance_Scen3"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:layout_width="100dp"
+        android:layout_above="@+id/textPatient4"
+        android:layout_toEndOf="@+id/textPulseAdvance_Scen3" />
+
+
+</RelativeLayout>

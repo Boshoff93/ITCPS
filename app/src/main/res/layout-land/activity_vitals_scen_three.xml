@@ -3,29 +3,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:text="BP"
-        android:id="@+id/textBP_Scen3"
-        android:layout_height="50dp"
-        android:layout_width="80dp"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:layout_alignBaseline="@+id/BPNum_Scen3"
-        android:layout_alignBottom="@+id/BPNum_Scen3"
-        android:layout_alignStart="@+id/textPulse_Scen3" />
-
-    <Button
-        android:text="Continue"
-        android:id="@+id/buttonConGame_Scen3"
-        android:layout_height="75dp"
-        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:layout_width="225dp"
-        android:background="@drawable/my_personal_buttons"
-        android:textSize="18sp"
-        android:layout_marginBottom="42dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:text=" "
         android:id="@+id/BPNum_Scen3"
         android:layout_height="50dp"
@@ -72,40 +49,6 @@
         android:layout_toStartOf="@+id/graphPulse_Scen3"
         android:layout_marginTop="12dp" />
 
-    <Button
-        android:text="Patient 5"
-        android:id="@+id/patient_five_Button_Scen3"
-        style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
-        android:elevation="0dp"
-        android:layout_height="75dp"
-        android:layout_width="100dp"
-        android:layout_above="@+id/graphBP_Scen3"
-        android:layout_alignEnd="@+id/graphBP_Scen3" />
-
-    <Button
-        android:text="Patient 4"
-        android:id="@+id/patient_four_Button_Scen3"
-        style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
-        android:elevation="0dp"
-        android:layout_height="75dp"
-        android:layout_width="100dp"
-        android:layout_above="@+id/graphBP_Scen3"
-        android:layout_toStartOf="@+id/patient_five_Button_Scen3" />
-
-    <Button
-        android:text="Patient 3"
-        android:id="@+id/patient_three_Button_Scen3"
-        style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
-        android:elevation="0dp"
-        android:layout_height="75dp"
-        android:layout_width="100dp"
-        android:layout_alignBottom="@+id/patient_two_Button_Scen3"
-        android:layout_toStartOf="@+id/patient_four_Button_Scen3"
-        android:layout_alignTop="@+id/patient_two_Button_Scen3" />
-
     <TextView
         android:text="Pulse"
         android:id="@+id/textPulse_Scen3"
@@ -142,61 +85,72 @@
         android:layout_alignBottom="@+id/RRNum_Scen3"
         android:layout_alignStart="@+id/textTemp_Scen3" />
 
-    <TextView
-        android:id="@+id/summaryText_Scen3"
-        android:background="@drawable/my_personal_border"
-        android:typeface="sans"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:layout_height="180dp"
-        android:layout_alignBaseline="@+id/BPNum_Scen3"
-        android:layout_alignBottom="@+id/BPNum_Scen3"
-        android:layout_alignParentEnd="true"
-        android:layout_width="250dp" />
-
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphPulse_Scen3"
-        android:layout_width="350dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/BPNum_Scen3"
-        android:layout_toStartOf="@+id/summaryText_Scen3" />
-
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphBP_Scen3"
-        android:layout_width="350dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="31dp"
-        android:layout_below="@+id/patient_three_Button_Scen3"
-        android:layout_toEndOf="@+id/BPNum_Scen3" />
-
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphRR_Scen3"
         android:layout_height="75dp"
         android:layout_width="350dp"
+        android:layout_marginTop="13dp"
         android:layout_below="@+id/graphPulse_Scen3"
-        android:layout_toStartOf="@+id/summaryText_Scen3"
-        android:layout_marginTop="13dp" />
+        android:layout_alignStart="@+id/graphPulse_Scen3" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphTemp_Scen3"
         android:layout_width="350dp"
         android:layout_height="75dp"
         android:layout_below="@+id/graphRR_Scen3"
-        android:layout_alignStart="@+id/graphRR_Scen3" />
+        android:layout_alignStart="@+id/graphRR_Scen3"
+        android:layout_marginTop="13dp" />
 
     <Button
-        android:text="Patient 1"
-        android:id="@+id/patient_one_Button_Scen3"
+        android:text="Continue"
+        android:id="@+id/buttonConGame_Scen3"
+        android:layout_height="75dp"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="225dp"
+        android:background="@drawable/my_personal_buttons"
+        android:textSize="18sp"
+        android:layout_below="@+id/textRR_Scen3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="84dp" />
+
+    <Button
+        android:text="Patient 5"
+        android:id="@+id/patient_five_Button_Scen3"
         style="@android:style/Widget.Button.Inset"
         android:background="@drawable/my_personal_buttons"
         android:elevation="0dp"
         android:layout_height="75dp"
         android:layout_width="100dp"
-        android:layout_above="@+id/graphBP_Scen3"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="13dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/patient_four_Button_Scen3"
+        android:layout_alignTop="@+id/patient_four_Button_Scen3" />
+
+    <TextView
+        android:text="BP"
+        android:id="@+id/textBP_Scen3"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/BPNum_Scen3"
+        android:layout_alignBottom="@+id/BPNum_Scen3"
+        android:layout_alignStart="@+id/textPulse_Scen3" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPulse_Scen3"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/patient_two_Button_Scen3"
+        android:layout_alignStart="@+id/graphBP_Scen3"
+        android:layout_marginTop="106dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphBP_Scen3"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/pulseNum_Scen3"
+        android:layout_alignEnd="@+id/patient_five_Button_Scen3"
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:text="Patient 2"
@@ -207,7 +161,54 @@
         android:layout_height="75dp"
         android:layout_width="100dp"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/patient_three_Button_Scen3" />
+        android:layout_toEndOf="@+id/patient_one_Button_Scen3"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="Patient 1"
+        android:id="@+id/patient_one_Button_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_alignStart="@+id/textBP_Scen3"
+        android:layout_alignTop="@+id/patient_two_Button_Scen3"
+        android:layout_alignBottom="@+id/patient_two_Button_Scen3" />
+
+    <Button
+        android:text="Patient 3"
+        android:id="@+id/patient_three_Button_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_alignBottom="@+id/patient_two_Button_Scen3"
+        android:layout_toEndOf="@+id/patient_two_Button_Scen3" />
+
+    <Button
+        android:text="Patient 4"
+        android:id="@+id/patient_four_Button_Scen3"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_alignBottom="@+id/patient_three_Button_Scen3"
+        android:layout_toEndOf="@+id/patient_three_Button_Scen3" />
+
+    <TextView
+        android:id="@+id/summaryText_Scen3"
+        android:background="@drawable/my_personal_border"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/graphBP_Scen3"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

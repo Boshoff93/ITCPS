@@ -11,17 +11,18 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
-public class Activity_Vitals_ScenThree extends AppCompatActivity {
+public class Advance_Display_ScenThree extends AppCompatActivity {
 
-    GraphView graphBP ;
-    GraphView graphPulse ;
-    GraphView graphRR;
-    GraphView graphTemp;
-    TextView BPNum ;
-    TextView pulseNum ;
-    TextView RRNum ;
-    TextView tempNum ;
-    TextView summaryText ;
+    GraphView graphBPAdvance ;
+    GraphView graphPulseAdvance ;
+    GraphView graphRRAdvance;
+    GraphView graphTempAdvance;
+    TextView BPNumAdvance ;
+    TextView pulseNumAdvance ;
+    TextView RRNumAdvance ;
+    TextView tempNumAdvance ;
+    TextView textInfo ;
+    TextView textPatient1, textPatient2, textPatient3, textPatient4, textPatient5 ;
     LineGraphSeries<DataPoint> seriesBP ;
     LineGraphSeries<DataPoint> seriesPulse ;
     LineGraphSeries<DataPoint> seriesRR ;
@@ -29,70 +30,86 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vitals_scen_three);
+        setContentView(R.layout.activity_advance_display_scen_three);
 
+        BPNumAdvance = (TextView)  findViewById(R.id.BPNumAdvance_Scen3) ;
+        pulseNumAdvance = (TextView)  findViewById(R.id.pulseNumAdvance_Scen3) ;
+        RRNumAdvance = (TextView)  findViewById(R.id.RRNumAdvance_Scen3) ;
+        tempNumAdvance = (TextView)  findViewById(R.id.tempNumAdvance_Scen3) ;
+        textInfo = (TextView) findViewById(R.id.textInfo_Scen3) ;
 
-        BPNum = (TextView)  findViewById(R.id.BPNum_Scen3) ;
-        pulseNum = (TextView)  findViewById(R.id.pulseNum_Scen3) ;
-        RRNum = (TextView)  findViewById(R.id.RRNum_Scen3) ;
-        tempNum = (TextView)  findViewById(R.id.tempNum_Scen3) ;
-        summaryText = (TextView) findViewById(R.id.summaryText_Scen3) ;
+        textPatient1 = (TextView) findViewById(R.id.textPatient1);
+        textPatient2 = (TextView) findViewById(R.id.textPatient2) ;
+        textPatient3 = (TextView) findViewById(R.id.textPatient3) ;
+        textPatient4 = (TextView) findViewById(R.id.textPatient4) ;
+        textPatient5 = (TextView) findViewById(R.id.textPatient5) ;
+        
 
-        graphBP = (GraphView)findViewById(R.id.graphBP_Scen3) ;
-        graphBP.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphBP.getGridLabelRenderer().setVerticalLabelsVisible(false);
-        graphBP.getViewport().setYAxisBoundsManual(true);
-        graphBP.getViewport().setMinY(0);
-        graphBP.getViewport().setMaxY(1.5);
+        graphBPAdvance = (GraphView)findViewById(R.id.graphBPAdvance_Scen3) ;
+        graphBPAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(false);
+        graphBPAdvance.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphBPAdvance.getViewport().setScrollableY(false);
+        graphBPAdvance.getViewport().setYAxisBoundsManual(true);
+        graphBPAdvance.getViewport().setMinY(0);
+        graphBPAdvance.getViewport().setMaxY(1.5);
 
+        graphPulseAdvance = (GraphView)findViewById(R.id.graphPulseAdvance_Scen3) ;
+        graphPulseAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(false);
+        graphPulseAdvance.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphPulseAdvance.getViewport().setScrollableY(false);
+        graphPulseAdvance.getViewport().setYAxisBoundsManual(true);
+        graphPulseAdvance.getViewport().setMinY(0);
+        graphPulseAdvance.getViewport().setMaxY(1);
 
+        graphRRAdvance = (GraphView)findViewById(R.id.graphRRAdvance_Scen3) ;
+        graphRRAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(false);
+        graphRRAdvance.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphRRAdvance.getViewport().setScrollableY(false);
+        graphRRAdvance.getViewport().setYAxisBoundsManual(true);
+        graphRRAdvance.getViewport().setMinY(0);
+        graphRRAdvance.getViewport().setMaxY(1);
 
-        graphPulse = (GraphView)findViewById(R.id.graphPulse_Scen3) ;
-        graphPulse.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphPulse.getGridLabelRenderer().setVerticalLabelsVisible(false);
-        graphPulse.getViewport().setYAxisBoundsManual(true);
-        graphPulse.getViewport().setMinY(0);
-        graphPulse.getViewport().setMaxY(1);
+        graphTempAdvance = (GraphView)findViewById(R.id.graphTempAdvance_Scen3) ;
+        graphTempAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(false);
+        graphTempAdvance.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphTempAdvance.getViewport().setScrollableY(false);
+        graphTempAdvance.getViewport().setYAxisBoundsManual(true);
+        graphTempAdvance.getViewport().setMinY(0);
+        graphTempAdvance.getViewport().setMaxY(1);
+        
 
-        graphRR = (GraphView)findViewById(R.id.graphRR_Scen3) ;
-        graphRR.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphRR.getGridLabelRenderer().setVerticalLabelsVisible(false);
-        graphRR.getViewport().setYAxisBoundsManual(true);
-        graphRR.getViewport().setMinY(0);
-        graphRR.getViewport().setMaxY(1);
+        Button createActionPlan = (Button) findViewById(R.id.buttonCAPAdvance_Scen3);
 
-        graphTemp = (GraphView)findViewById(R.id.graphTemp_Scen3) ;
-        graphTemp.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphTemp.getGridLabelRenderer().setVerticalLabelsVisible(false);
-        graphTemp.getViewport().setYAxisBoundsManual(true);
-        graphTemp.getViewport().setMinY(0);
-        graphTemp.getViewport().setMaxY(1);
-
-        Button buttonConGame = (Button) findViewById(R.id.buttonConGame_Scen3);
-
-        buttonConGame.setOnClickListener(new View.OnClickListener() {
+        createActionPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Activity_Game_Scen3.class);
+                Intent intent = new Intent(getApplicationContext(), Action_Plan.class);
                 startActivity(intent);
             }
         });
 
-        final Button patientOne = (Button) findViewById(R.id.patient_one_Button_Scen3) ;
+        final Button patientOne = (Button) findViewById(R.id.patient_One_Button_Adv_Scen3) ;
 
         patientOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                graphBP.removeAllSeries();
-                graphPulse.removeAllSeries();
-                graphRR.removeAllSeries();
-                graphTemp.removeAllSeries();
+                graphBPAdvance.removeAllSeries();
+                graphPulseAdvance.removeAllSeries();
+                graphRRAdvance.removeAllSeries();
+                graphTempAdvance.removeAllSeries();
 
-                BPNum.setText("122/80 ");
-                pulseNum.setText("82 ");
-                RRNum.setText("19 ");
-                tempNum.setText("97.6 ");
-                summaryText.setText("\nSummary: 89 y/o Male, Minor head injuries, Bruises and discoloration in temporal area.");
+                BPNumAdvance.setText("122/80 ");
+                pulseNumAdvance.setText("82 ");
+                RRNumAdvance.setText("19 ");
+                tempNumAdvance.setText("97.6 ");
+                textInfo.setText("\nFentanyl administered : 6:24 pm\nFluids givens : 6:32 pm");
+
+                textPatient1.setText("John 89");
+                textPatient2.setText("");
+                textPatient3.setText("");
+                textPatient4.setText("");
+                textPatient5.setText("");
+
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -102,29 +119,35 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
 
                 patienOneRandomGraphs();
 
-                graphPulse.addSeries(seriesPulse);
-                graphBP.addSeries(seriesBP);
-                graphRR.addSeries(seriesRR);
-                graphTemp.addSeries(seriesTemp);
+                graphPulseAdvance.addSeries(seriesPulse);
+                graphBPAdvance.addSeries(seriesBP);
+                graphRRAdvance.addSeries(seriesRR);
+                graphTempAdvance.addSeries(seriesTemp);
 
             }
         });
 
-        final Button patientTwo = (Button) findViewById(R.id.patient_two_Button_Scen3) ;
+        final Button patientTwo = (Button) findViewById(R.id.patient_Two_Button_Adv_Scen3) ;
 
         patientTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                graphBP.removeAllSeries();
-                graphPulse.removeAllSeries();
-                graphRR.removeAllSeries();
-                graphTemp.removeAllSeries();
+                graphBPAdvance.removeAllSeries();
+                graphPulseAdvance.removeAllSeries();
+                graphRRAdvance.removeAllSeries();
+                graphTempAdvance.removeAllSeries();
 
-                BPNum.setText("127/82 ");
-                pulseNum.setText("82 ");
-                RRNum.setText("17 ");
-                tempNum.setText("98.4 ");
-                summaryText.setText("\nSummary: 85 y/o Male, Severe burns on left arm.");
+                BPNumAdvance.setText("127/82 ");
+                pulseNumAdvance.setText("82 ");
+                RRNumAdvance.setText("17 ");
+                tempNumAdvance.setText("98.4 ");
+                textInfo.setText("\nFentanyl administered : 6:21 pm\nFluids givens : 6:35 pm");
+
+                textPatient1.setText("");
+                textPatient2.setText("Chris 85");
+                textPatient3.setText("");
+                textPatient4.setText("");
+                textPatient5.setText("");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -134,30 +157,36 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
 
                 patientTwoRandomGraphs();
 
-                graphPulse.addSeries(seriesPulse);
-                graphBP.addSeries(seriesBP);
-                graphRR.addSeries(seriesRR);
-                graphTemp.addSeries(seriesTemp);
+                graphPulseAdvance.addSeries(seriesPulse);
+                graphBPAdvance.addSeries(seriesBP);
+                graphRRAdvance.addSeries(seriesRR);
+                graphTempAdvance.addSeries(seriesTemp);
             }
 
 
         });
 
-        final Button patientThree = (Button) findViewById(R.id.patient_three_Button_Scen3) ;
+        final Button patientThree = (Button) findViewById(R.id.patient_Three_Button_Adv_Scen3) ;
 
         patientThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                graphBP.removeAllSeries();
-                graphPulse.removeAllSeries();
-                graphRR.removeAllSeries();
-                graphTemp.removeAllSeries();
+                graphBPAdvance.removeAllSeries();
+                graphPulseAdvance.removeAllSeries();
+                graphRRAdvance.removeAllSeries();
+                graphTempAdvance.removeAllSeries();
 
-                BPNum.setText("125/86 ");
-                pulseNum.setText("83 ");
-                RRNum.setText("119 ");
-                tempNum.setText("96.7 ");
-                summaryText.setText("\nSummary: 69 y/o Female, Broken collarbone, Minor burns on right arm.");
+                BPNumAdvance.setText("125/86 ");
+                pulseNumAdvance.setText("83 ");
+                RRNumAdvance.setText("119 ");
+                tempNumAdvance.setText("96.7 ");
+                textInfo.setText("\nFentanyl administered : 6:26 pm\nFluids givens : 6:35 pm");
+
+                textPatient1.setText("");
+                textPatient2.setText("");
+                textPatient3.setText("Marissa 69");
+                textPatient4.setText("");
+                textPatient5.setText("");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -167,30 +196,37 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
 
                 patientThreeRandomGraphs();
 
-                graphPulse.addSeries(seriesPulse);
-                graphBP.addSeries(seriesBP);
-                graphRR.addSeries(seriesRR);
-                graphTemp.addSeries(seriesTemp);
+                graphPulseAdvance.addSeries(seriesPulse);
+                graphBPAdvance.addSeries(seriesBP);
+                graphRRAdvance.addSeries(seriesRR);
+                graphTempAdvance.addSeries(seriesTemp);
             }
 
 
         });
 
-        final Button patientFour = (Button) findViewById(R.id.patient_four_Button_Scen3) ;
+        final Button patientFour = (Button) findViewById(R.id.patient_Four_Button_Adv_Scen3) ;
 
         patientFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                graphBP.removeAllSeries();
-                graphPulse.removeAllSeries();
-                graphRR.removeAllSeries();
-                graphTemp.removeAllSeries();
+                graphBPAdvance.removeAllSeries();
+                graphPulseAdvance.removeAllSeries();
+                graphRRAdvance.removeAllSeries();
+                graphTempAdvance.removeAllSeries();
 
-                BPNum.setText("129/85 ");
-                pulseNum.setText("84 ");
-                RRNum.setText("17 ");
-                tempNum.setText("98.1 ");
-                summaryText.setText("\nSummary: 75 y/o Female, Broken ribs, Sever burns on right shoulder.");
+                BPNumAdvance.setText("129/85 ");
+                pulseNumAdvance.setText("84 ");
+                RRNumAdvance.setText("17 ");
+                tempNumAdvance.setText("98.1 ");
+                textInfo.setText("\nFentanyl administered : 6:19 pm\nFluids givens : 6:30 pm");
+
+                textPatient1.setText("");
+                textPatient2.setText("");
+                textPatient3.setText("");
+                textPatient4.setText("Megan 75");
+                textPatient5.setText("");
+
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -200,30 +236,36 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
 
                 patientFourRandomGraphs();
 
-                graphPulse.addSeries(seriesPulse);
-                graphBP.addSeries(seriesBP);
-                graphRR.addSeries(seriesRR);
-                graphTemp.addSeries(seriesTemp);
+                graphPulseAdvance.addSeries(seriesPulse);
+                graphBPAdvance.addSeries(seriesBP);
+                graphRRAdvance.addSeries(seriesRR);
+                graphTempAdvance.addSeries(seriesTemp);
             }
 
 
         });
 
-        final Button patientFive = (Button) findViewById(R.id.patient_five_Button_Scen3) ;
+        final Button patientFive = (Button) findViewById(R.id.patient_Five_Button_Adv_Scen3) ;
 
         patientFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                graphBP.removeAllSeries();
-                graphPulse.removeAllSeries();
-                graphRR.removeAllSeries();
-                graphTemp.removeAllSeries();
+                graphBPAdvance.removeAllSeries();
+                graphPulseAdvance.removeAllSeries();
+                graphRRAdvance.removeAllSeries();
+                graphTempAdvance.removeAllSeries();
 
-                BPNum.setText("122/81 ");
-                pulseNum.setText("85 ");
-                RRNum.setText("18 ");
-                tempNum.setText("97.4 ");
-                summaryText.setText("\nSummary: 63 y/o Male, Left foot broken, Minor facial burns, Minor bruises.");
+                BPNumAdvance.setText("122/81 ");
+                pulseNumAdvance.setText("85 ");
+                RRNumAdvance.setText("18 ");
+                tempNumAdvance.setText("97.4 ");
+                textInfo.setText("\nFentanyl administered : 6:28 pm\nFluids givens : 6:37 pm");
+
+                textPatient1.setText("");
+                textPatient2.setText("");
+                textPatient3.setText("");
+                textPatient4.setText("");
+                textPatient5.setText("Kyle 63");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -233,10 +275,10 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
 
                 patientFiveRandomGraphs();
 
-                graphPulse.addSeries(seriesPulse);
-                graphBP.addSeries(seriesBP);
-                graphRR.addSeries(seriesRR);
-                graphTemp.addSeries(seriesTemp);
+                graphPulseAdvance.addSeries(seriesPulse);
+                graphBPAdvance.addSeries(seriesBP);
+                graphRRAdvance.addSeries(seriesRR);
+                graphTempAdvance.addSeries(seriesTemp);
             }
 
 
@@ -467,6 +509,6 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
             seriesTemp.appendData(new DataPoint(x, y), true, 400);
         }
     }
-}
 
+}
 

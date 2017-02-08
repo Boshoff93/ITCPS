@@ -159,18 +159,6 @@
         android:layout_alignTop="@+id/graphBBAdvance_Scen1"
         android:layout_toEndOf="@+id/textBPAdvance_Scen1" />
 
-    <TextView
-        android:id="@+id/textInfo_Scen1"
-        android:background="@drawable/my_personal_border"
-        android:typeface="sans"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/patient_One_Button_Adv_Scen1"
-        android:layout_height="280dp"
-        android:layout_width="280dp" />
-
     <Button
         android:text="Patient 2"
         android:layout_width="125dp"
@@ -205,5 +193,17 @@
         android:layout_marginEnd="25dp"
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/patient_Two_Button_Adv_Scen1" />
+
+    <TextView
+        android:id="@+id/textInfo_Scen1"
+        android:background="@drawable/my_personal_border"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_height="280dp"
+        android:layout_width="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

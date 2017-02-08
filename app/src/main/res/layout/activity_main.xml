@@ -11,7 +11,7 @@
     tools:context="com.example.wiehan.kate_app_final.MainActivity">
 
     <Button
-        android:text="Simple Scenario Advance\n(B)"
+        android:text="( B )"
         android:id="@+id/buttonScen2"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:background="@drawable/my_personal_buttons_flipped"
@@ -21,7 +21,7 @@
         android:layout_width="284dp" />
 
     <Button
-        android:text="Five Patient Scenario Advance\n(D)"
+        android:text="( D )"
         android:id="@+id/buttonScen4"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:background="@drawable/my_personal_buttons"
@@ -33,7 +33,7 @@
         android:layout_width="284dp" />
 
     <Button
-        android:text="Simple Scenario \n(A)"
+        android:text="( A )"
         android:id="@+id/buttonScen1"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:background="@drawable/my_personal_buttons_flipped"
@@ -44,7 +44,7 @@
         android:layout_width="284dp" />
 
     <Button
-        android:text="Five Patient Scenario\n(C)"
+        android:text="( C )"
         android:id="@+id/buttonScen3"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:background="@drawable/my_personal_buttons"

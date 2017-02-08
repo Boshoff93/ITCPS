@@ -66,17 +66,6 @@
         android:layout_toEndOf="@+id/textPulseAdvance_Scen1" />
 
     <Button
-        android:text="Patient 1"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:id="@+id/patient_One_Button_Adv_Scen1"
-        style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
-        android:layout_marginLeft="84dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/buttonCAPAdvance_Scen1" />
-
-    <Button
         android:text="Patient 2"
         android:layout_width="125dp"
         android:layout_height="125dp"
@@ -207,5 +196,17 @@
         android:layout_width="350dp"
         android:layout_below="@+id/vitalTrends_Scen1"
         android:layout_toEndOf="@+id/BPNumAdvance_Scen1" />
+
+    <Button
+        android:text="Patient 1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/patient_One_Button_Adv_Scen1"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:layout_marginLeft="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/buttonCAPAdvance_Scen1"
+        android:layout_marginEnd="19dp" />
 
 </RelativeLayout>

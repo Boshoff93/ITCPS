@@ -6,22 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Activity_Two_ScenFour extends AppCompatActivity {
+public class Activity_Game_Scen4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two_scen_four);
+        setContentView(R.layout.play_game_scen_four);
 
-        Button viewVitalsButton = (Button) findViewById(R.id.viewVitalsButtonScenFour);
+        Button buttonStart = (Button) findViewById(R.id.buttonGame_Scen4);
 
-        viewVitalsButton.setOnClickListener(new View.OnClickListener() {
+        buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Activity_Vitals_ScenFour.class);
+                Intent intent = new Intent(getApplicationContext(), Activity_Scenario_ScenFour.class );
                 startActivity(intent);
             }
         });
     }
-    }
-
+}

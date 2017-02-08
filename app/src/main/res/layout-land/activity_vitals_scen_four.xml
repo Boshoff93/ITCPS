@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:text="Patient 3"
+        android:id="@+id/patient_three_Button_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_alignBottom="@+id/patient_five_Button_Scen4"
+        android:layout_toStartOf="@+id/patient_four_Button_Scen4"
+        android:layout_alignTop="@+id/patient_two_Button_Scen4" />
+
+    <Button
+        android:text="Patient 2"
+        android:id="@+id/patient_two_Button_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_toStartOf="@+id/patient_three_Button_Scen4"
+        android:layout_alignTop="@+id/patient_four_Button_Scen4" />
+
+    <Button
+        android:text="Patient 5"
+        android:id="@+id/patient_five_Button_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/graphBP_Scen4"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:text="Patient 4"
+        android:id="@+id/patient_four_Button_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_toStartOf="@+id/patient_five_Button_Scen4"
+        android:layout_alignTop="@+id/patient_five_Button_Scen4" />
+
+    <Button
+        android:text="Patient 1"
+        android:id="@+id/patient_one_Button_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_alignBottom="@+id/patient_two_Button_Scen4"
+        android:layout_toStartOf="@+id/patient_two_Button_Scen4"
+        android:layout_alignTop="@+id/patient_two_Button_Scen4" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphTemp_Scen4"
+        android:layout_width="375dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/summaryText_Scen4"
+        android:layout_marginBottom="10dp"
+        android:layout_height="75dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPulse_Scen4"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/RRNum_Scen4" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphBP_Scen4"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/graphPulse_Scen4"
+        android:layout_alignStart="@+id/graphPulse_Scen4"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:layout_height="50dp"
+        android:id="@+id/pulseNum_Scen4"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:layout_width="100dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/tempNum_Scen4" />
+
+    <TextView
+        android:text=" "
+        android:id="@+id/BPNum_Scen4"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_width="100dp"
+        android:textAlignment="textEnd"
+        android:layout_alignBottom="@+id/graphBP_Scen4"
+        android:layout_toStartOf="@+id/graphBP_Scen4"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/RRNum_Scen4"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:layout_alignBaseline="@+id/textRR_Scen4"
+        android:layout_alignBottom="@+id/textRR_Scen4"
+        android:layout_toStartOf="@+id/graphRR_Scen4" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/tempNum_Scen4"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:textAlignment="textEnd"
+        android:layout_alignBaseline="@+id/textTemp_Scen4"
+        android:layout_alignBottom="@+id/textTemp_Scen4"
+        android:layout_toStartOf="@+id/graphTemp_Scen4" />
+
+    <Button
+        android:text="Continue"
+        android:id="@+id/buttonConGame_Scen4"
+        android:layout_height="75dp"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="225dp"
+        android:background="@drawable/my_personal_buttons"
+        android:textSize="18sp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/tempNum_Scen4"
+        android:layout_alignEnd="@+id/summaryText_Scen4" />
+
+    <TextView
+        android:id="@+id/summaryText_Scen4"
+        android:background="@drawable/my_personal_border"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:layout_width="400dp"
+        android:textSize="24sp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignTop="@+id/graphBP_Scen4"
+        android:layout_alignParentEnd="true" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphRR_Scen4"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/graphTemp_Scen4"
+        android:layout_alignStart="@+id/graphTemp_Scen4" />
+
+    <TextView
+        android:text="Pulse"
+        android:id="@+id/textPulse_Scen4"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_weight="0.03"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/pulseNum_Scen4"
+        android:layout_alignBottom="@+id/pulseNum_Scen4"
+        android:layout_alignStart="@+id/patient_one_Button_Scen4" />
+
+    <TextView
+        android:text="BP"
+        android:id="@+id/textBP_Scen4"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/BPNum_Scen4"
+        android:layout_alignBottom="@+id/BPNum_Scen4"
+        android:layout_alignStart="@+id/patient_one_Button_Scen4" />
+
+    <TextView
+        android:text="RR"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:id="@+id/textRR_Scen4"
+        android:layout_width="80dp"
+        android:layout_above="@+id/buttonConGame_Scen4"
+        android:layout_alignStart="@+id/textPulse_Scen4" />
+
+    <TextView
+        android:text="Temp"
+        android:layout_height="50dp"
+        android:id="@+id/textTemp_Scen4"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_width="80dp"
+        android:layout_below="@+id/graphRR_Scen4"
+        android:layout_alignStart="@+id/textRR_Scen4"
+        android:layout_marginTop="11dp" />
+
+
+</RelativeLayout>

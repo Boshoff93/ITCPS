@@ -77,7 +77,33 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //start of setting patient 1 data by default
+        graphBP.removeAllSeries();
+        graphPulse.removeAllSeries();
+        graphRR.removeAllSeries();
+        graphTemp.removeAllSeries();
 
+        BPNum.setText("122/80 ");
+        pulseNum.setText("82 ");
+        RRNum.setText("19 ");
+        tempNum.setText("97.6 ");
+        summaryText.setText("\nSummary: 89 y/o Male, Minor head injuries, Bruises and discoloration in temporal area.");
+
+        seriesBP = new LineGraphSeries<DataPoint>();
+        seriesPulse = new LineGraphSeries<DataPoint>();
+        seriesRR = new LineGraphSeries<DataPoint>();
+        seriesTemp = new LineGraphSeries<DataPoint>();
+
+
+        patienOneRandomGraphs();
+
+        graphPulse.addSeries(seriesPulse);
+        graphBP.addSeries(seriesBP);
+        graphRR.addSeries(seriesRR);
+        graphTemp.addSeries(seriesTemp);
+
+
+        //end
         final Button patientOne = (Button) findViewById(R.id.patient_one_Button_Scen4) ;
         final Button patientTwo = (Button) findViewById(R.id.patient_two_Button_Scen4) ;
         final Button patientThree = (Button) findViewById(R.id.patient_three_Button_Scen4) ;

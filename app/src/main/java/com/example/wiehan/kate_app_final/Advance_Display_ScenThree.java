@@ -88,6 +88,42 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
             }
         });
 
+
+        //start of setting patient 1 data by default
+
+        graphBPAdvance.removeAllSeries();
+        graphPulseAdvance.removeAllSeries();
+        graphRRAdvance.removeAllSeries();
+        graphTempAdvance.removeAllSeries();
+
+        BPNumAdvance.setText("122/80 ");
+        pulseNumAdvance.setText("82 ");
+        RRNumAdvance.setText("19 ");
+        tempNumAdvance.setText("97.6 ");
+        textInfo.setText("\nFentanyl administered : 6:24 pm\nFluids givens : 6:32 pm");
+
+        textPatient1.setText("John 89");
+        textPatient2.setText("");
+        textPatient3.setText("");
+        textPatient4.setText("");
+        textPatient5.setText("");
+
+
+        seriesBP = new LineGraphSeries<DataPoint>();
+        seriesPulse = new LineGraphSeries<DataPoint>();
+        seriesRR = new LineGraphSeries<DataPoint>();
+        seriesTemp = new LineGraphSeries<DataPoint>();
+
+
+        patienOneRandomGraphs();
+
+        graphPulseAdvance.addSeries(seriesPulse);
+        graphBPAdvance.addSeries(seriesBP);
+        graphRRAdvance.addSeries(seriesRR);
+        graphTempAdvance.addSeries(seriesTemp);
+
+        //end
+
         final Button patientOne = (Button) findViewById(R.id.patient_One_Button_Adv_Scen3) ;
         final Button patientTwo = (Button) findViewById(R.id.patient_Two_Button_Adv_Scen3) ;
         final Button patientThree = (Button) findViewById(R.id.patient_Three_Button_Adv_Scen3) ;

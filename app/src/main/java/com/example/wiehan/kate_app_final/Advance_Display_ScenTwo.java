@@ -123,6 +123,11 @@ public class Advance_Display_ScenTwo extends AppCompatActivity {
         });
 
         final Button patientOne = (Button) findViewById(R.id.patient_One_Button_Adv_Scen2) ;
+        final Button patientTwo = (Button) findViewById(R.id.patient_Two_Button_Adv_Scen2) ;
+
+
+        patientOne.setSelected(true);
+        patientTwo.setSelected(false);
 
         patientOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,6 +145,9 @@ public class Advance_Display_ScenTwo extends AppCompatActivity {
                 tempNumAdvance.setText("98.6 ");
                 textInfo.setText("\nFentanyl administered : 7:34 pm\nFluids givens : 7:40 pm");
 
+                patientOne.setSelected(true);
+                patientTwo.setSelected(false);
+
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
                 seriesRR = new LineGraphSeries<DataPoint>();
@@ -156,7 +164,7 @@ public class Advance_Display_ScenTwo extends AppCompatActivity {
             }
         });
 
-        final Button patientTwo = (Button) findViewById(R.id.patient_Two_Button_Adv_Scen2) ;
+
 
         patientTwo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -174,6 +182,9 @@ public class Advance_Display_ScenTwo extends AppCompatActivity {
                 RRNumAdvance.setText("16 ");
                 tempNumAdvance.setText("97.2 ");
                 textInfo.setText("\nFentanyl administered : 7:41 pm\nFluids givens : 7:52 pm");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(true);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();

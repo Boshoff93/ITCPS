@@ -89,6 +89,16 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
         });
 
         final Button patientOne = (Button) findViewById(R.id.patient_One_Button_Adv_Scen3) ;
+        final Button patientTwo = (Button) findViewById(R.id.patient_Two_Button_Adv_Scen3) ;
+        final Button patientThree = (Button) findViewById(R.id.patient_Three_Button_Adv_Scen3) ;
+        final Button patientFour = (Button) findViewById(R.id.patient_Four_Button_Adv_Scen3) ;
+        final Button patientFive = (Button) findViewById(R.id.patient_Five_Button_Adv_Scen3) ;
+
+        patientOne.setSelected(true);
+        patientTwo.setSelected(false);
+        patientThree.setSelected(false);
+        patientFour.setSelected(false);
+        patientFive.setSelected(false);
 
         patientOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +113,12 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 RRNumAdvance.setText("19 ");
                 tempNumAdvance.setText("97.6 ");
                 textInfo.setText("\nFentanyl administered : 6:24 pm\nFluids givens : 6:32 pm");
+
+                patientOne.setSelected(true);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(false);
+                patientFour.setSelected(false);
+                patientFive.setSelected(false);
 
                 textPatient1.setText("John 89");
                 textPatient2.setText("");
@@ -127,7 +143,7 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
             }
         });
 
-        final Button patientTwo = (Button) findViewById(R.id.patient_Two_Button_Adv_Scen3) ;
+
 
         patientTwo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,6 +158,12 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 RRNumAdvance.setText("17 ");
                 tempNumAdvance.setText("98.4 ");
                 textInfo.setText("\nFentanyl administered : 6:21 pm\nFluids givens : 6:35 pm");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(true);
+                patientThree.setSelected(false);
+                patientFour.setSelected(false);
+                patientFive.setSelected(false);
 
                 textPatient1.setText("");
                 textPatient2.setText("Chris 85");
@@ -166,7 +188,7 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
 
         });
 
-        final Button patientThree = (Button) findViewById(R.id.patient_Three_Button_Adv_Scen3) ;
+
 
         patientThree.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -181,6 +203,12 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 RRNumAdvance.setText("119 ");
                 tempNumAdvance.setText("96.7 ");
                 textInfo.setText("\nFentanyl administered : 6:26 pm\nFluids givens : 6:35 pm");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(true);
+                patientFour.setSelected(false);
+                patientFive.setSelected(false);
 
                 textPatient1.setText("");
                 textPatient2.setText("");
@@ -205,8 +233,6 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
 
         });
 
-        final Button patientFour = (Button) findViewById(R.id.patient_Four_Button_Adv_Scen3) ;
-
         patientFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -220,6 +246,12 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 RRNumAdvance.setText("17 ");
                 tempNumAdvance.setText("98.1 ");
                 textInfo.setText("\nFentanyl administered : 6:19 pm\nFluids givens : 6:30 pm");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(false);
+                patientFour.setSelected(true);
+                patientFive.setSelected(false);
 
                 textPatient1.setText("");
                 textPatient2.setText("");
@@ -245,7 +277,7 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
 
         });
 
-        final Button patientFive = (Button) findViewById(R.id.patient_Five_Button_Adv_Scen3) ;
+
 
         patientFive.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -260,6 +292,12 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 RRNumAdvance.setText("18 ");
                 tempNumAdvance.setText("97.4 ");
                 textInfo.setText("\nFentanyl administered : 6:28 pm\nFluids givens : 6:37 pm");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(false);
+                patientFour.setSelected(false);
+                patientFive.setSelected(true);
 
                 textPatient1.setText("");
                 textPatient2.setText("");

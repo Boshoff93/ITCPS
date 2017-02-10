@@ -7,6 +7,14 @@
             <gradient android:angle="-90" android:startColor="#ed550f" android:endColor="#ed7a0f"  />
         </shape>
     </item>
+
+    <item android:state_selected="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="5dip" />
+            <stroke android:width="1dip" android:color="@android:color/holo_red_light" />
+            <gradient android:angle="-90" android:startColor="#ff0000" android:endColor="#ff4444"  />
+        </shape>
+    </item>
     <!--android:color="@android:color/holo_red_light" is changed to #0cbd43-->
     <item android:state_focused="true">
         <shape android:shape="rectangle"  >

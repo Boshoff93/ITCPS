@@ -78,6 +78,9 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         });
 
         final Button patientOne = (Button) findViewById(R.id.patient_one_Button_Scen1) ;
+        final Button patientTwo = (Button) findViewById(R.id.patient_two_Button_Scen1) ;
+        patientOne.setSelected(true);
+        patientTwo.setSelected(false);
 
         patientOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +95,9 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
                 RRNum.setText("18 ");
                 tempNum.setText("98.6 ");
                 summaryText.setText("\nSummary: 29 y/o female, Minor head injuries, Bruises and discoloration in temporal area.");
+
+                patientOne.setSelected(true);
+                patientTwo.setSelected(false);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -109,7 +115,6 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
             }
         });
 
-        final Button patientTwo = (Button) findViewById(R.id.patient_two_Button_Scen1) ;
 
         patientTwo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,6 +129,9 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
                 RRNum.setText("16 ");
                 tempNum.setText("97.2 ");
                 summaryText.setText("\nSummary: 25 y/o male, Broken collarbone, Minor bruises.");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(true) ;
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();

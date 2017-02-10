@@ -79,6 +79,16 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
         });
 
         final Button patientOne = (Button) findViewById(R.id.patient_one_Button_Scen4) ;
+        final Button patientTwo = (Button) findViewById(R.id.patient_two_Button_Scen4) ;
+        final Button patientThree = (Button) findViewById(R.id.patient_three_Button_Scen4) ;
+        final Button patientFour = (Button) findViewById(R.id.patient_four_Button_Scen4) ;
+        final Button patientFive = (Button) findViewById(R.id.patient_five_Button_Scen4) ;
+
+        patientOne.setSelected(true);
+        patientTwo.setSelected(false);
+        patientThree.setSelected(false);
+        patientFour.setSelected(false);
+        patientFive.setSelected(false);
 
         patientOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +103,12 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("19 ");
                 tempNum.setText("97.6 ");
                 summaryText.setText("\nSummary: 89 y/o Male, Minor head injuries, Bruises and discoloration in temporal area.");
+
+                patientOne.setSelected(true);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(false);
+                patientFour.setSelected(false);
+                patientFive.setSelected(false);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -110,7 +126,7 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
             }
         });
 
-        final Button patientTwo = (Button) findViewById(R.id.patient_two_Button_Scen4) ;
+
 
         patientTwo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +141,12 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("17 ");
                 tempNum.setText("98.4 ");
                 summaryText.setText("\nSummary: 85 y/o Male, Severe burns on left arm.");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(true);
+                patientThree.setSelected(false);
+                patientFour.setSelected(false);
+                patientFive.setSelected(false);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -143,7 +165,6 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
 
         });
 
-        final Button patientThree = (Button) findViewById(R.id.patient_three_Button_Scen4) ;
 
         patientThree.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -158,6 +179,12 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("119 ");
                 tempNum.setText("96.7 ");
                 summaryText.setText("\nSummary: 69 y/o Female, Broken collarbone, Minor burns on right arm.");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(true);
+                patientFour.setSelected(false);
+                patientFive.setSelected(false);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -176,7 +203,6 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
 
         });
 
-        final Button patientFour = (Button) findViewById(R.id.patient_four_Button_Scen4) ;
 
         patientFour.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -191,6 +217,12 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("17 ");
                 tempNum.setText("98.1 ");
                 summaryText.setText("\nSummary: 75 y/o Female, Broken ribs, Sever burns on right shoulder.");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(false);
+                patientFour.setSelected(true);
+                patientFive.setSelected(false);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -209,7 +241,7 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
 
         });
 
-        final Button patientFive = (Button) findViewById(R.id.patient_five_Button_Scen4) ;
+
 
         patientFive.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -224,6 +256,12 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("18 ");
                 tempNum.setText("97.4 ");
                 summaryText.setText("\nSummary: 63 y/o Male, Left foot broken, Minor facial burns, Minor bruises.");
+
+                patientOne.setSelected(false);
+                patientTwo.setSelected(false);
+                patientThree.setSelected(false);
+                patientFour.setSelected(false);
+                patientFive.setSelected(true);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();

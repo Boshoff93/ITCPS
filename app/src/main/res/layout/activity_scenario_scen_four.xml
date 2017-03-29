@@ -13,18 +13,18 @@
     <TextView
         android:id="@+id/textScenario_Scen4"
         android:background="@drawable/my_personal_border"
-        android:typeface="sans"
+        android:typeface="serif"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Scenario"
-        android:layout_width="450dp"
-        android:layout_height="450dp"
-        android:layout_marginTop="94dp"
+        android:padding="15dp"
+        android:text="You’ve received further information on the statuses of your patients via the EMT’s. The explosion was in the kitchen of a nursing home restaurant; 2 workers were near the explosion and 3 elderlies who live at the nursing home were injured. The two workers are 47 and 55 year-old men. Patient 1 and 2 were closest to the explosion and have multiple 2nd degree burns on their arms and torso. All elderly patients are 70 or over. Patient 3 is an elderly patient who was near the kitchen to get food and suffered a hip fracture from falling down due to the blast. Patient 4 and 5 are having trouble breathing from inhaling too much smoke from the explosion/fire. Patient 5 had a lose of consciousness during the ride. Vital data over the whole EMT ride have been coming in, in addition to procedures performed by the EMTs."
+        android:layout_width="580dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_height="620dp" />
 
     <Button
         android:text="Continue to View Data"
@@ -33,7 +33,7 @@
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:background="@drawable/my_personal_buttons"
         android:textSize="18sp"
-        android:layout_marginBottom="79dp"
+        android:layout_marginBottom="38dp"
         android:layout_width="250dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

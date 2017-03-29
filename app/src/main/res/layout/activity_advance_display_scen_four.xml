@@ -10,4 +10,448 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.wiehan.kate_app_final.Advance_Display_ScenFour">
 
+    <TextView
+        android:text="P2:"
+        android:layout_height="25dp"
+        android:id="@+id/textP2_Scen4"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_width="30dp"
+        android:layout_alignBaseline="@+id/BPsumP2_Scen4"
+        android:layout_alignBottom="@+id/BPsumP2_Scen4"
+        android:layout_alignStart="@+id/textBPAdvance_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/pulseSumP2_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/pulseSumP1_Scen4"
+        android:layout_toEndOf="@+id/BPsumP2_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/BPsumP3_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/pulseSumP3_Scen4"
+        android:layout_alignBottom="@+id/pulseSumP3_Scen4"
+        android:layout_toEndOf="@+id/textP3_Scen4" />
+
+    <Button
+        android:text="Create Action Plan"
+        android:id="@+id/buttonCAPAdvance_Scen4"
+        android:layout_height="60dp"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="225dp"
+        android:background="@drawable/my_personal_buttons"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPAOAdvance_Scen4"
+        android:layout_width="380dp"
+        android:layout_above="@+id/graphTempAdvance_Scen4"
+        android:layout_alignParentEnd="true"
+        android:layout_height="90dp" />
+
+    <Button
+        android:text="Patient 3"
+        android:id="@+id/patient_Three_Button_Adv_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_height="60dp"
+        android:layout_width="100dp"
+        android:layout_alignBottom="@+id/buttonCAPAdvance_Scen4"
+        android:layout_toStartOf="@+id/buttonCAPAdvance_Scen4"
+        android:layout_alignTop="@+id/buttonCAPAdvance_Scen4" />
+
+    <Button
+        android:text="Patient 2"
+        android:id="@+id/patient_Two_Button_Adv_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/buttonCAPAdvance_Scen4"
+        android:layout_toStartOf="@+id/patient_Three_Button_Adv_Scen4"
+        android:layout_alignTop="@+id/patient_Three_Button_Adv_Scen4" />
+
+    <Button
+        android:text="Patient 1"
+        android:id="@+id/patient_One_Button_Adv_Scen4"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:elevation="0dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_toStartOf="@+id/patient_Two_Button_Adv_Scen4"
+        android:layout_alignTop="@+id/patient_Two_Button_Adv_Scen4"
+        android:layout_alignParentBottom="true" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphRRAdvance_Scen4"
+        android:layout_width="380dp"
+        android:layout_above="@+id/graphPAOAdvance_Scen4"
+        android:layout_alignParentEnd="true"
+        android:layout_height="90dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphBBAdvance_Scen4"
+        android:layout_width="380dp"
+        android:layout_above="@+id/graphPulseAdvance_Scen4"
+        android:layout_alignParentEnd="true"
+        android:layout_height="90dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPulseAdvance_Scen4"
+        android:layout_width="380dp"
+        android:layout_above="@+id/graphRRAdvance_Scen4"
+        android:layout_alignParentEnd="true"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:text="Pulse"
+        android:id="@+id/textPulseAdvance_Scen4"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_weight="0.03"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/pulseNumAdvance_Scen4"
+        android:layout_alignBottom="@+id/pulseNumAdvance_Scen4"
+        android:layout_alignStart="@+id/textBPAdvance_Scen4" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/pulseNumAdvance_Scen4"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/graphRRAdvance_Scen4"
+        android:layout_toStartOf="@+id/graphPulseAdvance_Scen4"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text=" "
+        android:id="@+id/BPNumAdvance_Scen4"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_width="100dp"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/graphPulseAdvance_Scen4"
+        android:layout_toStartOf="@+id/graphBBAdvance_Scen4"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="BP"
+        android:id="@+id/textBPAdvance_Scen4"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/BPNumAdvance_Scen4"
+        android:layout_alignBottom="@+id/BPNumAdvance_Scen4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/tempNumAdvance_Scen4"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/graphPAOAdvance_Scen4"
+        android:layout_toStartOf="@+id/graphTempAdvance_Scen4"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:text="Temp"
+        android:layout_height="50dp"
+        android:id="@+id/textTempAdvance_Scen4"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/tempNumAdvance_Scen4"
+        android:layout_alignBottom="@+id/tempNumAdvance_Scen4"
+        android:layout_alignStart="@+id/textRRAdvance_Scen4" />
+
+    <TextView
+        android:text="Last 15 minutes Vital Trends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vitalTrends_Scen4"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/graphBBAdvance_Scen4"
+        android:layout_alignStart="@+id/graphBBAdvance_Scen4" />
+
+    <TextView
+        android:text="RR"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:id="@+id/textRRAdvance_Scen4"
+        android:layout_width="80dp"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/graphPAOAdvance_Scen4"
+        android:layout_alignStart="@+id/textPulseAdvance_Scen4" />
+
+    <TextView
+        android:layout_height="50dp"
+        android:id="@+id/RRNumAdvance_Scen4"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:layout_width="100dp"
+        android:layout_alignBaseline="@+id/textRRAdvance_Scen4"
+        android:layout_alignBottom="@+id/textRRAdvance_Scen4"
+        android:layout_toStartOf="@+id/graphRRAdvance_Scen4" />
+
+    <TextView
+        android:id="@+id/textInfo_Scen4"
+        android:background="@drawable/my_personal_border"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_height="100dp"
+        android:layout_width="380dp"
+        android:layout_above="@+id/buttonCAPAdvance_Scen4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphTempAdvance_Scen4"
+        android:layout_width="380dp"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/textInfo_Scen4"
+        android:layout_alignParentEnd="true"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/pulseSumP1_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textSummaryAdv_Scen4"
+        android:layout_toEndOf="@+id/BPsumP2_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/BPsumP1_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/pulseSumP1_Scen4"
+        android:layout_alignBottom="@+id/pulseSumP1_Scen4"
+        android:layout_toStartOf="@+id/pulseSumP1_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/pulseSumP3_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/pulseSumP2_Scen4"
+        android:layout_toEndOf="@+id/BPsumP3_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/BPsumP2_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/BPsumP1_Scen4"
+        android:layout_alignStart="@+id/BPsumP3_Scen4" />
+
+    <TextView
+        android:text="P3:"
+        android:layout_height="25dp"
+        android:id="@+id/textP3_Scen4"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_width="30dp"
+        android:layout_alignBaseline="@+id/BPsumP3_Scen4"
+        android:layout_alignBottom="@+id/BPsumP3_Scen4"
+        android:layout_alignStart="@+id/textP2_Scen4" />
+
+    <TextView
+        android:text="P1:"
+        android:layout_height="25dp"
+        android:id="@+id/textP1_Scen4"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_width="30dp"
+        android:layout_alignBaseline="@+id/BPsumP1_Scen4"
+        android:layout_alignBottom="@+id/BPsumP1_Scen4"
+        android:layout_alignStart="@+id/textP2_Scen4" />
+
+    <TextView
+        android:id="@+id/textPatientNo_Scen4"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_height="28dp"
+        android:textAlignment="viewStart"
+        android:layout_width="125dp"
+        android:layout_above="@+id/textPatientInfo_Scen4"
+        android:layout_alignStart="@+id/textTempAdvance_Scen4" />
+
+    <TextView
+        android:id="@+id/textPatientInfo_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_height="100dp"
+        android:layout_width="160dp"
+        android:layout_below="@+id/graphTempAdvance_Scen4"
+        android:layout_alignStart="@+id/textPatientNo_Scen4" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/PAONumAdvance_Scen4"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/tempNumAdvance_Scen4"
+        android:layout_toStartOf="@+id/graphPAOAdvance_Scen4"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="PaO2"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:id="@+id/textPAOAdvance_Scen4"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/PAONumAdvance_Scen4"
+        android:layout_alignBottom="@+id/PAONumAdvance_Scen4"
+        android:layout_alignStart="@+id/textTempAdvance_Scen4" />
+
+    <TextView
+        android:text="Summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSummaryAdv_Scen4"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/tempSumP2_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/tempSumP1_Scen4"
+        android:layout_alignStart="@+id/tempSumP1_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/tempSumP3_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/tempSumP2_Scen4"
+        android:layout_alignStart="@+id/tempSumP2_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/POASumP3_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/tempSumP3_Scen4"
+        android:layout_alignBottom="@+id/tempSumP3_Scen4"
+        android:layout_alignStart="@+id/POASumP1_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/POASumP2_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBottom="@+id/tempSumP2_Scen4"
+        android:layout_alignStart="@+id/POASumP3_Scen4"
+        android:layout_below="@+id/POASumP1_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/tempSumP1_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_marginEnd="32dp"
+        android:layout_alignBaseline="@+id/POASumP1_Scen4"
+        android:layout_alignBottom="@+id/POASumP1_Scen4"
+        android:layout_alignEnd="@+id/vitalTrends_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:id="@+id/RRSumP1_Scen4"
+        android:textStyle="normal|bold"
+        android:layout_height="25dp"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/pulseSumP1_Scen4"
+        android:layout_alignBottom="@+id/pulseSumP1_Scen4"
+        android:layout_toEndOf="@+id/pulseSumP2_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:id="@+id/RRSumP2_Scen4"
+        android:textStyle="normal|bold"
+        android:layout_height="25dp"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/pulseSumP2_Scen4"
+        android:layout_alignBottom="@+id/pulseSumP2_Scen4"
+        android:layout_toEndOf="@+id/pulseSumP2_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:id="@+id/RRSumP3_Scen4"
+        android:textStyle="normal|bold"
+        android:layout_height="25dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/pulseSumP2_Scen4"
+        android:layout_toEndOf="@+id/pulseSumP2_Scen4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/POASumP1_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/RRSumP1_Scen4"
+        android:layout_alignBottom="@+id/RRSumP1_Scen4"
+        android:layout_toStartOf="@+id/tempSumP2_Scen4" />
 </RelativeLayout>

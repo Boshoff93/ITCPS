@@ -29,7 +29,7 @@
             android:layout_centerHorizontal="true" />
 
         <TextView
-            android:text="\n 2 Patients coming in from automobile accident. ETA: 20 minutes"
+            android:text="\n2 patients coming in from an automobile accident. ETA: 15 minutes"
             android:id="@+id/PatientNotificationScenOne"
             android:background="@drawable/my_personal_border"
             android:typeface="sans"

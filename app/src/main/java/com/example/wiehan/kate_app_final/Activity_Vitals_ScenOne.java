@@ -1,8 +1,8 @@
 package com.example.wiehan.kate_app_final;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,15 +17,18 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
     GraphView graphPulse ;
     GraphView graphRR;
     GraphView graphTemp;
+    GraphView graphPAO ;
     TextView BPNum ;
     TextView pulseNum ;
     TextView RRNum ;
     TextView tempNum ;
     TextView summaryText ;
+    TextView PAONum;
     LineGraphSeries<DataPoint> seriesBP ;
     LineGraphSeries<DataPoint> seriesPulse ;
     LineGraphSeries<DataPoint> seriesRR ;
     LineGraphSeries<DataPoint> seriesTemp ;
+    LineGraphSeries<DataPoint> seriesPAO ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,37 +38,53 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         pulseNum = (TextView)  findViewById(R.id.pulseNum_Scen1) ;
         RRNum = (TextView)  findViewById(R.id.RRNum_Scen1) ;
         tempNum = (TextView)  findViewById(R.id.tempNum_Scen1) ;
+        PAONum = (TextView) findViewById(R.id.PAONum_Scen1);
         summaryText = (TextView) findViewById(R.id.summaryText_Scen1) ;
 
         graphBP = (GraphView)findViewById(R.id.graphBP_Scen1) ;
-        graphBP.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphBP.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphBP.getGridLabelRenderer().setHorizontalLabelsVisible(true);
+        graphBP.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphBP.getViewport().setYAxisBoundsManual(true);
-        graphBP.getViewport().setMinY(0);
-        graphBP.getViewport().setMaxY(1.5);
-
-
+        graphBP.getViewport().setMinY(120);
+        graphBP.getViewport().setMaxY(200);
+        graphBP.getViewport().setMaxX(60);
+        graphBP.getViewport().setMinX(0);
 
         graphPulse = (GraphView)findViewById(R.id.graphPulse_Scen1) ;
-        graphPulse.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphPulse.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphPulse.getGridLabelRenderer().setHorizontalLabelsVisible(true);
+        graphPulse.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphPulse.getViewport().setYAxisBoundsManual(true);
-        graphPulse.getViewport().setMinY(0);
-        graphPulse.getViewport().setMaxY(1);
+        graphPulse.getViewport().setMinY(100);
+        graphPulse.getViewport().setMaxY(140);
+        graphPulse.getViewport().setMinX(0);
+        graphPulse.getViewport().setMaxX(60);
 
         graphRR = (GraphView)findViewById(R.id.graphRR_Scen1) ;
-        graphRR.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphRR.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphRR.getGridLabelRenderer().setHorizontalLabelsVisible(true);
+        graphRR.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphRR.getViewport().setYAxisBoundsManual(true);
-        graphRR.getViewport().setMinY(0);
-        graphRR.getViewport().setMaxY(1);
+        graphRR.getViewport().setMinY(15);
+        graphRR.getViewport().setMaxY(27);
+        graphRR.getViewport().setMinX(0);
+        graphRR.getViewport().setMaxX(60);
+
+        graphPAO = (GraphView)findViewById(R.id.graphPAO_Scen1) ;
+        graphPAO.getGridLabelRenderer().setHorizontalLabelsVisible(true);
+        graphPAO.getGridLabelRenderer().setVerticalLabelsVisible(true);
+        graphPAO.getViewport().setYAxisBoundsManual(true);
+        graphPAO.getViewport().setMinY(95);
+        graphPAO.getViewport().setMaxY(100);
+        graphPAO.getViewport().setMinX(0);
+        graphPAO.getViewport().setMaxX(60);
 
         graphTemp = (GraphView)findViewById(R.id.graphTemp_Scen1) ;
-        graphTemp.getGridLabelRenderer().setHorizontalLabelsVisible(false);
-        graphTemp.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        graphTemp.getGridLabelRenderer().setHorizontalLabelsVisible(true);
+        graphTemp.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphTemp.getViewport().setYAxisBoundsManual(true);
-        graphTemp.getViewport().setMinY(0);
-        graphTemp.getViewport().setMaxY(1);
+        graphTemp.getViewport().setMinY(97.6);
+        graphTemp.getViewport().setMaxY(99.6);
+        graphTemp.getViewport().setMinX(0);
+        graphTemp.getViewport().setMaxX(60);
 
         Button buttonConGame = (Button) findViewById(R.id.buttonConGame_Scen1);
 
@@ -82,17 +101,20 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         graphBP.removeAllSeries();
         graphPulse.removeAllSeries();
         graphRR.removeAllSeries();
+        graphPAO.removeAllSeries();
         graphTemp.removeAllSeries();
 
-        BPNum.setText("120/80 ");
-        pulseNum.setText("70 ");
-        RRNum.setText("18 ");
+        BPNum.setText("155/103 ");
+        pulseNum.setText("119 ");
+        RRNum.setText("25 ");
+        PAONum.setText("97 ");
         tempNum.setText("98.6 ");
-        summaryText.setText("\nSummary: 29 y/o female, Minor head injuries, Bruises and discoloration in temporal area.");
+        summaryText.setText("\nSummary: John, Male, 35 y/o, broken arm, head pains, shock");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
         seriesRR = new LineGraphSeries<DataPoint>();
+        seriesPAO = new LineGraphSeries<DataPoint>();
         seriesTemp = new LineGraphSeries<DataPoint>();
 
 
@@ -101,14 +123,12 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         graphPulse.addSeries(seriesPulse);
         graphBP.addSeries(seriesBP);
         graphRR.addSeries(seriesRR);
+        graphPAO.addSeries(seriesPAO);
         graphTemp.addSeries(seriesTemp);
 
-        //End
 
         final Button patientOne = (Button) findViewById(R.id.patient_one_Button_Scen1) ;
-        final Button patientTwo = (Button) findViewById(R.id.patient_two_Button_Scen1) ;
         patientOne.setSelected(true);
-        patientTwo.setSelected(false);
 
         patientOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,19 +137,21 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
                 graphPulse.removeAllSeries();
                 graphRR.removeAllSeries();
                 graphTemp.removeAllSeries();
+                graphPAO.removeAllSeries();
 
-                BPNum.setText("120/80 ");
-                pulseNum.setText("70 ");
-                RRNum.setText("18 ");
+                BPNum.setText("155/103 ");
+                pulseNum.setText("119 ");
+                RRNum.setText("25 ");
+                PAONum.setText("97 ");
                 tempNum.setText("98.6 ");
-                summaryText.setText("\nSummary: 29 y/o female, Minor head injuries, Bruises and discoloration in temporal area.");
+                summaryText.setText("\nSummary: John, Male, 35 y/o, broken arm, head pains, shock");
 
                 patientOne.setSelected(true);
-                patientTwo.setSelected(false);
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
                 seriesRR = new LineGraphSeries<DataPoint>();
+                seriesPAO = new LineGraphSeries<DataPoint>();
                 seriesTemp = new LineGraphSeries<DataPoint>();
 
 
@@ -138,142 +160,53 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
                 graphPulse.addSeries(seriesPulse);
                 graphBP.addSeries(seriesBP);
                 graphRR.addSeries(seriesRR);
+                graphPAO.addSeries(seriesPAO);
                 graphTemp.addSeries(seriesTemp);
 
             }
         });
-
-
-        patientTwo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                graphBP.removeAllSeries();
-                graphPulse.removeAllSeries();
-                graphRR.removeAllSeries();
-                graphTemp.removeAllSeries();
-
-                BPNum.setText("124/80 ");
-                pulseNum.setText("78 ");
-                RRNum.setText("16 ");
-                tempNum.setText("97.2 ");
-                summaryText.setText("\nSummary: 25 y/o male, Broken collarbone, Minor bruises.");
-
-                patientOne.setSelected(false);
-                patientTwo.setSelected(true) ;
-
-                seriesBP = new LineGraphSeries<DataPoint>();
-                seriesPulse = new LineGraphSeries<DataPoint>();
-                seriesRR = new LineGraphSeries<DataPoint>();
-                seriesTemp = new LineGraphSeries<DataPoint>();
-
-
-                patientTwoRandomGraphs();
-
-                graphPulse.addSeries(seriesPulse);
-                graphBP.addSeries(seriesBP);
-                graphRR.addSeries(seriesRR);
-                graphTemp.addSeries(seriesTemp);
-            }
-
-
-        });
-
-
-
-
-
 
     }
 
     private void patienOneRandomGraphs() {
-        double x = 0;
-        double y = 0.5 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.2;
-            if(y <= 0.75) {
-                y +=0.005;
-            }
 
-            seriesBP.appendData(new DataPoint(x, y), true, 400);
-        }
-        x = 0 ;
-        y = 0 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.4;
-            y = Math.cos(x) * 0.8;
+        seriesBP.appendData(new DataPoint(10, 150), true, 6);
+        seriesBP.appendData(new DataPoint(20, 154), true, 6);
+        seriesBP.appendData(new DataPoint(30, 152), true, 6);
+        seriesBP.appendData(new DataPoint(40, 158), true, 6);
+        seriesBP.appendData(new DataPoint(50, 153), true, 6);
+        seriesBP.appendData(new DataPoint(60, 155), true, 6);
 
-            if(y <0) {
-                y = 0 ;
-            }
-            seriesPulse.appendData(new DataPoint(x, y), true, 400);
-        }
 
-        x = 0 ;
-        y = 0.25 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.2;
-            if(y <= 0.5) {
-                y +=0.002;
-            }
-            seriesRR.appendData(new DataPoint(x, y), true, 400);
-        }
+        seriesPulse.appendData(new DataPoint(10, 121), true, 6);
+        seriesPulse.appendData(new DataPoint(20, 125), true, 6);
+        seriesPulse.appendData(new DataPoint(30, 123), true, 6);
+        seriesPulse.appendData(new DataPoint(40, 120), true, 6);
+        seriesPulse.appendData(new DataPoint(50, 119), true, 6);
+        seriesPulse.appendData(new DataPoint(60, 119), true, 6);
 
-        x = 0 ;
-        y = 0.5 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.2 ;
-            if(x > 20) {
-                if(y<0.9) {
-                    y += 0.001;
-                }
-            }
-            seriesTemp.appendData(new DataPoint(x, y), true, 400);
-        }
+
+        seriesRR.appendData(new DataPoint(10, 23), true, 6);
+        seriesRR.appendData(new DataPoint(20, 23), true, 6);
+        seriesRR.appendData(new DataPoint(30, 22), true, 6);
+        seriesRR.appendData(new DataPoint(40, 25), true, 6);
+        seriesRR.appendData(new DataPoint(50, 24), true, 6);
+        seriesRR.appendData(new DataPoint(60, 25), true, 6);
+
+        seriesPAO.appendData(new DataPoint(10,98), true, 6);
+        seriesPAO.appendData(new DataPoint(20,97), true, 6);
+        seriesPAO.appendData(new DataPoint(30,98), true, 6);
+        seriesPAO.appendData(new DataPoint(40,98), true, 6);
+        seriesPAO.appendData(new DataPoint(50,96), true, 6);
+        seriesPAO.appendData(new DataPoint(60,97), true, 6);
+
+        seriesTemp.appendData(new DataPoint(10, 98.6), true, 6);
+        seriesTemp.appendData(new DataPoint(20, 98.5), true, 6);
+        seriesTemp.appendData(new DataPoint(30, 98.7), true, 6);
+        seriesTemp.appendData(new DataPoint(40, 98.6), true, 6);
+        seriesTemp.appendData(new DataPoint(50, 98.5), true, 6);
+        seriesTemp.appendData(new DataPoint(60, 98.6), true, 6);
     }
 
-    private void patientTwoRandomGraphs() {
-        double x = 0;
-        double y = 0.5 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.2;
-            if(y <= 0.75) {
-                y +=0.0025;
-            }
-
-            seriesBP.appendData(new DataPoint(x, y), true, 400);
-        }
-        x = 0 ;
-        y = 0 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.4;
-            y = Math.cos(x);
-            if(y <0) {
-                y = 0 ;
-            }
-            seriesPulse.appendData(new DataPoint(x, y), true, 400);
-        }
-
-        x = 0 ;
-        y = 0.25 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.2;
-            if(y <= 0.4) {
-                y +=0.00125;
-            }
-            seriesRR.appendData(new DataPoint(x, y), true, 400);
-        }
-
-        x = 0 ;
-        y = 0.5 ;
-        for (int i = 0; i < 400; i++) {
-            x += 0.2 ;
-            if(x > 25) {
-                if(y<0.8) {
-                    y += 0.001;
-                }
-            }
-            seriesTemp.appendData(new DataPoint(x, y), true, 400);
-        }
-    }
 
 }

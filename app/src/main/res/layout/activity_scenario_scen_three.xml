@@ -13,18 +13,18 @@
     <TextView
         android:id="@+id/textScenario_Scen3"
         android:background="@drawable/my_personal_border"
-        android:typeface="sans"
+        android:typeface="serif"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Scenario"
-        android:layout_width="450dp"
-        android:layout_height="450dp"
-        android:layout_marginTop="94dp"
+        android:text="You’ve received further information on the statuses of your patients via the EMT’s. The explosion was in the kitchen of a restaurant; 3 workers were near the explosion. The patients ages range from 18-32. Patient 1 was closest to the explosion and has multiple 2nd degree burns and some 3rd degree burns on his arms and torso. Patient 2 has some burns on her back, all 2nd degree, and a broken arm from falling. Patient 3 was near glass that was caught in the explosion and has multiple cuts on her face and a piece of glass in her eye, her face is bleeding continuously from the cuts. Patient 4 is having trouble breathing from inhaling too much smoke from the explosion/fire. Patient 5 also inhaled too much smoke and had a loss of consciousness EMT’s picked him up in an unconscious state. Vital data over the last 5 minutes have been coming in, in addition to procedures performed by the EMTs."
+        android:padding="15dp"
+        android:layout_width="580dp"
+        android:layout_height="620dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Continue to View Data"
@@ -33,7 +33,7 @@
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:background="@drawable/my_personal_buttons"
         android:textSize="18sp"
-        android:layout_marginBottom="79dp"
+        android:layout_marginBottom="36dp"
         android:layout_width="250dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

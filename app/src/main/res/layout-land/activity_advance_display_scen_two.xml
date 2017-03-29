@@ -242,7 +242,7 @@
         android:layout_marginTop="11dp" />
 
     <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphTempAdvance_Scen2"
+        android:id="@+id/graphTempAdvance_Scen4"
         android:layout_height="50dp"
         android:layout_width="350dp"
         android:layout_above="@+id/textPatientNo_Scen2"
@@ -256,7 +256,7 @@
         android:layout_width="225dp"
         android:background="@drawable/my_personal_buttons"
         android:textSize="18sp"
-        android:layout_above="@+id/graphTempAdvance_Scen2"
+        android:layout_above="@+id/graphTempAdvance_Scen4"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -268,7 +268,7 @@
         android:textAlignment="textEnd"
         android:layout_alignBaseline="@+id/textTempAdvance_Scen2"
         android:layout_alignBottom="@+id/textTempAdvance_Scen2"
-        android:layout_toStartOf="@+id/graphTempAdvance_Scen2" />
+        android:layout_toStartOf="@+id/graphTempAdvance_Scen4" />
 
     <TextView
         android:text="Temp"
@@ -278,7 +278,7 @@
         android:textStyle="normal|bold"
         android:textAlignment="viewStart"
         android:layout_width="80dp"
-        android:layout_alignTop="@+id/graphTempAdvance_Scen2"
+        android:layout_alignTop="@+id/graphTempAdvance_Scen4"
         android:layout_alignParentStart="true" />
 
     <Button

@@ -21,18 +21,6 @@
         android:layout_width="284dp" />
 
     <Button
-        android:text="( D )"
-        android:id="@+id/buttonScen4"
-        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
-        android:textSize="18sp"
-        android:layout_height="400dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/buttonScen1"
-        android:layout_width="284dp" />
-
-    <Button
         android:text="( A )"
         android:id="@+id/buttonScen1"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -44,6 +32,17 @@
         android:layout_width="284dp" />
 
     <Button
+        android:text="( D )"
+        android:id="@+id/buttonScen4"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:background="@drawable/my_personal_buttons"
+        android:textSize="18sp"
+        android:layout_width="284dp"
+        android:layout_height="400dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/buttonScen2" />
+
+    <Button
         android:text="( C )"
         android:id="@+id/buttonScen3"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -51,6 +50,6 @@
         android:textSize="18sp"
         android:layout_height="400dp"
         android:layout_width="284dp"
-        android:layout_below="@+id/buttonScen1"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonScen2" />
 </RelativeLayout>

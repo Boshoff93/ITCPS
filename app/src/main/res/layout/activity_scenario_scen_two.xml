@@ -13,18 +13,18 @@
     <TextView
         android:id="@+id/textScenario_Scen2"
         android:background="@drawable/my_personal_border"
-        android:typeface="sans"
+        android:typeface="serif"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textAlignment="center"
         android:textSize="24sp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Scenario"
-        android:layout_width="450dp"
-        android:layout_height="450dp"
-        android:layout_marginTop="94dp"
+        android:text="You’ve received further information on the accident and statuses of your patients via the EMT’s. The driver is a 75 y/o male and the passenger is a 69 y/o female. The car slid off road into a nearby tree. The driver and passenger both suffered minor head and neck injuries due to their slow speed during the accident. The male driver, patient 1, was found unconscious but is awake now and has cuts and bruises on his head. The female patient, patient 2, has a broken foot and is complaining of neck pains and has bruises and discoloration on her frontal lobe area. Vital data over the whole EMT ride have come in along with EMT procedures preformed"
+        android:padding="15dp"
+        android:layout_width="580dp"
+        android:layout_height="620dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Continue to View Data"
@@ -33,7 +33,7 @@
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:background="@drawable/my_personal_buttons"
         android:textSize="18sp"
-        android:layout_marginBottom="79dp"
+        android:layout_marginBottom="37dp"
         android:layout_width="250dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

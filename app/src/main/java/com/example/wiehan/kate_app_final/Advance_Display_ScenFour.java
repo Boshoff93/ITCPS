@@ -291,7 +291,7 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
                 RRNumAdvance.setText("16 ");
                 POANumAdvance.setText("94 ");
                 tempNumAdvance.setText("98.5 ");
-                textInfo.setText("Assess Hip – min 2\nBack protection - min 4\nStabilizen - min 4O2- 5\nPain control - min 8");
+                textInfo.setText("Assess Hip – min 2\nBack protection - min 4\nStabilizen - min 4\nO2- 5\nPain control - min 8");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -332,6 +332,8 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         seriesBP.appendData(new DataPoint(13, 122), true, 15);
         seriesBP.appendData(new DataPoint(14, 127), true, 15);
         seriesBP.appendData(new DataPoint(15, 124), true, 15);
+
+
 
         seriesPulse.appendData(new DataPoint(1, 119), true, 15);
         seriesPulse.appendData(new DataPoint(2, 117), true, 15);

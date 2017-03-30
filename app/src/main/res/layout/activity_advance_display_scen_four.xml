@@ -221,19 +221,6 @@
         android:layout_alignBottom="@+id/textRRAdvance_Scen4"
         android:layout_toStartOf="@+id/graphRRAdvance_Scen4" />
 
-    <TextView
-        android:id="@+id/textInfo_Scen4"
-        android:background="@drawable/my_personal_border"
-        android:typeface="sans"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:layout_height="100dp"
-        android:layout_width="380dp"
-        android:layout_above="@+id/buttonCAPAdvance_Scen4"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="12dp" />
-
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphTempAdvance_Scen4"
         android:layout_width="380dp"
@@ -314,16 +301,6 @@
         android:layout_width="125dp"
         android:layout_above="@+id/textPatientInfo_Scen4"
         android:layout_alignStart="@+id/textTempAdvance_Scen4" />
-
-    <TextView
-        android:id="@+id/textPatientInfo_Scen4"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:textAlignment="viewStart"
-        android:layout_height="100dp"
-        android:layout_width="160dp"
-        android:layout_below="@+id/graphTempAdvance_Scen4"
-        android:layout_alignStart="@+id/textPatientNo_Scen4" />
 
     <TextView
         android:layout_width="100dp"
@@ -454,4 +431,28 @@
         android:layout_alignBaseline="@+id/RRSumP1_Scen4"
         android:layout_alignBottom="@+id/RRSumP1_Scen4"
         android:layout_toStartOf="@+id/tempSumP2_Scen4" />
+
+    <TextView
+        android:id="@+id/textInfo_Scen4"
+        android:background="@drawable/my_personal_border"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_width="380dp"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/buttonCAPAdvance_Scen4"
+        android:layout_toEndOf="@+id/textPatientInfo_Scen4"
+        android:layout_height="110dp" />
+
+    <TextView
+        android:id="@+id/textPatientInfo_Scen4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_width="160dp"
+        android:layout_alignBaseline="@+id/textInfo_Scen4"
+        android:layout_alignBottom="@+id/textInfo_Scen4"
+        android:layout_alignStart="@+id/textPatientNo_Scen4"
+        android:layout_height="110dp" />
 </RelativeLayout>

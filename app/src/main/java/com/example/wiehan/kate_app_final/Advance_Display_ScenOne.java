@@ -51,56 +51,66 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
         textPatientNo = (TextView) findViewById(R.id.textPatientNo_Scen1) ;
 
         graphBBAdvance = (GraphView)findViewById(R.id.graphBBAdvance_Scen1) ;
+        graphBBAdvance.getGridLabelRenderer().setTextSize(14f);
+        graphBBAdvance.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphBBAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphBBAdvance.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphBBAdvance.getViewport().setXAxisBoundsManual(true);
         graphBBAdvance.getViewport().setScrollableY(false);
         graphBBAdvance.getViewport().setMinX(10);
-        graphBBAdvance.getViewport().setMaxX(17);
+        graphBBAdvance.getViewport().setMaxX(15);
         graphBBAdvance.getViewport().setYAxisBoundsManual(true);
         graphBBAdvance.getViewport().setMinY(110);
         graphBBAdvance.getViewport().setMaxY(160);
 
         graphPulseAdvance = (GraphView)findViewById(R.id.graphPulseAdvance_Scen1) ;
+        graphPulseAdvance.getGridLabelRenderer().setTextSize(14f);
+        graphPulseAdvance.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphPulseAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphPulseAdvance.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphPulseAdvance.getViewport().setXAxisBoundsManual(true);
         graphPulseAdvance.getViewport().setScrollableY(false);
         graphPulseAdvance.getViewport().setMinX(10);
-        graphPulseAdvance.getViewport().setMaxX(17);
+        graphPulseAdvance.getViewport().setMaxX(15);
         graphPulseAdvance.getViewport().setYAxisBoundsManual(true);
         graphPulseAdvance.getViewport().setMinY(100);
-        graphPulseAdvance.getViewport().setMaxY(130);
+        graphPulseAdvance.getViewport().setMaxY(120);
 
         graphRRAdvance = (GraphView)findViewById(R.id.graphRRAdvance_Scen1) ;
+        graphRRAdvance.getGridLabelRenderer().setTextSize(14f);
+        graphRRAdvance.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphRRAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphRRAdvance.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphRRAdvance.getViewport().setXAxisBoundsManual(true);
         graphRRAdvance.getViewport().setScrollableY(false);
         graphRRAdvance.getViewport().setMinX(10);
-        graphRRAdvance.getViewport().setMaxX(17);
+        graphRRAdvance.getViewport().setMaxX(15);
         graphRRAdvance.getViewport().setYAxisBoundsManual(true);
         graphRRAdvance.getViewport().setMinY(16);
-        graphRRAdvance.getViewport().setMaxY(28);
+        graphRRAdvance.getViewport().setMaxY(22);
 
         graphPAOAdvance = (GraphView)findViewById(R.id.graphPAOAdvance_Scen1) ;
+        graphPAOAdvance.getGridLabelRenderer().setTextSize(14f);
+        graphPAOAdvance.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphPAOAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphPAOAdvance.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphPAOAdvance.getViewport().setXAxisBoundsManual(true);
         graphPAOAdvance.getViewport().setScrollableY(false);
         graphPAOAdvance.getViewport().setMinX(10);
-        graphPAOAdvance.getViewport().setMaxX(17);
+        graphPAOAdvance.getViewport().setMaxX(15);
         graphPAOAdvance.getViewport().setYAxisBoundsManual(true);
         graphPAOAdvance.getViewport().setMinY(94);
         graphPAOAdvance.getViewport().setMaxY(100);
 
         graphTempAdvance = (GraphView)findViewById(R.id.graphTempAdvance_Scen1) ;
+        graphTempAdvance.getGridLabelRenderer().setTextSize(14f);
+        graphTempAdvance.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphTempAdvance.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphTempAdvance.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphTempAdvance.getViewport().setXAxisBoundsManual(true);
         graphTempAdvance.getViewport().setScrollableY(false);
         graphTempAdvance.getViewport().setMinX(10);
-        graphTempAdvance.getViewport().setMaxX(17);
+        graphTempAdvance.getViewport().setMaxX(15);
         graphTempAdvance.getViewport().setYAxisBoundsManual(true);
         graphTempAdvance.getViewport().setMinY(96.6);
         graphTempAdvance.getViewport().setMaxY(99.6);
@@ -200,15 +210,7 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
 
     private void patienOneRandomGraphs() {
 
-        seriesBP.appendData(new DataPoint(1, 155), true, 15);
-        seriesBP.appendData(new DataPoint(2, 155), true, 15);
-        seriesBP.appendData(new DataPoint(3, 152), true, 15);
-        seriesBP.appendData(new DataPoint(4, 148), true, 15);
-        seriesBP.appendData(new DataPoint(5, 144), true, 15);
-        seriesBP.appendData(new DataPoint(6, 140), true, 15);
-        seriesBP.appendData(new DataPoint(7, 134), true, 15);
-        seriesBP.appendData(new DataPoint(8, 132), true, 15);
-        seriesBP.appendData(new DataPoint(9, 120), true, 15);
+
         seriesBP.appendData(new DataPoint(10, 119), true, 15);
         seriesBP.appendData(new DataPoint(11, 123), true, 15);
         seriesBP.appendData(new DataPoint(12, 120), true, 15);
@@ -216,15 +218,6 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
         seriesBP.appendData(new DataPoint(14, 125), true, 15);
         seriesBP.appendData(new DataPoint(15, 120), true, 15);
 
-        seriesPulse.appendData(new DataPoint(1, 119), true, 15);
-        seriesPulse.appendData(new DataPoint(2, 123), true, 15);
-        seriesPulse.appendData(new DataPoint(3, 122), true, 15);
-        seriesPulse.appendData(new DataPoint(4, 119), true, 15);
-        seriesPulse.appendData(new DataPoint(5, 115), true, 15);
-        seriesPulse.appendData(new DataPoint(6, 115), true, 15);
-        seriesPulse.appendData(new DataPoint(7, 114), true, 15);
-        seriesPulse.appendData(new DataPoint(8, 113), true, 15);
-        seriesPulse.appendData(new DataPoint(9, 110), true, 15);
         seriesPulse.appendData(new DataPoint(10, 106), true, 15);
         seriesPulse.appendData(new DataPoint(11, 105), true, 15);
         seriesPulse.appendData(new DataPoint(12, 106), true, 15);
@@ -232,15 +225,6 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
         seriesPulse.appendData(new DataPoint(14, 103), true, 15);
         seriesPulse.appendData(new DataPoint(15, 102), true, 15);
 
-        seriesRR.appendData(new DataPoint(1, 25), true, 15);
-        seriesRR.appendData(new DataPoint(2, 26), true, 15);
-        seriesRR.appendData(new DataPoint(3, 27), true, 15);
-        seriesRR.appendData(new DataPoint(4, 24), true, 15);
-        seriesRR.appendData(new DataPoint(5, 24), true, 15);
-        seriesRR.appendData(new DataPoint(6, 23), true, 15);
-        seriesRR.appendData(new DataPoint(7, 22), true, 15);
-        seriesRR.appendData(new DataPoint(8, 22), true, 15);
-        seriesRR.appendData(new DataPoint(9, 21), true, 15);
         seriesRR.appendData(new DataPoint(10, 19), true, 15);
         seriesRR.appendData(new DataPoint(11, 17), true, 15);
         seriesRR.appendData(new DataPoint(12, 17), true, 15);
@@ -248,15 +232,6 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
         seriesRR.appendData(new DataPoint(14, 19), true, 15);
         seriesRR.appendData(new DataPoint(15, 17), true, 15);
 
-        seriesPAO.appendData(new DataPoint(1, 97), true, 15);
-        seriesPAO.appendData(new DataPoint(2, 98), true, 15);
-        seriesPAO.appendData(new DataPoint(3, 97), true, 15);
-        seriesPAO.appendData(new DataPoint(4, 98), true, 15);
-        seriesPAO.appendData(new DataPoint(5, 96), true, 15);
-        seriesPAO.appendData(new DataPoint(6, 98), true, 15);
-        seriesPAO.appendData(new DataPoint(7, 96), true, 15);
-        seriesPAO.appendData(new DataPoint(8, 97), true, 15);
-        seriesPAO.appendData(new DataPoint(9, 96), true, 15);
         seriesPAO.appendData(new DataPoint(10, 97), true, 15);
         seriesPAO.appendData(new DataPoint(11, 96), true, 15);
         seriesPAO.appendData(new DataPoint(12, 95), true, 15);
@@ -264,16 +239,6 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
         seriesPAO.appendData(new DataPoint(14, 98), true, 15);
         seriesPAO.appendData(new DataPoint(15, 98), true, 15);
 
-
-        seriesTemp.appendData(new DataPoint(1, 98.6), true, 15);
-        seriesTemp.appendData(new DataPoint(2, 98.5), true, 15);
-        seriesTemp.appendData(new DataPoint(3, 98.6), true, 15);
-        seriesTemp.appendData(new DataPoint(4, 98.6), true, 15);
-        seriesTemp.appendData(new DataPoint(5, 98.6), true, 15);
-        seriesTemp.appendData(new DataPoint(6, 98.7), true, 15);
-        seriesTemp.appendData(new DataPoint(7, 98.7), true, 15);
-        seriesTemp.appendData(new DataPoint(8, 98.6), true, 15);
-        seriesTemp.appendData(new DataPoint(9, 98.7), true, 15);
         seriesTemp.appendData(new DataPoint(10, 98.8), true, 15);
         seriesTemp.appendData(new DataPoint(11, 98.7), true, 15);
         seriesTemp.appendData(new DataPoint(12, 98.6), true, 15);

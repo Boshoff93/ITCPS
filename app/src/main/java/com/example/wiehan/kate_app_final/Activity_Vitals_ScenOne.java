@@ -42,6 +42,8 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         summaryText = (TextView) findViewById(R.id.summaryText_Scen1) ;
 
         graphBP = (GraphView)findViewById(R.id.graphBP_Scen1) ;
+        graphBP.getGridLabelRenderer().setTextSize(14f);
+        graphBP.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphBP.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphBP.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphBP.getViewport().setYAxisBoundsManual(true);
@@ -51,6 +53,8 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         graphBP.getViewport().setMinX(0);
 
         graphPulse = (GraphView)findViewById(R.id.graphPulse_Scen1) ;
+        graphPulse.getGridLabelRenderer().setTextSize(14f);
+        graphPulse.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphPulse.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphPulse.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphPulse.getViewport().setYAxisBoundsManual(true);
@@ -60,6 +64,8 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         graphPulse.getViewport().setMaxX(60);
 
         graphRR = (GraphView)findViewById(R.id.graphRR_Scen1) ;
+        graphRR.getGridLabelRenderer().setTextSize(14f);
+        graphRR.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphRR.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphRR.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphRR.getViewport().setYAxisBoundsManual(true);
@@ -69,6 +75,8 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         graphRR.getViewport().setMaxX(60);
 
         graphPAO = (GraphView)findViewById(R.id.graphPAO_Scen1) ;
+        graphPAO.getGridLabelRenderer().setTextSize(14f);
+        graphPAO.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphPAO.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphPAO.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphPAO.getViewport().setYAxisBoundsManual(true);
@@ -78,6 +86,8 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         graphPAO.getViewport().setMaxX(60);
 
         graphTemp = (GraphView)findViewById(R.id.graphTemp_Scen1) ;
+        graphTemp.getGridLabelRenderer().setTextSize(14f);
+        graphTemp.getGridLabelRenderer().setNumHorizontalLabels(6);
         graphTemp.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphTemp.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphTemp.getViewport().setYAxisBoundsManual(true);

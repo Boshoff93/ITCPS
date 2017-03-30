@@ -12,7 +12,7 @@
         android:layout_marginEnd="50dp"
         android:layout_above="@+id/summaryText_Scen2"
         android:layout_alignParentEnd="true"
-        android:layout_height="120dp" />
+        android:layout_height="110dp" />
 
     <TextView
         android:text="Temp"
@@ -39,36 +39,28 @@
         android:layout_alignStart="@+id/RRNum_Scen2" />
 
     <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphPAO_Scen2"
-
-        android:layout_above="@+id/graphTemp_Scen2"
-        android:layout_alignStart="@+id/graphTemp_Scen2"
-        android:layout_width="380dp"
-        android:layout_height="120dp" />
-
-    <com.jjoe64.graphview.GraphView
         android:id="@+id/graphRR_Scen2"
         android:layout_width="380dp"
 
-        android:layout_height="120dp"
         android:layout_above="@+id/graphPAO_Scen2"
-        android:layout_alignStart="@+id/graphPAO_Scen2" />
+        android:layout_alignStart="@+id/graphPAO_Scen2"
+        android:layout_height="110dp" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphPulse_Scen2"
         android:layout_width="380dp"
 
-        android:layout_height="120dp"
         android:layout_above="@+id/graphRR_Scen2"
-        android:layout_toEndOf="@+id/pulseNum_Scen2" />
+        android:layout_toEndOf="@+id/pulseNum_Scen2"
+        android:layout_height="110dp" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphBP_Scen2"
         android:layout_width="380dp"
 
-        android:layout_height="120dp"
         android:layout_above="@+id/graphPulse_Scen2"
-        android:layout_toEndOf="@+id/BPNum_Scen2" />
+        android:layout_toEndOf="@+id/BPNum_Scen2"
+        android:layout_height="110dp" />
 
     <Button
         android:text="Continue"
@@ -198,6 +190,25 @@
         android:layout_height="60dp"
         android:layout_below="@+id/summaryText_Scen2"
         android:layout_toStartOf="@+id/buttonConGame_Scen2" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPAO_Scen2"
+
+        android:layout_width="380dp"
+        android:layout_above="@+id/graphTemp_Scen2"
+        android:layout_alignStart="@+id/graphTemp_Scen2"
+        android:layout_height="110dp" />
+
+    <TextView
+        android:text="First 60 seconds of Vitals"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/graphBP_Scen2"
+        android:layout_alignEnd="@+id/summaryText_Scen2"
+        android:layout_marginEnd="25dp" />
 
 
 </RelativeLayout>

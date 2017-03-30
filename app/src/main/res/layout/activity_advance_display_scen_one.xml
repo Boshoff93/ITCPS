@@ -10,14 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.wiehan.kate_app_final.Advance_Display_ScenOne">
 
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphTempAdvance_Scen1"
-        android:layout_width="380dp"
-        android:layout_above="@+id/textInfo_Scen1"
-        android:layout_alignEnd="@+id/textInfo_Scen1"
-        android:layout_marginBottom="14dp"
-        android:layout_height="110dp" />
-
     <TextView
         android:layout_width="100dp"
         android:id="@+id/RRNumAdvance_Scen1"
@@ -28,46 +20,6 @@
         android:layout_alignBaseline="@+id/textRRAdvance_Scen1"
         android:layout_alignBottom="@+id/textRRAdvance_Scen1"
         android:layout_toStartOf="@+id/graphRRAdvance_Scen1" />
-
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphRRAdvance_Scen1"
-        android:layout_width="380dp"
-        android:layout_height="110dp"
-        android:layout_above="@+id/graphPAOAdvance_Scen1"
-        android:layout_alignStart="@+id/graphPAOAdvance_Scen1" />
-
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphPAOAdvance_Scen1"
-        android:layout_width="380dp"
-        android:layout_height="110dp"
-        android:layout_above="@+id/graphTempAdvance_Scen1"
-        android:layout_alignStart="@+id/graphTempAdvance_Scen1" />
-
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphPulseAdvance_Scen1"
-        android:layout_width="380dp"
-        android:layout_height="110dp"
-        android:layout_above="@+id/graphRRAdvance_Scen1"
-        android:layout_alignStart="@+id/graphRRAdvance_Scen1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/vitalTrends_Scen1"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:text="Last 5 Minutes Vital Trends"
-        android:layout_marginStart="12dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/graphBBAdvance_Scen1" />
-
-    <com.jjoe64.graphview.GraphView
-        android:id="@+id/graphBBAdvance_Scen1"
-        android:layout_width="380dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/vitalTrends_Scen1"
-        android:layout_alignStart="@+id/graphPulseAdvance_Scen1"
-        android:layout_marginTop="11dp" />
 
     <TextView
         android:text="Temp"
@@ -102,31 +54,6 @@
         android:layout_alignBaseline="@+id/textTempAdvance_Scen1"
         android:layout_alignBottom="@+id/textTempAdvance_Scen1"
         android:layout_toStartOf="@+id/graphTempAdvance_Scen1" />
-
-    <TextView
-        android:text="Pulse"
-        android:id="@+id/textPulseAdvance_Scen1"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:textAlignment="viewStart"
-        android:layout_weight="0.03"
-        android:layout_height="50dp"
-        android:layout_width="80dp"
-        android:layout_below="@+id/graphBBAdvance_Scen1"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
-
-    <TextView
-        android:text=" "
-        android:id="@+id/pulseNumAdvance_Scen1"
-        android:layout_height="50dp"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:layout_width="100dp"
-        android:textAlignment="textEnd"
-        android:layout_alignBaseline="@+id/textPulseAdvance_Scen1"
-        android:layout_alignBottom="@+id/textPulseAdvance_Scen1"
-        android:layout_toStartOf="@+id/graphPulseAdvance_Scen1" />
 
     <TextView
         android:layout_width="100dp"
@@ -175,18 +102,75 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/textInfo_Scen1"
-        android:background="@drawable/my_personal_border"
-        android:typeface="sans"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="14dp"
-        android:layout_marginEnd="31dp"
-        android:layout_above="@+id/buttonCAPAdvance_Scen1"
+        android:text=" "
+        android:id="@+id/pulseNumAdvance_Scen1"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:layout_width="100dp"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/graphRRAdvance_Scen1"
+        android:layout_toStartOf="@+id/graphPulseAdvance_Scen1"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:text="Pulse"
+        android:id="@+id/textPulseAdvance_Scen1"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart"
+        android:layout_weight="0.03"
+        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/pulseNumAdvance_Scen1"
+        android:layout_alignBottom="@+id/pulseNumAdvance_Scen1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vitalTrends_Scen1"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:text="Last 5 Minutes Vital Trends"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_width="400dp" />
+        android:layout_marginEnd="11dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphBBAdvance_Scen1"
+        android:layout_width="380dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/vitalTrends_Scen1"
+        android:layout_alignEnd="@+id/vitalTrends_Scen1" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPulseAdvance_Scen1"
+        android:layout_width="380dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/graphBBAdvance_Scen1"
+        android:layout_alignStart="@+id/graphBBAdvance_Scen1" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphRRAdvance_Scen1"
+        android:layout_width="380dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/graphPulseAdvance_Scen1"
+        android:layout_alignStart="@+id/graphPulseAdvance_Scen1" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPAOAdvance_Scen1"
+        android:layout_width="380dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/graphRRAdvance_Scen1"
+        android:layout_alignStart="@+id/graphRRAdvance_Scen1" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphTempAdvance_Scen1"
+        android:layout_width="380dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/graphPAOAdvance_Scen1"
+        android:layout_alignStart="@+id/graphPAOAdvance_Scen1" />
 
     <TextView
         android:id="@+id/textPatientNo_Scen1"
@@ -194,10 +178,9 @@
         android:textStyle="normal|bold"
         android:layout_height="28dp"
         android:textAlignment="viewStart"
-        android:layout_alignBaseline="@+id/textInfo_Scen1"
-        android:layout_alignBottom="@+id/textInfo_Scen1"
-        android:layout_alignParentStart="true"
-        android:layout_width="130dp" />
+        android:layout_width="130dp"
+        android:layout_alignTop="@+id/textInfo_Scen1"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textPatientInfo_Scen1"
@@ -205,10 +188,9 @@
         android:textStyle="normal|bold"
         android:textAlignment="viewStart"
         android:layout_height="125dp"
-        android:layout_marginBottom="14dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_width="130dp" />
+        android:layout_width="130dp"
+        android:layout_below="@+id/textPatientNo_Scen1"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Patient 1"
@@ -218,10 +200,9 @@
         android:background="@drawable/my_personal_buttons"
         android:layout_marginLeft="84dp"
         android:layout_height="60dp"
-        android:layout_marginStart="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/vitalTrends_Scen1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button" />
+        android:layout_toStartOf="@+id/buttonCAPAdvance_Scen1" />
 
     <Button
         android:text="Create Action Plan"
@@ -231,7 +212,20 @@
         android:background="@drawable/my_personal_buttons"
         android:textSize="18sp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/patient_One_Button_Adv_Scen1"
         android:layout_alignEnd="@+id/textInfo_Scen1" />
+
+    <TextView
+        android:id="@+id/textInfo_Scen1"
+        android:background="@drawable/my_personal_border"
+        android:typeface="sans"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_width="400dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/graphTempAdvance_Scen1"
+        android:layout_alignEnd="@+id/graphTempAdvance_Scen1"
+        android:layout_height="120dp" />
 
 </RelativeLayout>

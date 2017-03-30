@@ -139,17 +139,6 @@
         android:layout_alignStart="@+id/graphPulseAdvance_Scen3" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/vitalTrends_Scen3"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:text="Last 5 Minutes Vital Trends"
-        android:layout_above="@+id/graphBPAdvance_Scen3"
-        android:layout_alignStart="@+id/graphBPAdvance_Scen3"
-        android:layout_marginStart="15dp" />
-
-    <TextView
         android:text="Pulse"
         android:id="@+id/textPulseAdvance_Scen3"
         android:textSize="28sp"
@@ -276,6 +265,16 @@
         android:layout_alignBaseline="@+id/tempNumAdvance_Scen3"
         android:layout_alignBottom="@+id/tempNumAdvance_Scen3"
         android:layout_alignStart="@+id/textPatient" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vitalTrends_Scen3"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:text="Last 5 Minutes Vital Trends"
+        android:layout_above="@+id/graphBPAdvance_Scen3"
+        android:layout_alignEnd="@+id/graphBPAdvance_Scen3" />
 
 
 </RelativeLayout>

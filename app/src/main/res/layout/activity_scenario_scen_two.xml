@@ -19,7 +19,8 @@
         android:textSize="24sp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="You’ve received further information on the accident and statuses of your patients via the EMT’s. The driver is a 75 y/o male and the passenger is a 69 y/o female. The car slid off road into a nearby tree. The driver and passenger both suffered minor head and neck injuries due to their slow speed during the accident. The male driver, patient 1, was found unconscious but is awake now and has cuts and bruises on his head. The female patient, patient 2, has a broken foot and is complaining of neck pains and has bruises and discoloration on her frontal lobe area. Vital data over the whole EMT ride have come in along with EMT procedures preformed"
+        android:text="You’ve received further information on the accident and status of your patient via the EMTs. The patient is a 75 y/o male. The car slid off road into a nearby tree. He was found unconscious but is awake now. The patient suffered minor head and neck injuries due to their slow speed during the accident. The patient has a fractured foot and is complaining of neck pains and has bruises and discoloration on his forehead area and has cuts and bruises on his head. Vital signs over the last 5 minutes have been arriving in addition to a record of procedures performed by EMTs.
+"
         android:padding="15dp"
         android:layout_width="580dp"
         android:layout_height="620dp"

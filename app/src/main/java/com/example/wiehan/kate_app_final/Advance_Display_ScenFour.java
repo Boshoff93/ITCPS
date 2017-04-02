@@ -80,7 +80,7 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         graphBBAdvance.getViewport().setMinX(1);
         graphBBAdvance.getViewport().setMaxX(10);
         graphBBAdvance.getViewport().setYAxisBoundsManual(true);
-        graphBBAdvance.getViewport().setMinY(110);
+        graphBBAdvance.getViewport().setMinY(50);
         graphBBAdvance.getViewport().setMaxY(160);
 
         graphPulseAdvance = (GraphView)findViewById(R.id.graphPulseAdvance_Scen4) ;
@@ -94,7 +94,7 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         graphPulseAdvance.getViewport().setMinX(1);
         graphPulseAdvance.getViewport().setMaxX(10);
         graphPulseAdvance.getViewport().setYAxisBoundsManual(true);
-        graphPulseAdvance.getViewport().setMinY(80);
+        graphPulseAdvance.getViewport().setMinY(55);
         graphPulseAdvance.getViewport().setMaxY(130);
 
         graphRRAdvance = (GraphView)findViewById(R.id.graphRRAdvance_Scen4) ;
@@ -108,8 +108,8 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         graphRRAdvance.getViewport().setMinX(1);
         graphRRAdvance.getViewport().setMaxX(10);
         graphRRAdvance.getViewport().setYAxisBoundsManual(true);
-        graphRRAdvance.getViewport().setMinY(12);
-        graphRRAdvance.getViewport().setMaxY(26);
+        graphRRAdvance.getViewport().setMinY(8);
+        graphRRAdvance.getViewport().setMaxY(30);
 
         graphPAOAdvance = (GraphView)findViewById(R.id.graphPAOAdvance_Scen4) ;
         graphPAOAdvance.getGridLabelRenderer().setTextSize(14f);
@@ -122,7 +122,7 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         graphPAOAdvance.getViewport().setMinX(1);
         graphPAOAdvance.getViewport().setMaxX(10);
         graphPAOAdvance.getViewport().setYAxisBoundsManual(true);
-        graphPAOAdvance.getViewport().setMinY(90);
+        graphPAOAdvance.getViewport().setMinY(65);
         graphPAOAdvance.getViewport().setMaxY(100);
 
         graphTempAdvance = (GraphView)findViewById(R.id.graphTempAdvance_Scen4) ;
@@ -136,26 +136,26 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         graphTempAdvance.getViewport().setMinX(1);
         graphTempAdvance.getViewport().setMaxX(10);
         graphTempAdvance.getViewport().setYAxisBoundsManual(true);
-        graphTempAdvance.getViewport().setMinY(97.6);
+        graphTempAdvance.getViewport().setMinY(95.6);
         graphTempAdvance.getViewport().setMaxY(99.6);
 
-        BPSumP1.setText("BP 124/82");
-        pulseSumP1.setText("Pulse 98");
-        RRSumP1.setText("RR 14");
-        POASumP1.setText("PaO2 97");
-        tempSumP1.setText("Temp 98.6");
+        BPSumP1.setText("BP 125/82");
+        pulseSumP1.setText("Pulse 87");
+        RRSumP1.setText("RR 16");
+        POASumP1.setText("PaO2 94");
+        tempSumP1.setText("Temp 98.5");
 
-        BPSumP2.setText("BP 142/93");
-        pulseSumP2.setText("Pulse 98");
-        RRSumP2.setText("RR 16");
+        BPSumP2.setText("BP 133/85");
+        pulseSumP2.setText("Pulse 117");
+        RRSumP2.setText("RR 14");
         POASumP2.setText("PaO2 96");
-        tempSumP2.setText("Temp 98.8");
+        tempSumP2.setText("Temp 98.6");
 
-        BPSumP3.setText("BP 125/82");
-        pulseSumP3.setText("Pulse 87");
-        RRSumP3.setText("RR 16");
-        POASumP3.setText("PaO2 94");
-        tempSumP3.setText("Temp 98.5");
+        BPSumP3.setText("BP 110/70");
+        pulseSumP3.setText("Pulse 81");
+        RRSumP3.setText("RR 10");
+        POASumP3.setText("PaO2 97");
+        tempSumP3.setText("Temp 97.5");
 
         Button createActionPlan = (Button) findViewById(R.id.buttonCAPAdvance_Scen4);
 
@@ -175,13 +175,13 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         graphTempAdvance.removeAllSeries();
 
         textPatientNo.setText("Patient 1:");
-        textPatientInfo.setText("Cindy, female, 47 y/o, 2nd degree burns - arms, torso.");
-        BPNumAdvance.setText("124/82 ");
-        pulseNumAdvance.setText("98 ");
-        RRNumAdvance.setText("14 ");
-        POANumAdvance.setText("97 ");
-        tempNumAdvance.setText("98.6 ");
-        textInfo.setText("Dressing burns - min 2\nStart IV - min 4\nPain control - min 7\n");
+        textPatientInfo.setText("72 y/o female, hip fracture");
+        BPNumAdvance.setText("125/82 ");
+        pulseNumAdvance.setText("87 ");
+        RRNumAdvance.setText("16 ");
+        POANumAdvance.setText("94 ");
+        tempNumAdvance.setText("98.5 ");
+        textInfo.setText("Assess Hip - min 2\nBackboard & C Spine protection - min 4\nO2 - min 5\nPain control - min 8");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
@@ -217,13 +217,13 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
                 graphTempAdvance.removeAllSeries();
 
                 textPatientNo.setText("Patient 1:");
-                textPatientInfo.setText("Cindy, female, 47 y/o, 2nd degree burns - arms, torso.");
-                BPNumAdvance.setText("124/82 ");
-                pulseNumAdvance.setText("98 ");
-                RRNumAdvance.setText("14 ");
-                POANumAdvance.setText("97 ");
-                tempNumAdvance.setText("98.6 ");
-                textInfo.setText("Dressing burns - min 2\nStart IV - min 4\nPain control - min 7\n");
+                textPatientInfo.setText("72 y/o female, hip fracture");
+                BPNumAdvance.setText("125/82 ");
+                pulseNumAdvance.setText("87 ");
+                RRNumAdvance.setText("16 ");
+                POANumAdvance.setText("94 ");
+                tempNumAdvance.setText("98.5 ");
+                textInfo.setText("Assess Hip - min 2\nBackboard & C Spine protection - min 4\nO2 - min 5\nPain control - min 8");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -256,13 +256,13 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
                 graphTempAdvance.removeAllSeries();
 
                 textPatientNo.setText("Patient 2:");
-                textPatientInfo.setText("Pete, male, 55 y/o, 2nd degree burns - arms, torso.");
-                BPNumAdvance.setText("142/93 ");
-                pulseNumAdvance.setText("98 ");
-                RRNumAdvance.setText("16 ");
+                textPatientInfo.setText("70 y/o male, SOB - smoke inhalation.");
+                BPNumAdvance.setText("133/85 ");
+                pulseNumAdvance.setText("117 ");
+                RRNumAdvance.setText("14 ");
                 POANumAdvance.setText("96 ");
-                tempNumAdvance.setText("98.8 ");
-                textInfo.setText("Dressing burns - min 2\nStart IV - min 6\nSplint broken arm - min 8");
+                tempNumAdvance.setText("98.6 ");
+                textInfo.setText("Tripod position/get patient in position they feel okay breathing - min 1\nO2 - min 4");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -295,14 +295,13 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
                 graphTempAdvance.removeAllSeries();
 
                 textPatientNo.setText("Patient 3:");
-                textPatientInfo.setText("Alice, female, 72 y/o, hip fracture from fall.");
-                BPNumAdvance.setText("125/82 ");
-                pulseNumAdvance.setText("87 ");
-                RRNumAdvance.setText("16 ");
-                POANumAdvance.setText("94 ");
-                tempNumAdvance.setText("98.5 ");
-                textInfo.setText("Assess Hip – min 2\nBack protection - min 4\nStabilizen - min 4\nO2- 5\nPain control - min 8");
-
+                textPatientInfo.setText("77 y/o male, SOB - smoke inhalation - LOC 1 min ");
+                BPNumAdvance.setText("110/70 ");
+                pulseNumAdvance.setText("81 ");
+                RRNumAdvance.setText("10 ");
+                POANumAdvance.setText("97 ");
+                tempNumAdvance.setText("97.5 ");
+                textInfo.setText("Tripod position/get patient in position they feel okay breathing - min 1\nRapid Sequence Intubation - min 8\nSupplemental heat - min 13");
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
                 seriesRR = new LineGraphSeries<DataPoint>();
@@ -327,208 +326,6 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
     }
 
     private void patienOneRandomGraphs() {
-
-        //Just resets the graphs so view is from 1 to 10 on x axis
-        graphBBAdvance.getViewport().setMinX(1);
-        graphBBAdvance.getViewport().setMaxX(10);
-        graphPulseAdvance.getViewport().setMinX(1);
-        graphPulseAdvance.getViewport().setMaxX(10);
-        graphRRAdvance.getViewport().setMinX(1);
-        graphRRAdvance.getViewport().setMaxX(10);
-        graphPAOAdvance.getViewport().setMinX(1);
-        graphPAOAdvance.getViewport().setMaxX(10);
-        graphTempAdvance.getViewport().setMinX(1);
-        graphTempAdvance.getViewport().setMaxX(10);
-
-        seriesBP.appendData(new DataPoint(1, 141), true, 30);
-        seriesBP.appendData(new DataPoint(2, 144), true, 30);
-        seriesBP.appendData(new DataPoint(3, 140), true, 30);
-        seriesBP.appendData(new DataPoint(4, 139), true, 30);
-        seriesBP.appendData(new DataPoint(5, 135), true, 30);
-        seriesBP.appendData(new DataPoint(6, 133), true, 30);
-        seriesBP.appendData(new DataPoint(7, 135), true, 30);
-        seriesBP.appendData(new DataPoint(8, 132), true, 30);
-        seriesBP.appendData(new DataPoint(9, 125), true, 30);
-        seriesBP.appendData(new DataPoint(10, 120), true, 30);
-        seriesBP.appendData(new DataPoint(11, 121), true, 30);
-        seriesBP.appendData(new DataPoint(12, 124), true, 30);
-        seriesBP.appendData(new DataPoint(13, 122), true, 30);
-        seriesBP.appendData(new DataPoint(14, 127), true, 30);
-        seriesBP.appendData(new DataPoint(15, 124), true, 30);
-        seriesBP.appendData(new DataPoint(15.1, 124), true, 30);
-
-        seriesPulse.appendData(new DataPoint(1, 119), true, 30);
-        seriesPulse.appendData(new DataPoint(2, 117), true, 30);
-        seriesPulse.appendData(new DataPoint(3, 116), true, 30);
-        seriesPulse.appendData(new DataPoint(4, 117), true, 30);
-        seriesPulse.appendData(new DataPoint(5, 119), true, 30);
-        seriesPulse.appendData(new DataPoint(6, 114), true, 30);
-        seriesPulse.appendData(new DataPoint(7, 110), true, 30);
-        seriesPulse.appendData(new DataPoint(8, 106), true, 30);
-        seriesPulse.appendData(new DataPoint(9, 104), true, 30);
-        seriesPulse.appendData(new DataPoint(10, 100), true, 30);
-        seriesPulse.appendData(new DataPoint(11, 98), true, 30);
-        seriesPulse.appendData(new DataPoint(12, 96), true, 30);
-        seriesPulse.appendData(new DataPoint(13, 99), true, 30);
-        seriesPulse.appendData(new DataPoint(14, 94), true, 30);
-        seriesPulse.appendData(new DataPoint(15, 98), false, 30);
-        seriesPulse.appendData(new DataPoint(15.1, 98), false, 30);
-
-        seriesRR.appendData(new DataPoint(1, 23), true, 30);
-        seriesRR.appendData(new DataPoint(2, 24), true, 30);
-        seriesRR.appendData(new DataPoint(3, 25), true, 30);
-        seriesRR.appendData(new DataPoint(4, 24), true, 30);
-        seriesRR.appendData(new DataPoint(5, 23), true, 30);
-        seriesRR.appendData(new DataPoint(6, 21), true, 30);
-        seriesRR.appendData(new DataPoint(7, 19), true, 30);
-        seriesRR.appendData(new DataPoint(8, 18), true, 30);
-        seriesRR.appendData(new DataPoint(9, 17), true, 30);
-        seriesRR.appendData(new DataPoint(10, 17), true, 30);
-        seriesRR.appendData(new DataPoint(11, 15), true, 30);
-        seriesRR.appendData(new DataPoint(12, 16), true, 30);
-        seriesRR.appendData(new DataPoint(13, 17), true, 30);
-        seriesRR.appendData(new DataPoint(14, 18), true, 30);
-        seriesRR.appendData(new DataPoint(15, 14), false, 30);
-        seriesRR.appendData(new DataPoint(15.1, 14), false, 30);
-
-        seriesPAO.appendData(new DataPoint(1, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(2, 95), true, 30);
-        seriesPAO.appendData(new DataPoint(3, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(4, 98), true, 30);
-        seriesPAO.appendData(new DataPoint(5, 98), true, 30);
-        seriesPAO.appendData(new DataPoint(6, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(7, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(8, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(9, 95), true, 30);
-        seriesPAO.appendData(new DataPoint(10, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(11, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(12, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(13, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(14, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(15, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(15.1, 97), true, 30);
-
-        seriesTemp.appendData(new DataPoint(1, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(2, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(3, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(4, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(5, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(6, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(7, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(8, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(9, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(10, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(11, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(12, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(13, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(14, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(15, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(15.1, 98.6), true, 30);
-
-
-    }
-
-    private void patienTwoRandomGraphs() {
-
-        //Just resets the graphs so view is from 1 to 10 on x axis
-        graphBBAdvance.getViewport().setMinX(1);
-        graphBBAdvance.getViewport().setMaxX(10);
-        graphPulseAdvance.getViewport().setMinX(1);
-        graphPulseAdvance.getViewport().setMaxX(10);
-        graphRRAdvance.getViewport().setMinX(1);
-        graphRRAdvance.getViewport().setMaxX(10);
-        graphPAOAdvance.getViewport().setMinX(1);
-        graphPAOAdvance.getViewport().setMaxX(10);
-        graphTempAdvance.getViewport().setMinX(1);
-        graphTempAdvance.getViewport().setMaxX(10);
-
-        seriesBP.appendData(new DataPoint(1, 140), true, 30);
-        seriesBP.appendData(new DataPoint(2, 140), true, 30);
-        seriesBP.appendData(new DataPoint(3, 144), true, 30);
-        seriesBP.appendData(new DataPoint(4, 139), true, 30);
-        seriesBP.appendData(new DataPoint(5, 139), true, 30);
-        seriesBP.appendData(new DataPoint(6, 139), true, 30);
-        seriesBP.appendData(new DataPoint(7, 135), true, 30);
-        seriesBP.appendData(new DataPoint(8, 132), true, 30);
-        seriesBP.appendData(new DataPoint(9, 124), true, 30);
-        seriesBP.appendData(new DataPoint(10, 120), true, 30);
-        seriesBP.appendData(new DataPoint(11, 141), true, 30);
-        seriesBP.appendData(new DataPoint(12, 142), true, 30);
-        seriesBP.appendData(new DataPoint(13, 140), true, 30);
-        seriesBP.appendData(new DataPoint(14, 140), true, 30);
-        seriesBP.appendData(new DataPoint(15, 142), true, 30);
-        seriesBP.appendData(new DataPoint(15.1, 142), true, 30);
-
-        seriesPulse.appendData(new DataPoint(1, 124), true, 30);
-        seriesPulse.appendData(new DataPoint(2, 121), true, 30);
-        seriesPulse.appendData(new DataPoint(3, 119), true, 30);
-        seriesPulse.appendData(new DataPoint(4, 120), true, 30);
-        seriesPulse.appendData(new DataPoint(5, 123), true, 30);
-        seriesPulse.appendData(new DataPoint(6, 124), true, 30);
-        seriesPulse.appendData(new DataPoint(7, 125), true, 30);
-        seriesPulse.appendData(new DataPoint(8, 124), true, 30);
-        seriesPulse.appendData(new DataPoint(9, 126), true, 30);
-        seriesPulse.appendData(new DataPoint(10, 123), true, 30);
-        seriesPulse.appendData(new DataPoint(11, 120), true, 30);
-        seriesPulse.appendData(new DataPoint(12, 117), true, 30);
-        seriesPulse.appendData(new DataPoint(13, 113), true, 30);
-        seriesPulse.appendData(new DataPoint(14, 100), true, 30);
-        seriesPulse.appendData(new DataPoint(15, 98), true, 30);
-        seriesPulse.appendData(new DataPoint(15.1, 98), true, 30);
-
-        seriesRR.appendData(new DataPoint(1, 24), true, 30);
-        seriesRR.appendData(new DataPoint(2, 23), true, 30);
-        seriesRR.appendData(new DataPoint(3, 20), true, 30);
-        seriesRR.appendData(new DataPoint(4, 22), true, 30);
-        seriesRR.appendData(new DataPoint(5, 23), true, 30);
-        seriesRR.appendData(new DataPoint(6, 21), true, 30);
-        seriesRR.appendData(new DataPoint(7, 19), true, 30);
-        seriesRR.appendData(new DataPoint(8, 15), true, 30);
-        seriesRR.appendData(new DataPoint(9, 15), true, 30);
-        seriesRR.appendData(new DataPoint(10, 17), true, 30);
-        seriesRR.appendData(new DataPoint(11, 18), true, 30);
-        seriesRR.appendData(new DataPoint(12, 17), true, 30);
-        seriesRR.appendData(new DataPoint(13, 19), true, 30);
-        seriesRR.appendData(new DataPoint(14, 15), true, 30);
-        seriesRR.appendData(new DataPoint(15, 16), true, 30);
-        seriesRR.appendData(new DataPoint(15.1, 16), true, 30);
-
-        seriesPAO.appendData(new DataPoint(1, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(2, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(3, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(4, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(5, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(6, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(7, 98), true, 30);
-        seriesPAO.appendData(new DataPoint(8, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(9, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(10, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(11, 95), true, 30);
-        seriesPAO.appendData(new DataPoint(12, 98), true, 30);
-        seriesPAO.appendData(new DataPoint(13, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(14, 97), true, 30);
-        seriesPAO.appendData(new DataPoint(15, 96), true, 30);
-        seriesPAO.appendData(new DataPoint(15.1, 96), true, 30);
-
-        seriesTemp.appendData(new DataPoint(1, 98.5), true, 30);
-        seriesTemp.appendData(new DataPoint(2, 98.4), true, 30);
-        seriesTemp.appendData(new DataPoint(3, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(4, 98.5), true, 30);
-        seriesTemp.appendData(new DataPoint(5, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(6, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(7, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(8, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(9, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(10, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(11, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(12, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(13, 98.7), true, 30);
-        seriesTemp.appendData(new DataPoint(14, 98.6), true, 30);
-        seriesTemp.appendData(new DataPoint(15, 98.8), true, 30);
-        seriesTemp.appendData(new DataPoint(15.1, 98.8), true, 30);
-    }
-
-    private void patienThreeRandomGraphs() {
 
         //Just resets the graphs so view is from 1 to 10 on x axis
         graphBBAdvance.getViewport().setMinX(1);
@@ -626,6 +423,208 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         seriesTemp.appendData(new DataPoint(14, 98.6), true, 30);
         seriesTemp.appendData(new DataPoint(15, 98.5), true, 30);
         seriesTemp.appendData(new DataPoint(15.1, 98.5), true, 30);
+
+
+    }
+
+    private void patienTwoRandomGraphs() {
+
+        //Just resets the graphs so view is from 1 to 10 on x axis
+        graphBBAdvance.getViewport().setMinX(1);
+        graphBBAdvance.getViewport().setMaxX(10);
+        graphPulseAdvance.getViewport().setMinX(1);
+        graphPulseAdvance.getViewport().setMaxX(10);
+        graphRRAdvance.getViewport().setMinX(1);
+        graphRRAdvance.getViewport().setMaxX(10);
+        graphPAOAdvance.getViewport().setMinX(1);
+        graphPAOAdvance.getViewport().setMaxX(10);
+        graphTempAdvance.getViewport().setMinX(1);
+        graphTempAdvance.getViewport().setMaxX(10);
+
+        seriesBP.appendData(new DataPoint(1, 120), true, 30);
+        seriesBP.appendData(new DataPoint(2, 136), true, 30);
+        seriesBP.appendData(new DataPoint(3, 137), true, 30);
+        seriesBP.appendData(new DataPoint(4, 140), true, 30);
+        seriesBP.appendData(new DataPoint(5, 139), true, 30);
+        seriesBP.appendData(new DataPoint(6, 134), true, 30);
+        seriesBP.appendData(new DataPoint(7, 135), true, 30);
+        seriesBP.appendData(new DataPoint(8, 132), true, 30);
+        seriesBP.appendData(new DataPoint(9, 130), true, 30);
+        seriesBP.appendData(new DataPoint(10, 136), true, 30);
+        seriesBP.appendData(new DataPoint(11, 137), true, 30);
+        seriesBP.appendData(new DataPoint(12, 134), true, 30);
+        seriesBP.appendData(new DataPoint(13, 132), true, 30);
+        seriesBP.appendData(new DataPoint(14, 138), true, 30);
+        seriesBP.appendData(new DataPoint(15, 133), true, 30);
+        seriesBP.appendData(new DataPoint(15.1, 133), true, 30);
+
+        seriesPulse.appendData(new DataPoint(1, 123), true, 30);
+        seriesPulse.appendData(new DataPoint(2, 121), true, 30);
+        seriesPulse.appendData(new DataPoint(3, 119), true, 30);
+        seriesPulse.appendData(new DataPoint(4, 115), true, 30);
+        seriesPulse.appendData(new DataPoint(5, 125), true, 30);
+        seriesPulse.appendData(new DataPoint(6, 122), true, 30);
+        seriesPulse.appendData(new DataPoint(7, 117), true, 30);
+        seriesPulse.appendData(new DataPoint(8, 119), true, 30);
+        seriesPulse.appendData(new DataPoint(9, 126), true, 30);
+        seriesPulse.appendData(new DataPoint(10, 122), true, 30);
+        seriesPulse.appendData(new DataPoint(11, 121), true, 30);
+        seriesPulse.appendData(new DataPoint(12, 120), true, 30);
+        seriesPulse.appendData(new DataPoint(13, 114), true, 30);
+        seriesPulse.appendData(new DataPoint(14, 118), true, 30);
+        seriesPulse.appendData(new DataPoint(15, 117), true, 30);
+        seriesPulse.appendData(new DataPoint(15.1, 117), true, 30);
+
+        seriesRR.appendData(new DataPoint(1, 24), true, 30);
+        seriesRR.appendData(new DataPoint(2, 23), true, 30);
+        seriesRR.appendData(new DataPoint(3, 25), true, 30);
+        seriesRR.appendData(new DataPoint(4, 21), true, 30);
+        seriesRR.appendData(new DataPoint(5, 22), true, 30);
+        seriesRR.appendData(new DataPoint(6, 20), true, 30);
+        seriesRR.appendData(new DataPoint(7, 18), true, 30);
+        seriesRR.appendData(new DataPoint(8, 16), true, 30);
+        seriesRR.appendData(new DataPoint(9, 17), true, 30);
+        seriesRR.appendData(new DataPoint(10, 23), true, 30);
+        seriesRR.appendData(new DataPoint(11, 24), true, 30);
+        seriesRR.appendData(new DataPoint(12, 22), true, 30);
+        seriesRR.appendData(new DataPoint(13, 23), true, 30);
+        seriesRR.appendData(new DataPoint(14, 18), true, 30);
+        seriesRR.appendData(new DataPoint(15, 14), true, 30);
+        seriesRR.appendData(new DataPoint(15.1, 14), true, 30);
+
+        seriesPAO.appendData(new DataPoint(1, 92), true, 30);
+        seriesPAO.appendData(new DataPoint(2, 90), true, 30);
+        seriesPAO.appendData(new DataPoint(3, 89), true, 30);
+        seriesPAO.appendData(new DataPoint(4, 93), true, 30);
+        seriesPAO.appendData(new DataPoint(5, 91), true, 30);
+        seriesPAO.appendData(new DataPoint(6, 91), true, 30);
+        seriesPAO.appendData(new DataPoint(7, 96), true, 30);
+        seriesPAO.appendData(new DataPoint(8, 97), true, 30);
+        seriesPAO.appendData(new DataPoint(9, 96), true, 30);
+        seriesPAO.appendData(new DataPoint(10, 94), true, 30);
+        seriesPAO.appendData(new DataPoint(11, 95), true, 30);
+        seriesPAO.appendData(new DataPoint(12, 97), true, 30);
+        seriesPAO.appendData(new DataPoint(13, 97), true, 30);
+        seriesPAO.appendData(new DataPoint(14, 96), true, 30);
+        seriesPAO.appendData(new DataPoint(15, 96), true, 30);
+        seriesPAO.appendData(new DataPoint(15.1, 96), true, 30);
+
+        seriesTemp.appendData(new DataPoint(1, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(2, 98.7), true, 30);
+        seriesTemp.appendData(new DataPoint(3, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(4, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(5, 98.5), true, 30);
+        seriesTemp.appendData(new DataPoint(6, 98.4), true, 30);
+        seriesTemp.appendData(new DataPoint(7, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(8, 98.5), true, 30);
+        seriesTemp.appendData(new DataPoint(9, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(10, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(11, 98.5), true, 30);
+        seriesTemp.appendData(new DataPoint(12, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(13, 98.5), true, 30);
+        seriesTemp.appendData(new DataPoint(14, 98.7), true, 30);
+        seriesTemp.appendData(new DataPoint(15, 98.6), true, 30);
+        seriesTemp.appendData(new DataPoint(15.1, 98.6), true, 30);
+    }
+
+    private void patienThreeRandomGraphs() {
+
+        //Just resets the graphs so view is from 1 to 10 on x axis
+        graphBBAdvance.getViewport().setMinX(1);
+        graphBBAdvance.getViewport().setMaxX(10);
+        graphPulseAdvance.getViewport().setMinX(1);
+        graphPulseAdvance.getViewport().setMaxX(10);
+        graphRRAdvance.getViewport().setMinX(1);
+        graphRRAdvance.getViewport().setMaxX(10);
+        graphPAOAdvance.getViewport().setMinX(1);
+        graphPAOAdvance.getViewport().setMaxX(10);
+        graphTempAdvance.getViewport().setMinX(1);
+        graphTempAdvance.getViewport().setMaxX(10);
+
+        seriesBP.appendData(new DataPoint(1, 120), true, 30);
+        seriesBP.appendData(new DataPoint(2, 123), true, 30);
+        seriesBP.appendData(new DataPoint(3, 125), true, 30);
+        seriesBP.appendData(new DataPoint(4, 120), true, 30);
+        seriesBP.appendData(new DataPoint(5, 119), true, 30);
+        seriesBP.appendData(new DataPoint(6, 118), true, 30);
+        seriesBP.appendData(new DataPoint(7, 124), true, 30);
+        seriesBP.appendData(new DataPoint(8, 113), true, 30);
+        seriesBP.appendData(new DataPoint(9, 99), true, 30);
+        seriesBP.appendData(new DataPoint(10, 90), true, 30);
+        seriesBP.appendData(new DataPoint(11, 93), true, 30);
+        seriesBP.appendData(new DataPoint(12, 89), true, 30);
+        seriesBP.appendData(new DataPoint(13, 98), true, 30);
+        seriesBP.appendData(new DataPoint(14, 103), true, 30);
+        seriesBP.appendData(new DataPoint(15, 110), true, 30);
+        seriesBP.appendData(new DataPoint(15.1, 110), true, 30);
+
+        seriesPulse.appendData(new DataPoint(1, 100), true, 30);
+        seriesPulse.appendData(new DataPoint(2, 96), true, 30);
+        seriesPulse.appendData(new DataPoint(3, 98), true, 30);
+        seriesPulse.appendData(new DataPoint(4, 117), true, 30);
+        seriesPulse.appendData(new DataPoint(5, 125), true, 30);
+        seriesPulse.appendData(new DataPoint(6, 123), true, 30);
+        seriesPulse.appendData(new DataPoint(7, 122), true, 30);
+        seriesPulse.appendData(new DataPoint(8, 111), true, 30);
+        seriesPulse.appendData(new DataPoint(9, 96), true, 30);
+        seriesPulse.appendData(new DataPoint(10, 84), true, 30);
+        seriesPulse.appendData(new DataPoint(11, 60), true, 30);
+        seriesPulse.appendData(new DataPoint(12, 67), true, 30);
+        seriesPulse.appendData(new DataPoint(13, 70), true, 30);
+        seriesPulse.appendData(new DataPoint(14, 84), true, 30);
+        seriesPulse.appendData(new DataPoint(15, 81), true, 30);
+        seriesPulse.appendData(new DataPoint(15.1, 81), true, 30);
+
+        seriesRR.appendData(new DataPoint(1, 22), true, 30);
+        seriesRR.appendData(new DataPoint(2, 23), true, 30);
+        seriesRR.appendData(new DataPoint(3, 25), true, 30);
+        seriesRR.appendData(new DataPoint(4, 27), true, 30);
+        seriesRR.appendData(new DataPoint(5, 28), true, 30);
+        seriesRR.appendData(new DataPoint(6, 28), true, 30);
+        seriesRR.appendData(new DataPoint(7, 27), true, 30);
+        seriesRR.appendData(new DataPoint(8, 26), true, 30);
+        seriesRR.appendData(new DataPoint(9, 27), true, 30);
+        seriesRR.appendData(new DataPoint(10, 24), true, 30);
+        seriesRR.appendData(new DataPoint(11, 22), true, 30);
+        seriesRR.appendData(new DataPoint(12, 13), true, 30);
+        seriesRR.appendData(new DataPoint(13, 14), true, 30);
+        seriesRR.appendData(new DataPoint(14, 11), true, 30);
+        seriesRR.appendData(new DataPoint(15, 10), true, 30);
+        seriesRR.appendData(new DataPoint(15.1, 10), true, 30);
+
+        seriesPAO.appendData(new DataPoint(1, 93), true, 30);
+        seriesPAO.appendData(new DataPoint(2, 91), true, 30);
+        seriesPAO.appendData(new DataPoint(3, 92), true, 30);
+        seriesPAO.appendData(new DataPoint(4, 93), true, 30);
+        seriesPAO.appendData(new DataPoint(5, 92), true, 30);
+        seriesPAO.appendData(new DataPoint(6, 84), true, 30);
+        seriesPAO.appendData(new DataPoint(7, 80), true, 30);
+        seriesPAO.appendData(new DataPoint(8, 77), true, 30);
+        seriesPAO.appendData(new DataPoint(9, 71), true, 30);
+        seriesPAO.appendData(new DataPoint(10, 86), true, 30);
+        seriesPAO.appendData(new DataPoint(11, 93), true, 30);
+        seriesPAO.appendData(new DataPoint(12, 96), true, 30);
+        seriesPAO.appendData(new DataPoint(13, 97), true, 30);
+        seriesPAO.appendData(new DataPoint(14, 97), true, 30);
+        seriesPAO.appendData(new DataPoint(15, 97), true, 30);
+        seriesPAO.appendData(new DataPoint(15.1, 97), true, 30);
+
+        seriesTemp.appendData(new DataPoint(1, 98.5), true, 30);
+        seriesTemp.appendData(new DataPoint(2, 98.5), true, 30);
+        seriesTemp.appendData(new DataPoint(3, 98.2), true, 30);
+        seriesTemp.appendData(new DataPoint(4, 98.1), true, 30);
+        seriesTemp.appendData(new DataPoint(5, 98.0), true, 30);
+        seriesTemp.appendData(new DataPoint(6, 98.0), true, 30);
+        seriesTemp.appendData(new DataPoint(7, 97.7), true, 30);
+        seriesTemp.appendData(new DataPoint(8, 97.3), true, 30);
+        seriesTemp.appendData(new DataPoint(9, 97.1), true, 30);
+        seriesTemp.appendData(new DataPoint(10, 97.1), true, 30);
+        seriesTemp.appendData(new DataPoint(11, 96.6), true, 30);
+        seriesTemp.appendData(new DataPoint(12, 96.0), true, 30);
+        seriesTemp.appendData(new DataPoint(13, 96.2), true, 30);
+        seriesTemp.appendData(new DataPoint(14, 96.8), true, 30);
+        seriesTemp.appendData(new DataPoint(15, 97.5), true, 30);
+        seriesTemp.appendData(new DataPoint(15.1, 97.5), true, 30);
     }
 
 }

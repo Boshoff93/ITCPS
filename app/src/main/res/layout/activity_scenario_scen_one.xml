@@ -30,7 +30,8 @@
         android:textSize="24sp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="You’ve received further information on the accident and statuses of your patients via the EMT’s Patient 1 is the driver of the vehicle and is a 35 y/o male and patient 2, the passenger, is a 29 y/o female. Both patients suffered head injuries from rear ending another car. Patient 1 has a broken arm, seems to be in a panicked state, and is complaining of a severe headache. Patient 2 has bruises and discoloration on her temporal area and she had a two transient loss of consciousness (both lasting about a minute) during the EMT ride.  Vital data from the last 5 minutes. "
+        android:text="You’ve received further information on the accident and statuses of your patient via the EMTs. The patient was the driver of the vehicle and is a 35 y/o male. The patient suffered a head injury after rear ending another car and a broken forearm. There are bruises and discoloration on his temporal area and he had a two minute loss of consciousness during transport. Vital signs over the last 5 minutes have been arriving in addition to a record of procedures performed by EMTs.
+"
         android:lineSpacingExtra="4sp"
         android:padding="15dp"
         android:layout_alignParentTop="true"

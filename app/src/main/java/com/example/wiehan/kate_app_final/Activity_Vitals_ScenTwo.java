@@ -120,7 +120,7 @@ public class Activity_Vitals_ScenTwo extends AppCompatActivity {
         RRNum.setText("23 ");
         PAONum.setText("96 ");
         tempNum.setText("98.5 ");
-        summaryText.setText("\nSummary: Kyle, male, 75 y/o, found unconscious, cuts and bruises on head.");
+        summaryText.setText("\nPatient: 75 y/o male, found unconscious, fractured foot, neck pains, lacs & bruises on forehead.");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
@@ -156,7 +156,7 @@ public class Activity_Vitals_ScenTwo extends AppCompatActivity {
                 RRNum.setText("23 ");
                 PAONum.setText("96 ");
                 tempNum.setText("98.5 ");
-                summaryText.setText("\nSummary: Kyle, male, 75 y/o, found unconscious, cuts and bruises on head.");
+                summaryText.setText("\nPatient: 75 y/o male, found unconscious, fractured foot, neck pains, lacs & bruises on forehead.");
 
                 patientOne.setSelected(true);
 

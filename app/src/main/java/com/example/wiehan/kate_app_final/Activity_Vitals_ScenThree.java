@@ -49,7 +49,7 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
         graphBP.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphBP.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphBP.getViewport().setYAxisBoundsManual(true);
-        graphBP.getViewport().setMinY(130);
+        graphBP.getViewport().setMinY(80);
         graphBP.getViewport().setMaxY(160);
         graphBP.getViewport().setMaxX(60);
         graphBP.getViewport().setMinX(0);
@@ -60,8 +60,8 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
         graphPulse.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphPulse.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphPulse.getViewport().setYAxisBoundsManual(true);
-        graphPulse.getViewport().setMinY(100);
-        graphPulse.getViewport().setMaxY(140);
+        graphPulse.getViewport().setMinY(45);
+        graphPulse.getViewport().setMaxY(135);
         graphPulse.getViewport().setMinX(0);
         graphPulse.getViewport().setMaxX(60);
 
@@ -71,8 +71,8 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
         graphRR.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphRR.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphRR.getViewport().setYAxisBoundsManual(true);
-        graphRR.getViewport().setMinY(18);
-        graphRR.getViewport().setMaxY(30);
+        graphRR.getViewport().setMinY(6);
+        graphRR.getViewport().setMaxY(26);
         graphRR.getViewport().setMinX(0);
         graphRR.getViewport().setMaxX(60);
 
@@ -82,7 +82,7 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
         graphPAO.getGridLabelRenderer().setHorizontalLabelsVisible(true);
         graphPAO.getGridLabelRenderer().setVerticalLabelsVisible(true);
         graphPAO.getViewport().setYAxisBoundsManual(true);
-        graphPAO.getViewport().setMinY(92);
+        graphPAO.getViewport().setMinY(88);
         graphPAO.getViewport().setMaxY(100);
         graphPAO.getViewport().setMinX(0);
         graphPAO.getViewport().setMaxX(60);
@@ -117,12 +117,12 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
         graphPAO.removeAllSeries();
         graphTemp.removeAllSeries();
 
-        BPNum.setText("141/91 ");
+        BPNum.setText("135/85 ");
         pulseNum.setText("119 ");
         RRNum.setText("23 ");
-        PAONum.setText("96");
-        tempNum.setText("98.7 ");
-        summaryText.setText("\nSummary: Jack, male, 18 y/o, 2nd & 3rd degree burns- arms, torso.");
+        PAONum.setText("97");
+        tempNum.setText("98.5 ");
+        summaryText.setText("\nPatient 1: 18 y/o male, 2nd & 3rd degree burns - arms, torso");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
@@ -165,7 +165,7 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
                 RRNum.setText("23 ");
                 PAONum.setText("96 ");
                 tempNum.setText("98.7 ");
-                summaryText.setText("\nSummary: Jack, male, 18 y/o, 2nd & 3rd degree burns- arms, torso.");
+                summaryText.setText("\nPatient 1: 18 y/o male, 2nd & 3rd degree burns - arms, torso");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -198,12 +198,12 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
                 graphPAO.removeAllSeries();
                 graphTemp.removeAllSeries();
 
-                BPNum.setText("140/90 ");
-                pulseNum.setText("122 ");
-                RRNum.setText("23 ");
+                BPNum.setText("145/95 ");
+                pulseNum.setText("120 ");
+                RRNum.setText("22 ");
                 PAONum.setText("96 ");
-                tempNum.setText("98.5 ");
-                summaryText.setText("\nSummary: Sammantha, female, 32 y/o, 2nd degree burns on back, broken arm.");
+                tempNum.setText("98.6 ");
+                summaryText.setText("\n22 y/o female, glass in eye, cuts on face - active bleeding");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -237,12 +237,12 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
                 graphPAO.removeAllSeries();
                 graphTemp.removeAllSeries();
 
-                BPNum.setText("145/95 ");
-                pulseNum.setText("120 ");
-                RRNum.setText("22 ");
-                PAONum.setText("96 ");
-                tempNum.setText("98.6 ");
-                summaryText.setText("\nSummary: Sofia, female, 22 y/o, glass in eye, cuts on face – bleeding.");
+                BPNum.setText("95/64 ");
+                pulseNum.setText("52 ");
+                RRNum.setText("14 ");
+                PAONum.setText("91 ");
+                tempNum.setText("98.7 ");
+                summaryText.setText("\nPatient 3: 19 y/o male, smoke inhalation - LOC");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -307,43 +307,6 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
     }
 
     private void patientTwoRandomGraphs() {
-        seriesBP.appendData(new DataPoint(10, 145), true, 6);
-        seriesBP.appendData(new DataPoint(20, 146), true, 6);
-        seriesBP.appendData(new DataPoint(30, 141), true, 6);
-        seriesBP.appendData(new DataPoint(40, 144), true, 6);
-        seriesBP.appendData(new DataPoint(50, 142), true, 6);
-        seriesBP.appendData(new DataPoint(60, 140), true, 6);
-
-        seriesPulse.appendData(new DataPoint(10, 120), true, 6);
-        seriesPulse.appendData(new DataPoint(20, 124), true, 6);
-        seriesPulse.appendData(new DataPoint(30, 121), true, 6);
-        seriesPulse.appendData(new DataPoint(40, 126), true, 6);
-        seriesPulse.appendData(new DataPoint(50, 123), true, 6);
-        seriesPulse.appendData(new DataPoint(60, 122), true, 6);
-
-        seriesRR.appendData(new DataPoint(10, 21), true, 6);
-        seriesRR.appendData(new DataPoint(20, 20), true, 6);
-        seriesRR.appendData(new DataPoint(30, 23), true, 6);
-        seriesRR.appendData(new DataPoint(40, 24), true, 6);
-        seriesRR.appendData(new DataPoint(50, 24), true, 6);
-        seriesRR.appendData(new DataPoint(60, 23), true, 6);
-
-        seriesPAO.appendData(new DataPoint(10, 98), true, 6);
-        seriesPAO.appendData(new DataPoint(20, 97), true, 6);
-        seriesPAO.appendData(new DataPoint(30, 96), true, 6);
-        seriesPAO.appendData(new DataPoint(40, 97), true, 6);
-        seriesPAO.appendData(new DataPoint(50, 96), true, 6);
-        seriesPAO.appendData(new DataPoint(60, 96), true, 6);
-
-        seriesTemp.appendData(new DataPoint(10, 98.7), true, 6);
-        seriesTemp.appendData(new DataPoint(20, 98.7), true, 6);
-        seriesTemp.appendData(new DataPoint(30, 98.5), true, 6);
-        seriesTemp.appendData(new DataPoint(40, 98.6), true, 6);
-        seriesTemp.appendData(new DataPoint(50, 98.6), true, 6);
-        seriesTemp.appendData(new DataPoint(60, 98.5), true, 6);
-    }
-
-    private void patientThreeRandomGraphs() {
         seriesBP.appendData(new DataPoint(10, 149), true, 6);
         seriesBP.appendData(new DataPoint(20, 148), true, 6);
         seriesBP.appendData(new DataPoint(30, 147), true, 6);
@@ -378,6 +341,43 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
         seriesTemp.appendData(new DataPoint(40, 98.6), true, 6);
         seriesTemp.appendData(new DataPoint(50, 98.5), true, 6);
         seriesTemp.appendData(new DataPoint(60, 98.6), true, 6);
+    }
+
+    private void patientThreeRandomGraphs() {
+        seriesBP.appendData(new DataPoint(10, 90), true, 6);
+        seriesBP.appendData(new DataPoint(20, 88), true, 6);
+        seriesBP.appendData(new DataPoint(30, 86), true, 6);
+        seriesBP.appendData(new DataPoint(40, 91), true, 6);
+        seriesBP.appendData(new DataPoint(50, 93), true, 6);
+        seriesBP.appendData(new DataPoint(60, 95), true, 6);
+
+        seriesPulse.appendData(new DataPoint(10, 50), true, 6);
+        seriesPulse.appendData(new DataPoint(20, 51), true, 6);
+        seriesPulse.appendData(new DataPoint(30, 52), true, 6);
+        seriesPulse.appendData(new DataPoint(40, 55), true, 6);
+        seriesPulse.appendData(new DataPoint(50, 54), true, 6);
+        seriesPulse.appendData(new DataPoint(60, 52), true, 6);
+
+        seriesRR.appendData(new DataPoint(10, 8), true, 6);
+        seriesRR.appendData(new DataPoint(20, 11), true, 6);
+        seriesRR.appendData(new DataPoint(30, 14), true, 6);
+        seriesRR.appendData(new DataPoint(40, 13), true, 6);
+        seriesRR.appendData(new DataPoint(50, 12), true, 6);
+        seriesRR.appendData(new DataPoint(60, 14), true, 6);
+
+        seriesPAO.appendData(new DataPoint(10, 90), true, 6);
+        seriesPAO.appendData(new DataPoint(20, 89), true, 6);
+        seriesPAO.appendData(new DataPoint(30, 92), true, 6);
+        seriesPAO.appendData(new DataPoint(40, 93), true, 6);
+        seriesPAO.appendData(new DataPoint(50, 92), true, 6);
+        seriesPAO.appendData(new DataPoint(60, 91), true, 6);
+
+        seriesTemp.appendData(new DataPoint(10, 98.6), true, 6);
+        seriesTemp.appendData(new DataPoint(20, 98.5), true, 6);
+        seriesTemp.appendData(new DataPoint(30, 98.7), true, 6);
+        seriesTemp.appendData(new DataPoint(40, 98.6), true, 6);
+        seriesTemp.appendData(new DataPoint(50, 98.6), true, 6);
+        seriesTemp.appendData(new DataPoint(60, 98.7), true, 6);
     }
 
 

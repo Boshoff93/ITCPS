@@ -137,13 +137,13 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
         graphPAOAdvance.removeAllSeries();
 
         textPatientNo.setText("Patient 1:");
-        textPatientInfo.setText("John, Male, 35 y/o, broken arm, head pains, shock");
+        textPatientInfo.setText("35 y/o Male, broken forearm, head ache, bruise temporal area, 2 min LOC");
         BPNumAdvance.setText("120/82 ");
         pulseNumAdvance.setText("102 ");
         RRNumAdvance.setText("17 ");
         PAONumAdvance.setText("98 ");
         tempNumAdvance.setText("98.6 ");
-        textInfo.setText("Basic Neuro Assessment – min 3\nIce broken arm- min 4\nO2- min 5\nAssess arm/Splint arm –min 6");
+        textInfo.setText("Basic Neuro Assessment - min 3\nIce broken arm - min 4\nO2 - min 5\nAssess arm/Splint arm - min 6 \nGlascow Coma Score - min 8\n");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
@@ -178,13 +178,13 @@ public class Advance_Display_ScenOne extends AppCompatActivity {
                 graphTempAdvance.removeAllSeries();
 
                 textPatientNo.setText("Patient 1:");
-                textPatientInfo.setText("John, Male, 35 y/o, broken arm, head pains, shock");
+                textPatientInfo.setText("35 y/o Male, broken forearm, head ache, bruise temporal area, 2 min LOC");
                 BPNumAdvance.setText("120/82 ");
                 pulseNumAdvance.setText("102 ");
                 RRNumAdvance.setText("17 ");
                 PAONumAdvance.setText("98 ");
                 tempNumAdvance.setText("98.6 ");
-                textInfo.setText("Basic Neuro Assessment – min 3\nIce broken arm- min 4\nO2- min 5\nAssess arm/Splint arm –min 6");
+                textInfo.setText("Basic Neuro Assessment - min 3\nIce broken arm - min 4\nO2 - min 5\nAssess arm/Splint arm - min 6 \nGlascow Coma Score - min 8\n");
 
                 patientOne.setSelected(true);
 

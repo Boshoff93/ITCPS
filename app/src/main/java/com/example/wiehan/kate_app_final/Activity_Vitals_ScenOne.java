@@ -119,7 +119,7 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
         RRNum.setText("25 ");
         PAONum.setText("97 ");
         tempNum.setText("98.6 ");
-        summaryText.setText("\nSummary: John, Male, 35 y/o, broken arm, head pains, shock");
+        summaryText.setText("\nPatient:  35 y/o Male, broken forearm, head ache, bruise temporal area, 2 min LOC");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
@@ -154,7 +154,7 @@ public class Activity_Vitals_ScenOne extends AppCompatActivity {
                 RRNum.setText("25 ");
                 PAONum.setText("97 ");
                 tempNum.setText("98.6 ");
-                summaryText.setText("\nSummary: John, Male, 35 y/o, broken arm, head pains, shock");
+                summaryText.setText("\nPatient: 35 y/o Male, broken forearm, head ache, bruise temporal area, 2 min LOC");
 
                 patientOne.setSelected(true);
 

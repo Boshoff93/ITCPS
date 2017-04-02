@@ -141,13 +141,13 @@ public class Advance_Display_ScenTwo extends AppCompatActivity {
         graphTempAdvance.removeAllSeries();
 
         textPatientNo.setText("Patient 1:");
-        textPatientInfo.setText("Kyle, male, 75 y/o, found unconscious, cuts and bruises on head");
+        textPatientInfo.setText("75 y/o male, found unconscious, fractured foot, neck pains, lacs & bruises on forehead");
         BPNumAdvance.setText("136/85 ");
         pulseNumAdvance.setText("122 ");
         RRNumAdvance.setText("14 ");
         POANumAdvance.setText("98 ");
         tempNumAdvance.setText("98.6 ");
-        textInfo.setText("Full C Spine protection - min 1\nBasic Neuro Assessment - min 2 \nDress wounds - min 4\nO2 - min 5\nSupplement heat - min 12");
+        textInfo.setText("Backboard & C Spine protection - min 1\nBasic Neuro Assessment - min 2\nDress wounds- min 4\nO2 - min 5\nGlascow Coma Score - min 6\nSplint & ice foot - min 8");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
@@ -182,13 +182,13 @@ public class Advance_Display_ScenTwo extends AppCompatActivity {
                 graphTempAdvance.removeAllSeries();
 
                 textPatientNo.setText("Patient 1:");
-                textPatientInfo.setText("Kyle, male, 75 y/o, found unconscious, cuts and bruises on head");
+                textPatientInfo.setText("75 y/o male, found unconscious, fractured foot, neck pains, lacs & bruises on forehead");
                 BPNumAdvance.setText("136/85 ");
                 pulseNumAdvance.setText("122 ");
                 RRNumAdvance.setText("14 ");
                 POANumAdvance.setText("98 ");
                 tempNumAdvance.setText("98.6 ");
-                textInfo.setText("Full C Spine protection - min 1\nBasic Neuro Assessment - min 2 \nDress wounds - min 4\nO2 - min 5\nSupplement heat - min 12");
+                textInfo.setText("Backboard & C Spine protection - min 1\nBasic Neuro Assessment - min 2\nDress wounds- min 4\nO2 - min 5\nGlascow Coma Score - min 6\nSplint & ice foot - min 8");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();

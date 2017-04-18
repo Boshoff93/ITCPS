@@ -118,7 +118,7 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
         RRNum.setText("23 ");
         PAONum.setText("97 ");
         tempNum.setText("98.7 ");
-        summaryText.setText("\nPatient 1: 72 y/o female, hip fracture");
+        summaryText.setText("Patient 1: 72 y/o female, hip fracture");
 
         seriesBP = new LineGraphSeries<DataPoint>();
         seriesPulse = new LineGraphSeries<DataPoint>();
@@ -160,7 +160,7 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("23 ");
                 PAONum.setText("92 ");
                 tempNum.setText("98.5 ");
-                summaryText.setText("\nPatient 1: 72 y/o female, hip fracture");
+                summaryText.setText("Patient 1: 72 y/o female, hip fracture");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -198,7 +198,7 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("24 ");
                 PAONum.setText("92 ");
                 tempNum.setText("98.5 ");
-                summaryText.setText("\nPatient 2: 70 y/o male, SOB - smoke inhalation");
+                summaryText.setText("Patient 2: 70 y/o male, SOB - smoke inhalation");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
@@ -239,7 +239,7 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 RRNum.setText("22 ");
                 PAONum.setText("93 ");
                 tempNum.setText("98.5 ");
-                summaryText.setText("\n77 y/o male, SOB - smoke inhalation - LOC 1 min ");
+                summaryText.setText("Patient 3: 77 y/o male, SOB - smoke inhalation - LOC 1 min ");
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();
                 seriesRR = new LineGraphSeries<DataPoint>();

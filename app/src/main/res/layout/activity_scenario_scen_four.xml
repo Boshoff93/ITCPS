@@ -20,7 +20,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:padding="15dp"
-        android:text="You’ve received further information on the status of your patients via the EMTs. The explosion was in the kitchen of a nursing home; 3 elder patients who live at the nursing home were injured. All patients are over 70. Patient 1 is an elderly patient who was near the kitchen to get food and suffered a hip fracture from falling down due to the blast. Patient 2 and 3 are having trouble breathing from inhaling too much smoke from the explosion/fire. Patient 5 had a loss of consciousness during the ride. Vital signs during entire transport have been arriving in addition to a record of procedures by the EMTs."
+        android:text="You’ve received further information on the status of your patients via the EMTs. The explosion was in the kitchen of a nursing home; 3 elder patients who live at the nursing home were injured. All patients are over 70. Patient 1 is an elderly patient who was near the kitchen to get food and suffered a hip fracture from falling down due to the blast. Patient 2 and 3 are having trouble breathing from inhaling too much smoke from the explosion/fire. Patient 3 had a loss of consciousness during the ride. Vital signs during entire transport have been arriving in addition to a record of procedures by the EMTs."
         android:layout_width="580dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"

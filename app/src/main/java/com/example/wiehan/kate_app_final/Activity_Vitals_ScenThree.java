@@ -203,7 +203,7 @@ public class Activity_Vitals_ScenThree extends AppCompatActivity {
                 RRNum.setText("22 ");
                 PAONum.setText("96 ");
                 tempNum.setText("98.6 ");
-                summaryText.setText("\n22 y/o female, glass in eye, cuts on face - active bleeding");
+                summaryText.setText("\nPatient 2: 22 y/o female, glass in eye, cuts on face - active bleeding");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();

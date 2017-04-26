@@ -1,6 +1,7 @@
 package com.example.wiehan.kate_app_final;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -140,22 +141,37 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         graphTempAdvance.getViewport().setMaxY(99.6);
 
         BPSumP1.setText("BP 125/82");
+        BPSumP1.setTextColor(Color.parseColor("#ffff4c"));
         pulseSumP1.setText("Pulse 87");
+        pulseSumP1.setTextColor(Color.parseColor("#1bca00"));
         RRSumP1.setText("RR 16");
+        RRSumP1.setTextColor(Color.parseColor("#1bca00"));
         POASumP1.setText("PaO2 94");
+        POASumP1.setTextColor(Color.parseColor("#ffff4c"));
         tempSumP1.setText("Temp 98.5");
+        tempSumP1.setTextColor(Color.parseColor("#1bca00"));
 
         BPSumP2.setText("BP 133/85");
+        BPSumP2.setTextColor(Color.parseColor("#ffff4c"));
         pulseSumP2.setText("Pulse 117");
+        pulseSumP2.setTextColor(Color.parseColor("#ffff4c"));
         RRSumP2.setText("RR 14");
+        RRSumP2.setTextColor(Color.parseColor("#1bca00"));
         POASumP2.setText("PaO2 96");
+        POASumP2.setTextColor(Color.parseColor("#1bca00"));
         tempSumP2.setText("Temp 98.6");
+        tempSumP2.setTextColor(Color.parseColor("#1bca00"));
 
         BPSumP3.setText("BP 110/70");
+        BPSumP3.setTextColor(Color.parseColor("#ffff4c"));
         pulseSumP3.setText("Pulse 81");
+        pulseSumP3.setTextColor(Color.parseColor("#1bca00"));
         RRSumP3.setText("RR 10");
+        RRSumP3.setTextColor(Color.parseColor("#ffff4c"));
         POASumP3.setText("PaO2 97");
+        POASumP3.setTextColor(Color.parseColor("#1bca00"));
         tempSumP3.setText("Temp 97.5");
+        tempSumP3.setTextColor(Color.parseColor("#ffff4c"));
 
         Button createActionPlan = (Button) findViewById(R.id.buttonCAPAdvance_Scen4);
 
@@ -177,10 +193,15 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
         textPatientNo.setText("Patient 1:");
         textPatientInfo.setText("72 y/o female, hip fracture");
         BPNumAdvance.setText("125/82 ");
+        BPNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
         pulseNumAdvance.setText("87 ");
+        pulseNumAdvance.setTextColor(Color.parseColor("#1bca00"));
         RRNumAdvance.setText("16 ");
+        RRNumAdvance.setTextColor(Color.parseColor("#1bca00"));
         POANumAdvance.setText("94 ");
+        POANumAdvance.setTextColor(Color.parseColor("#ffff4c"));
         tempNumAdvance.setText("98.5 ");
+        tempNumAdvance.setTextColor(Color.parseColor("#1bca00"));
         textInfo.setText("Assess Hip - min 2\nBackboard & C Spine protection - min 4\nO2 - min 5\nPain control - min 8");
 
         seriesBP = new LineGraphSeries<DataPoint>();
@@ -219,10 +240,15 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
                 textPatientNo.setText("Patient 1:");
                 textPatientInfo.setText("72 y/o female, hip fracture");
                 BPNumAdvance.setText("125/82 ");
+                BPNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 pulseNumAdvance.setText("87 ");
+                pulseNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 RRNumAdvance.setText("16 ");
+                RRNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 POANumAdvance.setText("94 ");
+                POANumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 tempNumAdvance.setText("98.5 ");
+                tempNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 textInfo.setText("Assess Hip - min 2\nBackboard & C Spine protection - min 4\nO2 - min 5\nPain control - min 8");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
@@ -258,10 +284,15 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
                 textPatientNo.setText("Patient 2:");
                 textPatientInfo.setText("70 y/o male, SOB - smoke inhalation.");
                 BPNumAdvance.setText("133/85 ");
+                BPNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 pulseNumAdvance.setText("117 ");
+                pulseNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 RRNumAdvance.setText("14 ");
+                RRNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 POANumAdvance.setText("96 ");
+                POANumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 tempNumAdvance.setText("98.6 ");
+                tempNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 textInfo.setText("Tripod position/get patient in position they feel okay breathing - min 1\nO2 - min 4");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
@@ -297,10 +328,15 @@ public class Advance_Display_ScenFour extends AppCompatActivity {
                 textPatientNo.setText("Patient 3:");
                 textPatientInfo.setText("77 y/o male, SOB - smoke inhalation - LOC 1 min ");
                 BPNumAdvance.setText("110/70 ");
+                BPNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 pulseNumAdvance.setText("81 ");
+                pulseNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 RRNumAdvance.setText("10 ");
+                RRNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 POANumAdvance.setText("97 ");
+                POANumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 tempNumAdvance.setText("97.5 ");
+                tempNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 textInfo.setText("Tripod position/get patient in position they feel okay breathing - min 1\nRapid Sequence Intubation - min 8\nSupplemental heat - min 13");
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();

@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#d8d8d8">
 
     <Button
         android:text="Patient 3"
         android:id="@+id/patient_three_Button_Scen4"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_yellow"
         android:elevation="0dp"
         android:layout_height="60dp"
         android:layout_width="100dp"
         android:layout_alignBottom="@+id/buttonConGame_Scen4"
         android:layout_toStartOf="@+id/buttonConGame_Scen4"
-        android:layout_below="@+id/summaryText_Scen4" />
+        android:layout_below="@+id/summaryText_Scen4"
+        android:textColor="#000000" />
 
     <Button
         android:text="Patient 2"
         android:id="@+id/patient_two_Button_Scen4"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_red"
         android:elevation="0dp"
         android:layout_width="100dp"
         android:layout_alignBottom="@+id/buttonConGame_Scen4"
         android:layout_toStartOf="@+id/patient_three_Button_Scen4"
         android:layout_below="@+id/summaryText_Scen4"
-        android:layout_height="60dp" />
+        android:layout_height="60dp"
+        android:textColor="#000000" />
 
     <Button
         android:text="Continue"
@@ -37,19 +39,21 @@
         android:layout_marginBottom="12dp"
         android:layout_marginEnd="33dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000" />
 
     <Button
         android:text="Patient 1"
         android:id="@+id/patient_one_Button_Scen4"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_red"
         android:elevation="0dp"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_alignBottom="@+id/patient_two_Button_Scen4"
         android:layout_toStartOf="@+id/patient_two_Button_Scen4"
-        android:layout_alignTop="@+id/patient_two_Button_Scen4" />
+        android:layout_alignTop="@+id/patient_two_Button_Scen4"
+        android:textColor="#000000" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphTemp_Scen4"
@@ -116,7 +120,7 @@
         android:layout_marginTop="29dp" />
 
     <TextView
-        android:text="BP"
+        android:text="BP:"
         android:id="@+id/textBP_Scen4"
         android:layout_height="50dp"
         android:layout_width="80dp"
@@ -124,10 +128,11 @@
         android:textStyle="normal|bold"
         android:layout_alignBaseline="@+id/BPNum_Scen4"
         android:layout_alignBottom="@+id/BPNum_Scen4"
-        android:layout_alignStart="@+id/textPulse_Scen4" />
+        android:layout_alignStart="@+id/textPulse_Scen4"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="Pulse"
+        android:text="Pulse:"
         android:id="@+id/textPulse_Scen4"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -136,10 +141,11 @@
         android:layout_height="50dp"
         android:layout_width="80dp"
         android:layout_alignTop="@+id/pulseNum_Scen4"
-        android:layout_alignStart="@+id/textRR_Scen4" />
+        android:layout_alignStart="@+id/textRR_Scen4"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="RR"
+        android:text="RR:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -148,23 +154,25 @@
         android:layout_width="80dp"
         android:layout_alignBaseline="@+id/RRNum_Scen4"
         android:layout_alignBottom="@+id/RRNum_Scen4"
-        android:layout_alignStart="@+id/textPOA_Scen4" />
+        android:layout_alignStart="@+id/textPOA_Scen4"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="Temp"
+        android:text="Temp:"
         android:layout_height="50dp"
         android:id="@+id/textTemp_Scen4"
         android:textSize="28sp"
         android:textStyle="normal|bold"
         android:textAlignment="viewStart"
-        android:layout_width="80dp"
         android:layout_alignBaseline="@+id/tempNum_Scen4"
         android:layout_alignBottom="@+id/tempNum_Scen4"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="23dp" />
+        android:layout_marginStart="23dp"
+        android:textColor="#000000"
+        android:layout_width="82dp" />
 
     <TextView
-        android:text="PaO2"
+        android:text="PaO2:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -173,7 +181,8 @@
         android:layout_width="80dp"
         android:layout_alignBaseline="@+id/POANum_Scen4"
         android:layout_alignBottom="@+id/POANum_Scen4"
-        android:layout_alignStart="@+id/textTemp_Scen4" />
+        android:layout_alignStart="@+id/textTemp_Scen4"
+        android:textColor="#000000" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphPAO_Scen4"
@@ -208,7 +217,8 @@
         android:layout_width="520dp"
         android:layout_marginBottom="12dp"
         android:layout_above="@+id/buttonConGame_Scen4"
-        android:layout_alignEnd="@+id/buttonConGame_Scen4" />
+        android:layout_alignEnd="@+id/buttonConGame_Scen4"
+        android:textColor="#000000" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphRR_Scen4"
@@ -226,7 +236,8 @@
         android:layout_width="wrap_content"
         android:layout_marginEnd="27dp"
         android:layout_above="@+id/graphBP_Scen4"
-        android:layout_alignEnd="@+id/graphBP_Scen4" />
+        android:layout_alignEnd="@+id/graphBP_Scen4"
+        android:textColor="#000000" />
 
 
 </RelativeLayout>

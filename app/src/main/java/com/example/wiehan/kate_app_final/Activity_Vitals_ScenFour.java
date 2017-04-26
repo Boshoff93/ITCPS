@@ -1,6 +1,7 @@
 package com.example.wiehan.kate_app_final;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -113,11 +114,16 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
         graphPAO.removeAllSeries();
         graphTemp.removeAllSeries();
 
-        BPNum.setText("141/91 ");
-        pulseNum.setText("119 ");
+        BPNum.setText("143/92 ");
+        BPNum.setTextColor(Color.parseColor("#ffff4c"));
+        pulseNum.setText("124 ");
+        pulseNum.setTextColor(Color.parseColor("#ff0000"));
         RRNum.setText("23 ");
-        PAONum.setText("97 ");
-        tempNum.setText("98.7 ");
+        RRNum.setTextColor(Color.parseColor("#ffff4c"));
+        PAONum.setText("92 ");
+        PAONum.setTextColor(Color.parseColor("#ffff4c"));
+        tempNum.setText("98.5 ");
+        tempNum.setTextColor(Color.parseColor("#1bca00"));
         summaryText.setText("Patient 1: 72 y/o female, hip fracture");
 
         seriesBP = new LineGraphSeries<DataPoint>();
@@ -156,10 +162,15 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 graphTemp.removeAllSeries();
 
                 BPNum.setText("143/92 ");
-                pulseNum.setText("143 ");
+                BPNum.setTextColor(Color.parseColor("#ffff4c"));
+                pulseNum.setText("124 ");
+                pulseNum.setTextColor(Color.parseColor("#ff0000"));
                 RRNum.setText("23 ");
+                RRNum.setTextColor(Color.parseColor("#ffff4c"));
                 PAONum.setText("92 ");
+                PAONum.setTextColor(Color.parseColor("#ffff4c"));
                 tempNum.setText("98.5 ");
+                tempNum.setTextColor(Color.parseColor("#1bca00"));
                 summaryText.setText("Patient 1: 72 y/o female, hip fracture");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
@@ -194,10 +205,16 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 graphTemp.removeAllSeries();
 
                 BPNum.setText("120/79 ");
+                BPNum.setTextColor(Color.parseColor("#1bca00"));
                 pulseNum.setText("123 ");
+                pulseNum.setTextColor(Color.parseColor("#ff0000"));
                 RRNum.setText("24 ");
+                RRNum.setTextColor(Color.parseColor("#ffff4c"));
                 PAONum.setText("92 ");
+                PAONum.setTextColor(Color.parseColor("#ffff4c"));
                 tempNum.setText("98.5 ");
+                tempNum.setTextColor(Color.parseColor("#1bca00"));
+
                 summaryText.setText("Patient 2: 70 y/o male, SOB - smoke inhalation");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
@@ -235,10 +252,15 @@ public class Activity_Vitals_ScenFour extends AppCompatActivity {
                 graphTemp.removeAllSeries();
 
                 BPNum.setText("120/81 ");
+                BPNum.setTextColor(Color.parseColor("#1bca00"));
                 pulseNum.setText("100 ");
+                pulseNum.setTextColor(Color.parseColor("#1bca00"));
                 RRNum.setText("22 ");
+                RRNum.setTextColor(Color.parseColor("#ffff4c"));
                 PAONum.setText("93 ");
+                PAONum.setTextColor(Color.parseColor("#ffff4c"));
                 tempNum.setText("98.5 ");
+                tempNum.setTextColor(Color.parseColor("#1bca00"));
                 summaryText.setText("Patient 3: 77 y/o male, SOB - smoke inhalation - LOC 1 min ");
                 seriesBP = new LineGraphSeries<DataPoint>();
                 seriesPulse = new LineGraphSeries<DataPoint>();

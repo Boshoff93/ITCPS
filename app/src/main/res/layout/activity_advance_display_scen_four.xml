@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#d8d8d8"
     tools:context="com.example.wiehan.kate_app_final.Advance_Display_ScenFour">
 
     <TextView
@@ -19,7 +20,8 @@
         android:layout_width="30dp"
         android:layout_alignBaseline="@+id/BPsumP2_Scen4"
         android:layout_alignBottom="@+id/BPsumP2_Scen4"
-        android:layout_alignStart="@+id/textBPAdvance_Scen4" />
+        android:layout_alignStart="@+id/textBPAdvance_Scen4"
+        android:textColor="#000000" />
 
     <TextView
         android:text="TextView"
@@ -64,7 +66,7 @@
         android:text="Patient 3"
         android:id="@+id/patient_Three_Button_Adv_Scen4"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_yellow"
         android:elevation="0dp"
         android:layout_height="60dp"
         android:layout_width="100dp"
@@ -76,7 +78,7 @@
         android:text="Patient 2"
         android:id="@+id/patient_Two_Button_Adv_Scen4"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_yellow"
         android:elevation="0dp"
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -88,7 +90,7 @@
         android:text="Patient 1"
         android:id="@+id/patient_One_Button_Adv_Scen4"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_yellow"
         android:elevation="0dp"
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -118,7 +120,7 @@
         android:layout_height="90dp" />
 
     <TextView
-        android:text="Pulse"
+        android:text="Pulse:"
         android:id="@+id/textPulseAdvance_Scen4"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -128,7 +130,8 @@
         android:layout_width="80dp"
         android:layout_alignBaseline="@+id/pulseNumAdvance_Scen4"
         android:layout_alignBottom="@+id/pulseNumAdvance_Scen4"
-        android:layout_alignStart="@+id/textBPAdvance_Scen4" />
+        android:layout_alignStart="@+id/textBPAdvance_Scen4"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="100dp"
@@ -154,7 +157,7 @@
         android:layout_marginBottom="16dp" />
 
     <TextView
-        android:text="BP"
+        android:text="BP:"
         android:id="@+id/textBPAdvance_Scen4"
         android:layout_height="50dp"
         android:layout_width="80dp"
@@ -163,7 +166,8 @@
         android:layout_alignBaseline="@+id/BPNumAdvance_Scen4"
         android:layout_alignBottom="@+id/BPNumAdvance_Scen4"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="22dp" />
+        android:layout_marginStart="22dp"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="100dp"
@@ -177,19 +181,20 @@
         android:layout_marginTop="23dp" />
 
     <TextView
-        android:text="Temp"
+        android:text="Temp:"
         android:layout_height="50dp"
         android:id="@+id/textTempAdvance_Scen4"
         android:textSize="28sp"
         android:textStyle="normal|bold"
         android:textAlignment="viewStart"
-        android:layout_width="80dp"
         android:layout_alignBaseline="@+id/tempNumAdvance_Scen4"
         android:layout_alignBottom="@+id/tempNumAdvance_Scen4"
-        android:layout_alignStart="@+id/textRRAdvance_Scen4" />
+        android:layout_alignStart="@+id/textRRAdvance_Scen4"
+        android:textColor="#000000"
+        android:layout_width="82dp" />
 
     <TextView
-        android:text="RR"
+        android:text="RR:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -198,7 +203,8 @@
         android:layout_width="80dp"
         android:layout_marginBottom="23dp"
         android:layout_above="@+id/graphPAOAdvance_Scen4"
-        android:layout_alignStart="@+id/textPulseAdvance_Scen4" />
+        android:layout_alignStart="@+id/textPulseAdvance_Scen4"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_height="50dp"
@@ -269,7 +275,8 @@
         android:layout_width="30dp"
         android:layout_alignBaseline="@+id/BPsumP3_Scen4"
         android:layout_alignBottom="@+id/BPsumP3_Scen4"
-        android:layout_alignStart="@+id/textP2_Scen4" />
+        android:layout_alignStart="@+id/textP2_Scen4"
+        android:textColor="#000000" />
 
     <TextView
         android:text="P1:"
@@ -280,7 +287,8 @@
         android:layout_width="30dp"
         android:layout_alignBaseline="@+id/BPsumP1_Scen4"
         android:layout_alignBottom="@+id/BPsumP1_Scen4"
-        android:layout_alignStart="@+id/textP2_Scen4" />
+        android:layout_alignStart="@+id/textP2_Scen4"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textPatientNo_Scen4"
@@ -290,7 +298,8 @@
         android:textAlignment="viewStart"
         android:layout_width="125dp"
         android:layout_above="@+id/textPatientInfo_Scen4"
-        android:layout_alignStart="@+id/textTempAdvance_Scen4" />
+        android:layout_alignStart="@+id/textTempAdvance_Scen4"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="100dp"
@@ -304,7 +313,7 @@
         android:layout_marginBottom="16dp" />
 
     <TextView
-        android:text="PaO2"
+        android:text="PaO2:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -313,7 +322,8 @@
         android:layout_width="80dp"
         android:layout_alignBaseline="@+id/PAONumAdvance_Scen4"
         android:layout_alignBottom="@+id/PAONumAdvance_Scen4"
-        android:layout_alignStart="@+id/textTempAdvance_Scen4" />
+        android:layout_alignStart="@+id/textTempAdvance_Scen4"
+        android:textColor="#000000" />
 
     <TextView
         android:text="Summary"
@@ -323,7 +333,8 @@
         android:textSize="24sp"
         android:textStyle="normal|bold"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
 
     <TextView
         android:text="TextView"
@@ -431,7 +442,8 @@
         android:layout_alignBaseline="@+id/textInfo_Scen4"
         android:layout_alignBottom="@+id/textInfo_Scen4"
         android:layout_alignStart="@+id/textPatientNo_Scen4"
-        android:layout_width="150dp" />
+        android:layout_width="150dp"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textInfo_Scen4"
@@ -444,7 +456,8 @@
         android:layout_marginBottom="12dp"
         android:layout_height="110dp"
         android:layout_above="@+id/buttonCAPAdvance_Scen4"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000" />
 
     <TextView
         android:text="Last 15 minutes Vital Trends"

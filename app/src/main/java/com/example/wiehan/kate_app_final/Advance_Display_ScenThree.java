@@ -1,6 +1,7 @@
 package com.example.wiehan.kate_app_final;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -132,10 +133,15 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
         graphPAOAdvance.removeAllSeries();
 
         BPNumAdvance.setText("124/82 ");
+        BPNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
         pulseNumAdvance.setText("98 ");
+        pulseNumAdvance.setTextColor(Color.parseColor("#1bca00"));
         RRNumAdvance.setText("14 ");
+        RRNumAdvance.setTextColor(Color.parseColor("#1bca00"));
         PAONumAdvance.setText("97 ");
+        PAONumAdvance.setTextColor(Color.parseColor("#1bca00"));
         tempNumAdvance.setText("98.6 ");
+        tempNumAdvance.setTextColor(Color.parseColor("#1bca00"));
         textInfo.setText("Dressing burns - min 2\nStart IV - min 3\nPain control - min 4");
 
         seriesBP = new LineGraphSeries<DataPoint>();
@@ -174,10 +180,15 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 graphPAOAdvance.removeAllSeries();
 
                 BPNumAdvance.setText("124/82 ");
+                BPNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 pulseNumAdvance.setText("98 ");
+                pulseNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 RRNumAdvance.setText("14 ");
+                RRNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 PAONumAdvance.setText("97 ");
+                PAONumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 tempNumAdvance.setText("98.6 ");
+                tempNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 textInfo.setText("Dressing burns - min 2\nStart IV - min 3\nPain control - min 4");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
@@ -187,7 +198,7 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 seriesTemp = new LineGraphSeries<DataPoint>();
 
                 textPatientNo.setText("Patient 1:");
-                textPatientInfo.setText("18 y/o male, 2nd & 3rd degree burns- arms, torso");
+                textPatientInfo.setText("18 y/o male, 2nd & 3rd degree burns - arms, torso");
 
                 patientOne.setSelected(true);
                 patientTwo.setSelected(false);
@@ -216,10 +227,15 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 graphPAOAdvance.removeAllSeries();
 
                 BPNumAdvance.setText("121/82 ");
+                BPNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 pulseNumAdvance.setText("94 ");
+                pulseNumAdvance.setTextColor(Color.parseColor("#ffff4c"));
                 RRNumAdvance.setText("15 ");
+                RRNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 PAONumAdvance.setText("97 ");
+                PAONumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 tempNumAdvance.setText("98.5 ");
+                tempNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 textInfo.setText("Dressing burns - min 3\nTend to cuts - min 4\nEye protection - min 7");
 
                 seriesBP = new LineGraphSeries<DataPoint>();
@@ -260,10 +276,15 @@ public class Advance_Display_ScenThree extends AppCompatActivity {
                 graphPAOAdvance.removeAllSeries();
 
                 BPNumAdvance.setText("119/80 ");
+                BPNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 pulseNumAdvance.setText("48 ");
+                pulseNumAdvance.setTextColor(Color.parseColor("#ff0000"));
                 RRNumAdvance.setText("15 ");
+                RRNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 PAONumAdvance.setText("98 ");
+                PAONumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 tempNumAdvance.setText("98.4 ");
+                tempNumAdvance.setTextColor(Color.parseColor("#1bca00"));
                 textInfo.setText("Tripod position/get patient in position they feel okay breathing - min 1\nAssessment lungs/airway - min 2\nBreath mask - min 6\nSupplemental heat - min 13");
 
                 seriesBP = new LineGraphSeries<DataPoint>();

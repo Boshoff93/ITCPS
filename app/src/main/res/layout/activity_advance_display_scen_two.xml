@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.wiehan.kate_app_final.Advance_Display_ScenTwo">
+    tools:context="com.example.wiehan.kate_app_final.Advance_Display_ScenTwo"
+    android:background="#d8d8d8">
 
     <TextView
         android:layout_height="50dp"
@@ -19,7 +20,8 @@
         android:id="@+id/PAONumAdvance_Scen2"
         android:layout_alignBaseline="@+id/textPAOAdvance_Scen2"
         android:layout_alignBottom="@+id/textPAOAdvance_Scen2"
-        android:layout_toStartOf="@+id/graphPAOAdvance_Scen2" />
+        android:layout_toStartOf="@+id/graphPAOAdvance_Scen2"
+        android:textColor="#1bca00" />
 
     <TextView
         android:text=" "
@@ -31,7 +33,8 @@
         android:textAlignment="textEnd"
         android:layout_below="@+id/graphBBAdvance_Scen2"
         android:layout_toStartOf="@+id/graphPulseAdvance_Scen2"
-        android:layout_marginTop="19dp" />
+        android:layout_marginTop="19dp"
+        android:textColor="#ffff4c" />
 
     <TextView
         android:layout_height="50dp"
@@ -42,7 +45,8 @@
         android:id="@+id/RRNumAdvance_Scen2"
         android:layout_marginBottom="21dp"
         android:layout_above="@+id/graphPAOAdvance_Scen2"
-        android:layout_toStartOf="@+id/graphRRAdvance_Scen2" />
+        android:layout_toStartOf="@+id/graphRRAdvance_Scen2"
+        android:textColor="#1bca00" />
 
     <TextView
         android:layout_width="100dp"
@@ -53,10 +57,11 @@
         android:textAlignment="textEnd"
         android:layout_alignBaseline="@+id/textBPAdvance_Scen2"
         android:layout_alignBottom="@+id/textBPAdvance_Scen2"
-        android:layout_toStartOf="@+id/graphBBAdvance_Scen2" />
+        android:layout_toStartOf="@+id/graphBBAdvance_Scen2"
+        android:textColor="#ffff4c" />
 
     <TextView
-        android:text="BP"
+        android:text="BP:"
         android:id="@+id/textBPAdvance_Scen2"
         android:layout_height="50dp"
         android:layout_width="80dp"
@@ -64,10 +69,11 @@
         android:textStyle="normal|bold"
         android:layout_marginBottom="22dp"
         android:layout_above="@+id/pulseNumAdvance_Scen2"
-        android:layout_alignStart="@+id/textPulseAdvance_Scen2" />
+        android:layout_alignStart="@+id/textPulseAdvance_Scen2"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="Pulse"
+        android:text="Pulse:"
         android:id="@+id/textPulseAdvance_Scen2"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -77,10 +83,11 @@
         android:layout_width="80dp"
         android:layout_alignBaseline="@+id/pulseNumAdvance_Scen2"
         android:layout_alignBottom="@+id/pulseNumAdvance_Scen2"
-        android:layout_alignStart="@+id/textRRAdvance_Scen2" />
+        android:layout_alignStart="@+id/textRRAdvance_Scen2"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="RR"
+        android:text="RR:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -90,10 +97,11 @@
         android:layout_alignBaseline="@+id/RRNumAdvance_Scen2"
         android:layout_alignBottom="@+id/RRNumAdvance_Scen2"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp" />
+        android:layout_marginStart="20dp"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="PAo2"
+        android:text="PAo2:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -102,7 +110,8 @@
         android:layout_width="80dp"
         android:layout_below="@+id/RRNumAdvance_Scen2"
         android:layout_alignStart="@+id/textRRAdvance_Scen2"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="24dp"
+        android:textColor="#000000" />
 
     <Button
         android:text="Create Action Plan"
@@ -120,7 +129,7 @@
         android:layout_width="100dp"
         android:id="@+id/patient_One_Button_Adv_Scen2"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_yellow"
         android:layout_marginLeft="84dp"
         android:layout_height="60dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
@@ -135,19 +144,21 @@
         android:textAlignment="viewStart"
         android:layout_width="125dp"
         android:layout_alignTop="@+id/textInfo_Scen2"
-        android:layout_alignStart="@+id/textTempAdvance_Scen2" />
+        android:layout_alignStart="@+id/textTempAdvance_Scen2"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="Temp"
+        android:text="Temp:"
         android:layout_height="50dp"
         android:id="@+id/textTempAdvance_Scen2"
         android:textSize="28sp"
         android:textStyle="normal|bold"
         android:textAlignment="viewStart"
-        android:layout_width="80dp"
+        android:layout_width="82dp"
         android:layout_alignBottom="@+id/graphTempAdvance_Scen2"
         android:layout_alignStart="@+id/textPAOAdvance_Scen2"
-        android:layout_marginBottom="22dp" />
+        android:layout_marginBottom="22dp"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="100dp"
@@ -158,7 +169,8 @@
         android:textAlignment="textEnd"
         android:layout_alignBaseline="@+id/textTempAdvance_Scen2"
         android:layout_alignBottom="@+id/textTempAdvance_Scen2"
-        android:layout_toStartOf="@+id/graphTempAdvance_Scen2" />
+        android:layout_toStartOf="@+id/graphTempAdvance_Scen2"
+        android:textColor="#1bca00" />
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graphBBAdvance_Scen2"
@@ -218,7 +230,8 @@
         android:textStyle="normal|bold"
         android:layout_marginBottom="22dp"
         android:layout_above="@+id/graphBBAdvance_Scen2"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textPatientInfo_Scen2"
@@ -228,7 +241,8 @@
         android:layout_height="150dp"
         android:layout_below="@+id/textPatientNo_Scen2"
         android:layout_alignStart="@+id/textPatientNo_Scen2"
-        android:layout_width="130dp" />
+        android:layout_width="130dp"
+        android:textColor="#000000" />
 
 
 </RelativeLayout>

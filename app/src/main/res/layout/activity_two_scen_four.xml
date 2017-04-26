@@ -4,6 +4,7 @@
     android:id="@+id/activity_two_scen_four"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d8d8d8"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -20,7 +21,8 @@
         android:textSize="18sp"
         android:layout_marginBottom="229dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
 
     <TextView
         android:text="\n3 patients injured in an explosion at a local restaurant: ETA: 15 minutes"
@@ -34,5 +36,6 @@
         android:textSize="24sp"
         android:layout_marginBottom="56dp"
         android:layout_above="@+id/viewVitalsButtonScenFour"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
 </RelativeLayout>

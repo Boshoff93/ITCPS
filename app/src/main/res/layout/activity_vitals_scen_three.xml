@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#d8d8d8">
 
     <TextView
-        android:text="Temp"
+        android:text="Temp:"
         android:layout_height="50dp"
         android:id="@+id/textTemp_Scen3"
         android:textSize="28sp"
         android:textStyle="normal|bold"
         android:textAlignment="viewStart"
-        android:layout_width="80dp"
         android:layout_alignBaseline="@+id/tempNum_Scen3"
         android:layout_alignBottom="@+id/tempNum_Scen3"
-        android:layout_alignStart="@+id/textRR_Scen3" />
+        android:layout_alignStart="@+id/textRR_Scen3"
+        android:textColor="#000000"
+        android:layout_width="82dp" />
 
     <TextView
-        android:text="RR"
+        android:text="RR:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -24,7 +25,8 @@
         android:layout_width="80dp"
         android:layout_alignBaseline="@+id/RRNum_Scen3"
         android:layout_alignBottom="@+id/RRNum_Scen3"
-        android:layout_alignStart="@+id/textPulse_Scen3" />
+        android:layout_alignStart="@+id/textPulse_Scen3"
+        android:textColor="#000000" />
 
     <Button
         android:text="Continue"
@@ -37,41 +39,45 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="41dp"
-        android:layout_height="60dp" />
+        android:layout_height="60dp"
+        android:textColor="#000000" />
 
     <Button
         android:text="Patient 3"
         android:id="@+id/patient_three_Button_Scen3"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_red"
         android:elevation="0dp"
         android:layout_width="100dp"
         android:layout_alignBottom="@+id/buttonConGame_Scen3"
         android:layout_toStartOf="@+id/buttonConGame_Scen3"
         android:layout_below="@+id/summaryText_Scen3"
-        android:layout_height="60dp" />
+        android:layout_height="60dp"
+        android:textColor="#000000" />
 
     <Button
         android:text="Patient 2"
         android:id="@+id/patient_two_Button_Scen3"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_red"
         android:elevation="0dp"
         android:layout_width="100dp"
         android:layout_alignTop="@+id/patient_three_Button_Scen3"
         android:layout_toStartOf="@+id/patient_three_Button_Scen3"
-        android:layout_height="60dp" />
+        android:layout_height="60dp"
+        android:textColor="#000000" />
 
     <Button
         android:text="Patient 1"
         android:id="@+id/patient_one_Button_Scen3"
         style="@android:style/Widget.Button.Inset"
-        android:background="@drawable/my_personal_buttons"
+        android:background="@drawable/my_personal_buttons_yellow"
         android:elevation="0dp"
         android:layout_width="100dp"
         android:layout_alignTop="@+id/patient_two_Button_Scen3"
         android:layout_toStartOf="@+id/patient_two_Button_Scen3"
-        android:layout_height="60dp" />
+        android:layout_height="60dp"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/summaryText_Scen3"
@@ -84,10 +90,11 @@
         android:layout_height="120dp"
         android:layout_above="@+id/buttonConGame_Scen3"
         android:layout_alignEnd="@+id/buttonConGame_Scen3"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="12dp"
+        android:textColor="#000000" />
 
     <TextView
-        android:text="PaO2"
+        android:text="PaO2:"
         android:layout_height="50dp"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -96,18 +103,8 @@
         android:layout_width="80dp"
         android:layout_marginBottom="31dp"
         android:layout_above="@+id/graphTemp_Scen3"
-        android:layout_alignStart="@+id/textTemp_Scen3" />
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:textAlignment="textEnd"
-        android:id="@+id/PAONum_Scen3"
-        android:layout_alignBaseline="@+id/textPAO_Scen3"
-        android:layout_alignBottom="@+id/textPAO_Scen3"
-        android:layout_toStartOf="@+id/graphPAO_Scen3" />
+        android:layout_alignStart="@+id/textTemp_Scen3"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="100dp"
@@ -132,7 +129,7 @@
         android:layout_marginBottom="32dp" />
 
     <TextView
-        android:text="Pulse"
+        android:text="Pulse:"
         android:id="@+id/textPulse_Scen3"
         android:textSize="28sp"
         android:textStyle="normal|bold"
@@ -142,7 +139,8 @@
         android:layout_width="80dp"
         android:layout_marginBottom="28dp"
         android:layout_above="@+id/graphRR_Scen3"
-        android:layout_alignStart="@+id/textBP_Scen3" />
+        android:layout_alignStart="@+id/textBP_Scen3"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_height="50dp"
@@ -156,7 +154,7 @@
         android:layout_toStartOf="@+id/graphPulse_Scen3" />
 
     <TextView
-        android:text="BP"
+        android:text="BP:"
         android:id="@+id/textBP_Scen3"
         android:layout_height="50dp"
         android:layout_width="80dp"
@@ -164,7 +162,8 @@
         android:textStyle="normal|bold"
         android:layout_above="@+id/graphPulse_Scen3"
         android:layout_alignStart="@+id/patient_one_Button_Scen3"
-        android:layout_marginBottom="22dp" />
+        android:layout_marginBottom="22dp"
+        android:textColor="#000000" />
 
     <TextView
         android:text=" "
@@ -224,7 +223,19 @@
         android:layout_marginTop="31dp"
         android:layout_alignParentTop="true"
         android:layout_alignEnd="@+id/graphBP_Scen3"
-        android:layout_marginEnd="27dp" />
+        android:layout_marginEnd="27dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="28sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:id="@+id/PAONum_Scen3"
+        android:layout_alignBaseline="@+id/textPAO_Scen3"
+        android:layout_alignBottom="@+id/textPAO_Scen3"
+        android:layout_toStartOf="@+id/graphPAO_Scen3" />
 
 
 </RelativeLayout>
